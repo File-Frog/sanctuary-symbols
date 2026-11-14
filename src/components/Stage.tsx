@@ -10,11 +10,11 @@ function Arrow({ dir }: { dir: 'prev' | 'next' }) {
   )
 }
 
-export default function Stage({ children, caption }: { children: React.ReactNode; caption?: string }) {
+export default function Stage({ children, caption, bare }: { children: React.ReactNode; caption?: string; bare?: boolean }) {
   const { pathname } = useLocation()
   const { prev, next, index, total } = neighbours(pathname)
   return (
-    <section className="stage" aria-label="Illustration">
+    <section className={`stage${bare ? ' bare' : ''}`} aria-label="Illustration">
       <div className="stage-inner">{children}</div>
       {prev && (
         <Link className="stage-arrow prev" to={prev.path} aria-label={`Previous: ${prev.title}`}>
@@ -29,7 +29,7 @@ export default function Stage({ children, caption }: { children: React.ReactNode
         </Link>
       )}
       {caption && <div className="stage-caption">{caption}</div>}
-      {index >= 0 && <div className="stage-progress">{index + 1} of {total}</div>}
+      {index >= 0 && !bare && <div className="stage-progress">{index + 1} of {total}</div>}
     </section>
   )
 }

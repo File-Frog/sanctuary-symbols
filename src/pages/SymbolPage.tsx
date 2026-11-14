@@ -39,7 +39,7 @@ export default function SymbolPage() {
 
   return (
     <>
-      <Stage caption={art ? undefined : 'Click any piece of furniture on the plan'}>
+      <Stage bare={!!art} caption={art ? undefined : 'Click any piece of furniture on the plan'}>
         {art ? (
           <>
             <div className="stage-painting">
@@ -52,7 +52,6 @@ export default function SymbolPage() {
                   exit={{ opacity: 0 }}
                   transition={{ duration: reduce ? 0 : 0.9, ease: [0.4, 0, 0.2, 1] }}
                 >
-                  <img className="painting-bg" src={shown} alt="" aria-hidden="true" />
                   <motion.img
                     className="painting-fg"
                     src={shown}
@@ -63,10 +62,6 @@ export default function SymbolPage() {
                   />
                 </motion.div>
               </AnimatePresence>
-              <div className="stage-shade" />
-            </div>
-            <div className="plan-inset" aria-label="Where it stood">
-              <Plan zoom={2.4} focus={s.id} pair={pair} onSelect={(x) => navigate(`/sanctuary/symbol/${x}`)} dimOutside />
             </div>
           </>
         ) : (
@@ -83,12 +78,12 @@ export default function SymbolPage() {
             </div>
           </div>
         )}
-        <AnimatePresence mode="wait" initial={false}>
+        {!art && <AnimatePresence mode="wait" initial={false}>
           <motion.div className="stage-title" key={s.id} {...fade}>
             <span className="st-name">{s.name}</span>
             <span className="st-zone">{zones[s.zone].name}</span>
           </motion.div>
-        </AnimatePresence>
+        </AnimatePresence>}
         {detail && (
           <div className="stage-action">
             <button className="btn on-night" onClick={() => setInside((v) => !v)} aria-pressed={inside}>
