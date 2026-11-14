@@ -87,7 +87,7 @@ export default function Quiz() {
                           <li key={x.q}>
                             <strong style={{ fontFamily: 'var(--display)', fontWeight: 400 }}>{x.q}</strong>
                             <p>Answer: {x.options[x.answer]}. <Rich text={x.explain} /></p>
-                            {FOCUS[i] && <p><Link to={`/symbol/${FOCUS[i]}`}>Study this again</Link></p>}
+                            {FOCUS[i] && <p><Link to={`/sanctuary/symbol/${FOCUS[i]}`}>Study this again</Link></p>}
                           </li>
                         ),
                       )}
@@ -102,7 +102,7 @@ export default function Quiz() {
           </AnimatePresence>
         </div>
 
-        <Pager path="/quiz" />
+        <Pager path="/sanctuary/quiz" />
       </div>
     </>
   )

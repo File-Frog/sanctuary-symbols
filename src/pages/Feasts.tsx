@@ -109,7 +109,7 @@ export default function Feasts() {
         <h2>Further reading</h2>
         <Resources items={[R.haskell, R.andreasen, R.gc23]} />
 
-        <Pager path="/feasts" />
+        <Pager path="/sanctuary/feasts" />
       </div>
     </>
   )

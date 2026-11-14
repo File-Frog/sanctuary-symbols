@@ -12,11 +12,11 @@ export function buildUsage() {
       map.set(m[0], list)
     }
   }
-  symbols.forEach((s) => add(`/symbol/${s.id}`, s.name, s))
-  add('/services/daily', 'The Daily Service', [dailySteps, dailyTerms])
-  add('/services/atonement', 'The Day of Atonement', [yearlySteps, yearlyTerms])
-  add('/feasts', 'The Feasts', feasts)
-  add('/priest', 'The High Priest', [garments, priestVerses])
-  add('/prophecy', 'The 2300 Days', [prophecyPeriods, prophecyTerms, prophecyKeys])
+  symbols.forEach((s) => add(`/sanctuary/symbol/${s.id}`, s.name, s))
+  add('/sanctuary/services/daily', 'The Daily Service', [dailySteps, dailyTerms])
+  add('/sanctuary/services/atonement', 'The Day of Atonement', [yearlySteps, yearlyTerms])
+  add('/sanctuary/feasts', 'The Feasts', feasts)
+  add('/sanctuary/priest', 'The High Priest', [garments, priestVerses])
+  add('/sanctuary/prophecy', 'The 2300 Days', [prophecyPeriods, prophecyTerms, prophecyKeys])
   return map
 }

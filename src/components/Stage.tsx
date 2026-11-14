@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom'
-import { neighbours, sections } from '../data/order'
+import { neighbours } from '../data/order'
 
 function Arrow({ dir }: { dir: 'prev' | 'next' }) {
   return (
@@ -12,7 +12,7 @@ function Arrow({ dir }: { dir: 'prev' | 'next' }) {
 
 export default function Stage({ children, caption }: { children: React.ReactNode; caption?: string }) {
   const { pathname } = useLocation()
-  const { prev, next, index } = neighbours(pathname)
+  const { prev, next, index, total } = neighbours(pathname)
   return (
     <section className="stage" aria-label="Illustration">
       <div className="stage-inner">{children}</div>
@@ -29,7 +29,7 @@ export default function Stage({ children, caption }: { children: React.ReactNode
         </Link>
       )}
       {caption && <div className="stage-caption">{caption}</div>}
-      {index >= 0 && <div className="stage-progress">{index + 1} of {sections.length}</div>}
+      {index >= 0 && <div className="stage-progress">{index + 1} of {total}</div>}
     </section>
   )
 }

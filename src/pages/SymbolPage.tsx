@@ -23,7 +23,7 @@ export default function SymbolPage() {
     setTorn(false)
   }, [id])
 
-  if (!s) return <Navigate to="/" replace />
+  if (!s) return <Navigate to="/sanctuary" replace />
 
   const fade = {
     initial: { opacity: 0, y: reduce ? 0 : 8 },
@@ -37,7 +37,7 @@ export default function SymbolPage() {
       <Stage caption="Click any piece of furniture on the plan">
         <div className="stage-split">
           <div className="plan-pane">
-            <Plan focus={s.id} pair={pair} onSelect={(x) => navigate(`/symbol/${x}`)} dimOutside />
+            <Plan focus={s.id} pair={pair} onSelect={(x) => navigate(`/sanctuary/symbol/${x}`)} dimOutside />
           </div>
           <div className="art-pane">
             <AnimatePresence mode="wait" initial={false}>
@@ -110,7 +110,7 @@ export default function SymbolPage() {
                 return (
                   <li key={l.to}>
                     <Link
-                      to={`/symbol/${l.to}`}
+                      to={`/sanctuary/symbol/${l.to}`}
                       onMouseEnter={() => setPair(l.to)}
                       onMouseLeave={() => setPair(undefined)}
                       onFocus={() => setPair(l.to)}
@@ -138,7 +138,7 @@ export default function SymbolPage() {
             <h2>Further reading</h2>
             <Resources items={s.resources} />
 
-            <Pager path={`/symbol/${s.id}`} />
+            <Pager path={`/sanctuary/symbol/${s.id}`} />
           </motion.article>
         </AnimatePresence>
       </div>

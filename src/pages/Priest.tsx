@@ -167,7 +167,7 @@ export default function Priest() {
         <h2>Further reading</h2>
         <Resources items={[R.andreasen, R.hardinge, R.davidson]} />
 
-        <Pager path="/priest" />
+        <Pager path="/sanctuary/priest" />
       </div>
     </>
   )

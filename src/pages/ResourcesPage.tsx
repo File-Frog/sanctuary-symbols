@@ -11,7 +11,7 @@ export default function ResourcesPage() {
   return (
     <>
       <Stage caption="Click any piece of furniture to return to it">
-        <div className="home-plan"><Plan onSelect={(id) => navigate(`/symbol/${id}`)} /></div>
+        <div className="home-plan"><Plan onSelect={(id) => navigate(`/sanctuary/symbol/${id}`)} /></div>
         <div className="stage-title"><span className="st-name">Resources</span></div>
       </Stage>
       <div className="commentary">
@@ -42,7 +42,7 @@ export default function ResourcesPage() {
           <p>Scripture quotations are from the King James Version, which is in the public domain. Measurements assume a cubit of about 18 inches.</p>
         </div>
 
-        <Pager path="/resources" />
+        <Pager path="/sanctuary/resources" />
       </div>
     </>
   )

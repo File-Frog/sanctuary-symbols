@@ -21,7 +21,7 @@ interface Config {
 
 const configs: Record<'daily' | 'atonement', Config> = {
   daily: {
-    path: '/services/daily',
+    path: '/sanctuary/services/daily',
     title: 'The Daily Service',
     lede: 'Forgiveness, every day of the year.',
     intro: [
@@ -38,7 +38,7 @@ const configs: Record<'daily' | 'atonement', Config> = {
     resources: [R.gane, R.andreasen, R.pp30],
   },
   atonement: {
-    path: '/services/atonement',
+    path: '/sanctuary/services/atonement',
     title: 'The Day of Atonement',
     lede: 'The year\'s record of sin, removed.',
     intro: [
@@ -88,7 +88,7 @@ export default function Service({ kind }: { kind: 'daily' | 'atonement' }) {
           routeKey={`${kind}-${cur}`}
           routeColor={c.colour}
           markers={c.steps.map((s, i) => ({ at: s.at!, label: s.title, active: i === cur }))}
-          onSelect={(id) => navigate(`/symbol/${id}`)}
+          onSelect={(id) => navigate(`/sanctuary/symbol/${id}`)}
         />
         </div>
         <div className="stage-title">

@@ -15,7 +15,7 @@ export default function Home() {
     <>
       <Stage caption="The tabernacle drawn to scale. Click any piece of furniture.">
         <div className="home-plan">
-          <Plan intro onSelect={(id) => navigate(`/symbol/${id}`)} />
+          <Plan intro onSelect={(id) => navigate(`/sanctuary/symbol/${id}`)} />
         </div>
         <motion.div
           className="hero-text"
@@ -60,7 +60,7 @@ export default function Home() {
               <ul>
                 {symbols.filter((s) => s.zone === z).map((s) => (
                   <li key={s.id}>
-                    <Link to={`/symbol/${s.id}`}>{s.name}</Link>
+                    <Link to={`/sanctuary/symbol/${s.id}`}>{s.name}</Link>
                   </li>
                 ))}
               </ul>
@@ -70,25 +70,25 @@ export default function Home() {
 
         <h2>Ways to study</h2>
         <div className="paths">
-          <Link className="path-card" to="/symbol/gate">
+          <Link className="path-card" to="/sanctuary/symbol/gate">
             <strong>Walk the sanctuary</strong>
             <span>Start at the gate and move inward, one piece of furniture at a time.</span>
           </Link>
-          <Link className="path-card" to="/services/daily">
+          <Link className="path-card" to="/sanctuary/services/daily">
             <strong>Watch the services</strong>
             <span>Follow the blood from the altar to the mercy seat, day by day and year by year.</span>
           </Link>
-          <Link className="path-card" to="/prophecy">
+          <Link className="path-card" to="/sanctuary/prophecy">
             <strong>Trace the 2,300 days</strong>
             <span>From the decree of 457 BC to the cross to 1844, on one timeline.</span>
           </Link>
-          <Link className="path-card" to="/quiz">
+          <Link className="path-card" to="/sanctuary/quiz">
             <strong>Test yourself</strong>
             <span>Twelve questions to check what has stuck.</span>
           </Link>
         </div>
 
-        <Pager path="/" />
+        <Pager path="/sanctuary" />
       </div>
     </>
   )

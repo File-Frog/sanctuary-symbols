@@ -143,7 +143,7 @@ export default function Prophecy() {
         <h2>Further reading</h2>
         <Resources items={[R.goldstein, R.shea, R.seventy, R.gc23, R.darcom]} />
 
-        <Pager path="/prophecy" />
+        <Pager path="/sanctuary/prophecy" />
       </div>
     </>
   )

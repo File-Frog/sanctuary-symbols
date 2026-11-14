@@ -105,7 +105,7 @@ export default function Scripture() {
           </section>
         ))}
 
-        <Pager path="/scripture" />
+        <Pager path="/sanctuary/scripture" />
       </div>
     </>
   )
