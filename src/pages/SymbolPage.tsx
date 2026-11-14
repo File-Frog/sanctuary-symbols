@@ -17,13 +17,18 @@ export default function SymbolPage() {
   const reduce = useReducedMotion()
   const [pair, setPair] = useState<string | undefined>()
   const [torn, setTorn] = useState(false)
+  const [inside, setInside] = useState(false)
 
   useEffect(() => {
     setPair(undefined)
     setTorn(false)
+    setInside(false)
   }, [id])
 
   if (!s) return <Navigate to="/sanctuary" replace />
+  const art = artFor(s.id)
+  const detail = artFor(`${s.id}-detail`)
+  const shown = (inside && detail) || art
 
   const fade = {
     initial: { opacity: 0, y: reduce ? 0 : 8 },
@@ -34,26 +39,64 @@ export default function SymbolPage() {
 
   return (
     <>
-      <Stage caption="Click any piece of furniture on the plan">
-        <div className="stage-split">
-          <div className="plan-pane">
-            <Plan focus={s.id} pair={pair} onSelect={(x) => navigate(`/sanctuary/symbol/${x}`)} dimOutside />
+      <Stage caption={art ? undefined : 'Click any piece of furniture on the plan'}>
+        {art ? (
+          <>
+            <div className="stage-painting">
+              <AnimatePresence initial={false}>
+                <motion.div
+                  key={shown}
+                  className="painting-layer"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: reduce ? 0 : 0.9, ease: [0.4, 0, 0.2, 1] }}
+                >
+                  <img className="painting-bg" src={shown} alt="" aria-hidden="true" />
+                  <motion.img
+                    className="painting-fg"
+                    src={shown}
+                    alt={`${s.name}, painting`}
+                    initial={{ scale: reduce ? 1 : 1.03 }}
+                    animate={{ scale: 1 }}
+                    transition={{ duration: reduce ? 0 : 1.2, ease: [0.4, 0, 0.2, 1] }}
+                  />
+                </motion.div>
+              </AnimatePresence>
+              <div className="stage-shade" />
+            </div>
+            <div className="plan-inset" aria-label="Where it stood">
+              <Plan zoom={2.4} focus={s.id} pair={pair} onSelect={(x) => navigate(`/sanctuary/symbol/${x}`)} dimOutside />
+            </div>
+          </>
+        ) : (
+          <div className="stage-split">
+            <div className="plan-pane">
+              <Plan focus={s.id} pair={pair} onSelect={(x) => navigate(`/sanctuary/symbol/${x}`)} dimOutside />
+            </div>
+            <div className="art-pane">
+              <AnimatePresence mode="wait" initial={false}>
+                <motion.div key={s.id} initial={{ opacity: 0, scale: reduce ? 1 : 0.96 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: reduce ? 1 : 1.02 }} transition={{ duration: reduce ? 0 : 0.45 }}>
+                  <Illustration id={s.id} torn={torn} />
+                </motion.div>
+              </AnimatePresence>
+            </div>
           </div>
-          <div className="art-pane">
-            <AnimatePresence mode="wait" initial={false}>
-              <motion.div key={s.id} initial={{ opacity: 0, scale: reduce ? 1 : 0.96 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: reduce ? 1 : 1.02 }} transition={{ duration: reduce ? 0 : 0.45 }}>
-                <Illustration id={s.id} torn={torn} />
-              </motion.div>
-            </AnimatePresence>
-          </div>
-        </div>
+        )}
         <AnimatePresence mode="wait" initial={false}>
           <motion.div className="stage-title" key={s.id} {...fade}>
             <span className="st-name">{s.name}</span>
             <span className="st-zone">{zones[s.zone].name}</span>
           </motion.div>
         </AnimatePresence>
-        {s.id === 'veil' && !artFor('veil') && (
+        {detail && (
+          <div className="stage-action">
+            <button className="btn on-night" onClick={() => setInside((v) => !v)} aria-pressed={inside}>
+              {inside ? 'Back to the ark' : 'Look inside'}
+            </button>
+          </div>
+        )}
+        {s.id === 'veil' && !art && (
           <div className="stage-action">
             <button className="btn on-night" onClick={() => setTorn((t) => !t)}>
               {torn ? 'Restore the veil' : 'Tear the veil'}

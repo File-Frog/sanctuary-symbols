@@ -25,11 +25,12 @@ export const spots: Record<string, { c: Pt; w: number }> = {
 
 const FULL = { x: -8, y: -7, w: 116, h: 64 }
 
-export function viewFor(focus?: string, pair?: string) {
-  const s = focus ? spots[focus] : undefined
+export function viewFor(focus?: string, pair?: string, zoom = 1) {
+  const base = focus ? spots[focus] : undefined
+  const s = base ? { c: base.c, w: Math.min(base.w * zoom, FULL.w) } : undefined
   if (!s) return `${FULL.x} ${FULL.y} ${FULL.w} ${FULL.h}`
   const p = pair ? spots[pair] : undefined
-  if (p && p !== s) {
+  if (p && p !== base) {
     const minX = Math.min(s.c[0], p.c[0])
     const maxX = Math.max(s.c[0], p.c[0])
     const w = Math.max(maxX - minX + 22, 30)
@@ -56,6 +57,7 @@ interface Props {
   intro?: boolean
   dimOutside?: boolean
   pair?: string
+  zoom?: number
 }
 
 function pillarPositions(): Pt[] {
@@ -71,11 +73,11 @@ function pillarPositions(): Pt[] {
 }
 const PILLARS = pillarPositions()
 
-export default function Plan({ focus, onSelect, route, routeColor = '#f2c96b', routeKey, markers, intro, dimOutside, pair }: Props) {
+export default function Plan({ focus, onSelect, route, routeColor = '#f2c96b', routeKey, markers, intro, dimOutside, pair, zoom = 1 }: Props) {
   const reduce = useReducedMotion()
   const [hover, setHover] = useState<string | null>(null)
   const uid = useId().replace(/:/g, '')
-  const vb = viewFor(focus, pair)
+  const vb = viewFor(focus, pair, zoom)
   const scale = Number(vb.split(' ')[2]) / FULL.w
   const label = (s: number) => 2.1 * Math.max(scale, 0.18) * s
 
