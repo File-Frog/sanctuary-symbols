@@ -657,3 +657,7 @@ p { margin: 0 0 1rem; line-height: 1.72; }
   .plan-inset { width: 36%; bottom: 30px; }
 }
 @media (max-width: 860px) { .stage.bare { height: auto; min-height: 0; aspect-ratio: 4 / 3; } }
+/* Paintings fill the whole window */
+.stage.bare { height: auto; min-height: 0; aspect-ratio: 9 / 5; max-height: 78vh; }
+.stage.bare .painting-fg { object-fit: cover; }
+@media (max-width: 860px) { .stage.bare { aspect-ratio: 4 / 3; } }
