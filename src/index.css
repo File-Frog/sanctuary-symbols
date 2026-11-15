@@ -657,7 +657,8 @@ p { margin: 0 0 1rem; line-height: 1.72; }
   .plan-inset { width: 36%; bottom: 30px; }
 }
 @media (max-width: 860px) { .stage.bare { height: auto; min-height: 0; aspect-ratio: 4 / 3; } }
-/* Paintings fill the whole window */
-.stage.bare { height: auto; min-height: 0; aspect-ratio: 9 / 5; max-height: 78vh; }
-.stage.bare .painting-fg { object-fit: cover; }
-@media (max-width: 860px) { .stage.bare { aspect-ratio: 4 / 3; } }
+/* Blurred copy of the painting fills the sides */
+.painting-bg { position: absolute; inset: -60px; width: calc(100% + 120px); height: calc(100% + 120px); object-fit: cover; filter: blur(22px) brightness(0.72) saturate(1.1); }
+.stage.bare .painting-fg { -webkit-mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent); mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent); }
+@media (max-width: 860px) { .stage.bare .painting-fg { -webkit-mask-image: none; mask-image: none; } }
+.stage.bare .painting-fg { inset: 0 auto; left: 50%; width: auto; max-width: 100%; height: 100%; transform: translateX(-50%); }

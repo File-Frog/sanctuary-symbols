@@ -8,9 +8,6 @@ import { Rich, VerseList } from '../components/Scripture'
 import { Pager, Paras, Resources, Terms } from '../components/Bits'
 import { getSymbol, zones } from '../data/symbols'
 
-// Vertical focal point of each painting when it is cropped to fill the window.
-const FOCUS: Record<string, number> = { gate: 50, altar: 55, laver: 60, tent: 50, table: 55, lampstand: 45, incense: 50, veil: 45, ark: 35, mercyseat: 12 }
-
 const zoneColour = { court: 'var(--court)', holy: 'var(--holy)', most: 'var(--most)' }
 
 export default function SymbolPage() {
@@ -47,7 +44,8 @@ export default function SymbolPage() {
           <>
             <div className="stage-painting">
               <div className="painting-layer">
-                <img className="painting-fg" src={shown} alt={`${s.name}, painting`} style={{ objectPosition: `center ${FOCUS[s.id] ?? 50}%` }} />
+                <img className="painting-bg" src={shown} alt="" aria-hidden="true" />
+                <img className="painting-fg" src={shown} alt={`${s.name}, painting`} />
               </div>
             </div>
           </>
