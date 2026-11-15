@@ -43,25 +43,9 @@ export default function SymbolPage() {
         {art ? (
           <>
             <div className="stage-painting">
-              <AnimatePresence initial={false}>
-                <motion.div
-                  key={shown}
-                  className="painting-layer"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  transition={{ duration: reduce ? 0 : 0.9, ease: [0.4, 0, 0.2, 1] }}
-                >
-                  <motion.img
-                    className="painting-fg"
-                    src={shown}
-                    alt={`${s.name}, painting`}
-                    initial={{ scale: reduce ? 1 : 1.03 }}
-                    animate={{ scale: 1 }}
-                    transition={{ duration: reduce ? 0 : 1.2, ease: [0.4, 0, 0.2, 1] }}
-                  />
-                </motion.div>
-              </AnimatePresence>
+              <div className="painting-layer">
+                <img className="painting-fg" src={shown} alt={`${s.name}, painting`} />
+              </div>
             </div>
           </>
         ) : (
