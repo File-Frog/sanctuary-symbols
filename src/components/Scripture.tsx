@@ -123,8 +123,31 @@ export function VerseRef({ refText, children }: { refText: string; children?: Re
   )
 }
 
+type InlineTerm = { translit: string; meaning: string; lang: string }
+
+function withTerms(text: string, terms: InlineTerm[] | undefined, keyBase: number): React.ReactNode[] {
+  if (!terms?.length) return [text]
+  const esc = terms.map((t) => t.translit.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).sort((a, b) => b.length - a.length)
+  const re = new RegExp(`(?<![\\w'])(${esc.join('|')})(?![\\w'])`, 'g')
+  const out: React.ReactNode[] = []
+  let last = 0
+  for (const m of text.matchAll(re)) {
+    const i = m.index ?? 0
+    if (i > last) out.push(text.slice(last, i))
+    const t = terms.find((x) => x.translit === m[0])!
+    out.push(
+      <em key={`${keyBase}-${i}`} className="term-inline" title={`${t.lang}: ${t.meaning}`}>
+        {m[0]}
+      </em>,
+    )
+    last = i + m[0].length
+  }
+  if (last < text.length) out.push(text.slice(last))
+  return out
+}
+
 /** Renders text, turning every scripture reference into a hover popover. */
-export function Rich({ text }: { text: string }) {
+export function Rich({ text, terms }: { text: string; terms?: InlineTerm[] }) {
   const out: React.ReactNode[] = []
   let last = 0
   for (const m of text.matchAll(refRegex())) {
@@ -132,7 +155,7 @@ export function Rich({ text }: { text: string }) {
     let before = text.slice(last, i)
     const lead = before.endsWith('(') ? '(' : ''
     if (lead) before = before.slice(0, -1)
-    if (before) out.push(before)
+    if (before) out.push(...withTerms(before, terms, i))
     const end = i + m[0].length
     const tail = text.slice(end).match(/^[).,;:]+/)?.[0] ?? ''
     out.push(
@@ -144,7 +167,7 @@ export function Rich({ text }: { text: string }) {
     )
     last = end + tail.length
   }
-  if (last < text.length) out.push(text.slice(last))
+  if (last < text.length) out.push(...withTerms(text.slice(last), terms, -1))
   return <>{out}</>
 }
 

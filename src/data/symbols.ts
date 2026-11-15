@@ -18,6 +18,14 @@ export interface Resource {
   url: string
 }
 
+export interface Quote {
+  quote: string
+  by: string
+  source: string
+}
+
+export type Para = string | Quote
+
 export interface Link {
   to: string
   text: string
@@ -33,8 +41,8 @@ export interface SanctuarySymbol {
   measure?: string
   service: string
   christ: string
-  deeper: string[]
-  meaning?: { title: string; paras: string[] }
+  deeper: Para[]
+  meaning?: { title: string; paras: Para[] }
   links: Link[]
   life: string
   verses: Verse[]
@@ -128,25 +136,47 @@ export const symbols: SanctuarySymbol[] = [
       { word: 'מִזְבֵּחַ', translit: 'mizbeach', lang: 'Hebrew', meaning: 'Altar, literally "place of slaughter," from zabach, to slaughter for sacrifice.' },
       { word: 'עֹלָה', translit: 'olah', lang: 'Hebrew', meaning: 'Burnt offering, literally "that which goes up." The whole animal went up to God in smoke. Nothing was kept back.' },
       { word: 'קֶרֶן', translit: 'qeren', lang: 'Hebrew', meaning: 'Horn. A symbol of strength, and in prophecy of a kingdom (Daniel 7:24). Blood on the four horns pointed to salvation offered to every nation.' },
+      { word: 'סָמַךְ', translit: 'samak', lang: 'Hebrew', meaning: 'To lean or press. Used for laying a hand on the head of the offering with real weight.' },
+      { word: 'חַטָּאת', translit: "chatta't", lang: 'Hebrew', meaning: 'Sin, and also sin offering. The offering carried the name of what it removed.' },
     ],
-    build: `Acacia wood overlaid with bronze (the KJV says "brass"), with a horn at each corner and a bronze grate set halfway down (Exodus 27:1-5). It was the largest piece of furniture in the sanctuary and the only one in the court made for blood and fire.`,
+    build: `The Hebrew word for altar, mizbeach, comes from zabach, "to slaughter": it was literally the place of slaughter. It was built of acacia wood overlaid with bronze (the KJV says "brass"), with a horn at each corner and a bronze grate set halfway down (Exodus 27:1-5). It was the largest piece of furniture in the sanctuary and the only one in the court made for blood and fire.`,
     measure: 'Five cubits square and three cubits high, about 7½ by 7½ by 4½ feet.',
-    service: `A person who sinned brought an unblemished animal from his own flock, laid a hand on its head and confessed the sin (Leviticus 5:5), then killed it himself (Leviticus 4:29). The priest put the blood on the horns of the altar and poured the rest at its base. Every morning and evening a lamb was offered for the whole nation (Exodus 29:38-42), and the fire on the altar was never allowed to go out (Leviticus 6:13).`,
+    service: `A person who sinned brought an unblemished animal from his own flock, laid a hand on its head and confessed the sin (Leviticus 5:5). The Hebrew verb for laying on the hand, samak, means to lean or press with your weight. It was a deliberate act, not a light touch. He then killed the animal himself (Leviticus 4:29). The priest put the blood on the horns of the altar and poured the rest at its base. Every morning and evening a lamb was offered for the whole nation as an olah, a burnt offering. The word means "that which goes up," because the whole animal went up to God in smoke and nothing was kept back (Exodus 29:38-42). The fire on the altar was never allowed to go out (Leviticus 6:13).`,
     meaning: {
       title: 'Sin, confession and faith',
       paras: [
         `Scripture defines sin plainly: "sin is the transgression of the law" (1 John 3:4). It is more than a wrong act. It breaks the relationship with God and separates the sinner from Him: "your iniquities have separated between you and your God" (Isaiah 59:2). Every person is caught in it, "for all have sinned, and come short of the glory of God" (Romans 3:23), and its end is death (Romans 6:23). The sanctuary existed because God would not leave His people there.`,
         `Bringing the offering was itself a confession. By leading his animal through the gate, the worshipper admitted that he had broken God's law and that the penalty was death. When he pressed his hand on its head and named his sin aloud, the admission became words. When he took its life with his own hand, it became an act. Repentance, confession and the plea for mercy were all built into the ritual. David knew this was what God was looking for: "The sacrifices of God are a broken spirit: a broken and a contrite heart, O God, thou wilt not despise" (Psalm 51:17).`,
+        {
+          quote: 'The repentant sinner brought his offering to the door of the tabernacle, and, placing his hand upon the victim\'s head, confessed his sins, thus in figure transferring them from himself to the innocent sacrifice.',
+          by: 'Ellen G. White',
+          source: 'Patriarchs and Prophets, ch. 30',
+        },
         `The animal itself could not save anyone. "It is not possible that the blood of bulls and of goats should take away sins" (Hebrews 10:4). Its value lay in what it pointed to. A worshipper who understood the offering was trusting in the Redeemer God had promised since Eden (Genesis 3:15), "the Lamb slain from the foundation of the world" (Revelation 13:8). That is why Abel's offering is called an act of faith (Hebrews 11:4), and why Jesus said Abraham "rejoiced to see my day" (John 8:56). Believers before the cross were saved the same way believers are now, by grace through faith in Christ. They looked forward to Calvary. We look back to it.`,
+        {
+          quote: 'Through the shed blood he looked forward to the future sacrifice, Christ dying on the cross of Calvary; and trusting in the atonement that was there to be made, he had witness that he was righteous, and his offering accepted.',
+          by: 'Ellen G. White, on Abel',
+          source: 'Patriarchs and Prophets, ch. 5',
+        },
         `For the same reason, an offering without a changed heart was empty, and the prophets said so bluntly (Isaiah 1:11-17). "For I desired mercy, and not sacrifice; and the knowledge of God more than burnt offerings" (Hosea 6:6). God never wanted the animal for its own sake. He wanted the sinner back.`,
       ],
     },
     christ: `John the Baptist pointed at Jesus and said, "Behold the Lamb of God, which taketh away the sin of the world" (John 1:29). Every animal on this altar was a preview of Calvary. "Without shedding of blood is no remission" (Hebrews 9:22), and Christ "his own self bare our sins in his own body on the tree" (1 Peter 2:24). The laying on of hands is substitution in its plainest form: my sin goes onto Him and His death counts as mine (Isaiah 53:6).`,
     deeper: [
       `The sinner had to take the life himself. The sacrifice was meant to teach what sin costs. As he watched the lamb's life fade away under his own hand, he saw the result of his sin in front of him: an innocent life lost because of what he had done. The sight was meant to convict his heart and bring real sorrow for sin, the "godly sorrow" that "worketh repentance to salvation" (2 Corinthians 7:10). Nobody walked away from this altar thinking sin was a small thing. The cross makes the same point on a larger scale, because our sin is what put Him there, and those who look on Him whom they pierced are moved to mourn (Zechariah 12:10).`,
-      `In Bible prophecy a horn stands for a kingdom: "the ten horns out of this kingdom are ten kings" (Daniel 7:24). The number four stands for the whole earth, its four winds and four corners (Daniel 7:2; Isaiah 11:12; Revelation 7:1). When the priest put the blood on the horns at all four corners of the altar (Leviticus 4:30), the act declared that the blood of the sacrifice reaches every kingdom and every direction of the earth. Salvation was never meant for Israel alone: "Look unto me, and be ye saved, all the ends of the earth" (Isaiah 45:22). The same gospel goes "to every nation, and kindred, and tongue, and people" (Revelation 14:6).`,
-      `Blood on the horns was not the end of the process. In some sin offerings the blood was carried inside to the holy place, and in others the priest ate part of the flesh and so "bore the iniquity" of the people (Leviticus 10:17; Leviticus 6:26). The priest stood in the place of the Messiah. By eating the flesh of the sin offering he took the sinner's guilt upon himself, a picture of Jesus Christ becoming the sin offering for the guilty. God "hath made him to be sin for us, who knew no sin; that we might be made the righteousness of God in him" (2 Corinthians 5:21), and "he bare the sin of many" (Isaiah 53:12). Either way the sin was now on record in the sanctuary. The scholar Roy Gane has shown that this is why the sanctuary itself needed cleansing once a year. Forgiveness was real and immediate, but the record remained until the Day of Atonement.`,
+      {
+        quote: 'As he slew the innocent victim, he trembled at the thought that his sin must shed the blood of the spotless Lamb of God.',
+        by: 'Ellen G. White, on Adam\'s first sacrifice',
+        source: 'Patriarchs and Prophets, ch. 4',
+      },
+      `The Hebrew word for horn, qeren, also carries the sense of strength and power, and in Bible prophecy a horn stands for a kingdom: "the ten horns out of this kingdom are ten kings" (Daniel 7:24). The number four stands for the whole earth, its four winds and four corners (Daniel 7:2; Isaiah 11:12; Revelation 7:1). When the priest put the blood on the horns at all four corners of the altar (Leviticus 4:30), the act declared that the blood of the sacrifice reaches every kingdom and every direction of the earth. Salvation was never meant for Israel alone: "Look unto me, and be ye saved, all the ends of the earth" (Isaiah 45:22). The same gospel goes "to every nation, and kindred, and tongue, and people" (Revelation 14:6).`,
+      `Blood on the horns was not the end of the process. The sin offering is called chatta't in Hebrew, the same word as "sin" itself. The offering bore the name of the very thing it took away. In some sin offerings the blood was carried inside to the holy place, and in others the priest ate part of the flesh and so "bore the iniquity" of the people (Leviticus 10:17; Leviticus 6:26). The priest stood in the place of the Messiah. By eating the flesh of the sin offering he took the sinner's guilt upon himself, a picture of Jesus Christ becoming the sin offering for the guilty. God "hath made him to be sin for us, who knew no sin; that we might be made the righteousness of God in him" (2 Corinthians 5:21), and "he bare the sin of many" (Isaiah 53:12). Either way the sin was now on record in the sanctuary. The scholar Roy Gane has shown that this is why the sanctuary itself needed cleansing once a year. Forgiveness was real and immediate, but the record remained until the Day of Atonement.`,
       `Everything about the altar was oversized: the largest furniture, the hottest fire, the busiest place in the court. The cross is the centre of the plan of salvation, and the altar is the centre of the court.`,
+      {
+        quote: 'It consumed that which typified sin; and as the fires were continually burning, it has been called the altar of continual atonement.',
+        by: 'Stephen N. Haskell',
+        source: 'The Cross and Its Shadow (1914), ch. 25',
+      },
     ],
     links: [
       { to: 'incense', text: 'Coals for the golden altar of incense came only from this altar. Prayer is fuelled by the sacrifice.' },

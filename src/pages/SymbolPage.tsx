@@ -99,7 +99,7 @@ export default function SymbolPage() {
               <dl className="facts">
                 <div>
                   <dt>How it was made</dt>
-                  <dd><Rich text={s.build} /></dd>
+                  <dd><Rich text={s.build} terms={s.terms} /></dd>
                 </div>
                 {s.measure && (
                   <div>
@@ -110,20 +110,20 @@ export default function SymbolPage() {
               </dl>
 
               <h2>How it was used</h2>
-              <p><Rich text={s.service} /></p>
+              <p><Rich text={s.service} terms={s.terms} /></p>
 
               {s.meaning && (
                 <>
                   <h2>{s.meaning.title}</h2>
-                  <Paras items={s.meaning.paras} />
+                  <Paras items={s.meaning.paras} terms={s.terms} />
                 </>
               )}
 
               <h2>What it points to</h2>
-              <p><Rich text={s.christ} /></p>
+              <p><Rich text={s.christ} terms={s.terms} /></p>
 
               <h2>Looking closer</h2>
-              <Paras items={s.deeper} />
+              <Paras items={s.deeper} terms={s.terms} />
             </div>
 
             <h2>Key words</h2>

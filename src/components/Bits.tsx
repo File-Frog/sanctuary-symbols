@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import type { Resource, Term } from '../data/symbols'
+import type { Para, Resource, Term } from '../data/symbols'
 import { neighbours } from '../data/order'
 import { Rich } from './Scripture'
 
@@ -57,12 +57,21 @@ export function Pager({ path }: { path: string }) {
   )
 }
 
-export function Paras({ items }: { items: string[] }) {
+export function Paras({ items, terms }: { items: Para[]; terms?: Term[] }) {
   return (
     <>
-      {items.map((p, i) => (
-        <p key={i}><Rich text={p} /></p>
-      ))}
+      {items.map((p, i) =>
+        typeof p === 'string' ? (
+          <p key={i}><Rich text={p} terms={terms} /></p>
+        ) : (
+          <figure className="pullquote" key={i}>
+            <blockquote>{p.quote}</blockquote>
+            <figcaption>
+              <span className="pq-by">{p.by}</span>, <cite>{p.source}</cite>
+            </figcaption>
+          </figure>
+        ),
+      )}
     </>
   )
 }

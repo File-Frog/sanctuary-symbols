@@ -662,3 +662,11 @@ p { margin: 0 0 1rem; line-height: 1.72; }
 .stage.bare .painting-fg { -webkit-mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent); mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent); }
 @media (max-width: 860px) { .stage.bare .painting-fg { -webkit-mask-image: none; mask-image: none; } }
 .stage.bare .painting-fg { inset: 0 auto; left: 50%; width: auto; max-width: 100%; height: 100%; transform: translateX(-50%); }
+
+/* Theologian quotes in the narrative */
+.pullquote { margin: 1.6rem 0 1.8rem; padding: 4px 0 4px 22px; border-left: 3px solid var(--gold); }
+.pullquote blockquote { margin: 0; font-style: italic; font-size: 1.12rem; line-height: 1.6; color: var(--ink); }
+.pullquote figcaption { margin-top: 8px; font-size: 0.9rem; color: var(--ink-soft); }
+.pullquote .pq-by { font-family: var(--display); color: var(--purple); }
+.pullquote cite { font-style: italic; }
+.term-inline { font-style: italic; color: var(--scarlet); border-bottom: 1px dotted rgba(158, 42, 43, 0.5); cursor: help; }
