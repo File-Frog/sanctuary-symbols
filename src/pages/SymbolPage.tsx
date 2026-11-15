@@ -112,6 +112,13 @@ export default function SymbolPage() {
               <h2>How it was used</h2>
               <p><Rich text={s.service} /></p>
 
+              {s.meaning && (
+                <>
+                  <h2>{s.meaning.title}</h2>
+                  <Paras items={s.meaning.paras} />
+                </>
+              )}
+
               <h2>What it points to</h2>
               <p><Rich text={s.christ} /></p>
 

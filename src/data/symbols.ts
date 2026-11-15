@@ -34,6 +34,7 @@ export interface SanctuarySymbol {
   service: string
   christ: string
   deeper: string[]
+  meaning?: { title: string; paras: string[] }
   links: Link[]
   life: string
   verses: Verse[]
@@ -130,7 +131,16 @@ export const symbols: SanctuarySymbol[] = [
     ],
     build: `Acacia wood overlaid with bronze (the KJV says "brass"), with a horn at each corner and a bronze grate set halfway down (Exodus 27:1-5). It was the largest piece of furniture in the sanctuary and the only one in the court made for blood and fire.`,
     measure: 'Five cubits square and three cubits high, about 7½ by 7½ by 4½ feet.',
-    service: `A person who sinned brought an unblemished animal, laid a hand on its head and confessed the sin, then killed it himself (Leviticus 4:29). The priest put the blood on the horns of the altar and poured the rest at its base. Every morning and evening a lamb was offered for the whole nation (Exodus 29:38-42), and the fire on the altar was never allowed to go out (Leviticus 6:13).`,
+    service: `A person who sinned brought an unblemished animal from his own flock, laid a hand on its head and confessed the sin (Leviticus 5:5), then killed it himself (Leviticus 4:29). The priest put the blood on the horns of the altar and poured the rest at its base. Every morning and evening a lamb was offered for the whole nation (Exodus 29:38-42), and the fire on the altar was never allowed to go out (Leviticus 6:13).`,
+    meaning: {
+      title: 'What sin is, and what the offering said',
+      paras: [
+        `Scripture defines sin plainly: "sin is the transgression of the law" (1 John 3:4). It is more than a wrong act. It breaks the relationship with God and separates the sinner from Him: "your iniquities have separated between you and your God" (Isaiah 59:2). Every person is caught in it, "for all have sinned, and come short of the glory of God" (Romans 3:23), and its end is death (Romans 6:23). The sanctuary existed because God would not leave His people there.`,
+        `Bringing the offering was itself a confession. By leading his animal through the gate, the worshipper admitted that he had broken God's law and that the penalty was death. When he pressed his hand on its head and named his sin aloud, the admission became words. When he took its life with his own hand, it became an act. Repentance, confession and the plea for mercy were all built into the ritual. David knew this was what God was looking for: "The sacrifices of God are a broken spirit: a broken and a contrite heart, O God, thou wilt not despise" (Psalm 51:17).`,
+        `The animal itself could not save anyone. "It is not possible that the blood of bulls and of goats should take away sins" (Hebrews 10:4). Its value lay in what it pointed to. A worshipper who understood the offering was trusting in the Redeemer God had promised since Eden (Genesis 3:15), "the Lamb slain from the foundation of the world" (Revelation 13:8). That is why Abel's offering is called an act of faith (Hebrews 11:4), and why Jesus said Abraham "rejoiced to see my day" (John 8:56). Believers before the cross were saved the same way believers are now, by grace through faith in Christ. They looked forward to Calvary. We look back to it.`,
+        `For the same reason, an offering without a changed heart was empty, and the prophets said so bluntly (Isaiah 1:11-17). "For I desired mercy, and not sacrifice; and the knowledge of God more than burnt offerings" (Hosea 6:6). God never wanted the animal for its own sake. He wanted the sinner back.`,
+      ],
+    },
     christ: `John the Baptist pointed at Jesus and said, "Behold the Lamb of God, which taketh away the sin of the world" (John 1:29). Every animal on this altar was a preview of Calvary. "Without shedding of blood is no remission" (Hebrews 9:22), and Christ "his own self bare our sins in his own body on the tree" (1 Peter 2:24). The laying on of hands is substitution in its plainest form: my sin goes onto Him and His death counts as mine (Isaiah 53:6).`,
     deeper: [
       `The sinner had to take the life himself. Nobody walked away from this altar thinking sin was a small thing. The cross makes the same point on a larger scale, because our sin is what put Him there.`,
