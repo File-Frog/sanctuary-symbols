@@ -13,7 +13,7 @@ export default function Home() {
   const reduce = useReducedMotion()
   return (
     <>
-      <Stage caption="The tabernacle drawn to scale. Click any piece of furniture.">
+      <Stage caption="Click any piece of furniture.">
         <div className="home-plan">
           <Plan intro onSelect={(id) => navigate(`/sanctuary/symbol/${id}`)} />
         </div>
