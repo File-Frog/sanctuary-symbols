@@ -133,7 +133,7 @@ export const symbols: SanctuarySymbol[] = [
     measure: 'Five cubits square and three cubits high, about 7½ by 7½ by 4½ feet.',
     service: `A person who sinned brought an unblemished animal from his own flock, laid a hand on its head and confessed the sin (Leviticus 5:5), then killed it himself (Leviticus 4:29). The priest put the blood on the horns of the altar and poured the rest at its base. Every morning and evening a lamb was offered for the whole nation (Exodus 29:38-42), and the fire on the altar was never allowed to go out (Leviticus 6:13).`,
     meaning: {
-      title: 'What sin is, and what the offering said',
+      title: 'Sin, confession and faith',
       paras: [
         `Scripture defines sin plainly: "sin is the transgression of the law" (1 John 3:4). It is more than a wrong act. It breaks the relationship with God and separates the sinner from Him: "your iniquities have separated between you and your God" (Isaiah 59:2). Every person is caught in it, "for all have sinned, and come short of the glory of God" (Romans 3:23), and its end is death (Romans 6:23). The sanctuary existed because God would not leave His people there.`,
         `Bringing the offering was itself a confession. By leading his animal through the gate, the worshipper admitted that he had broken God's law and that the penalty was death. When he pressed his hand on its head and named his sin aloud, the admission became words. When he took its life with his own hand, it became an act. Repentance, confession and the plea for mercy were all built into the ritual. David knew this was what God was looking for: "The sacrifices of God are a broken spirit: a broken and a contrite heart, O God, thou wilt not despise" (Psalm 51:17).`,
