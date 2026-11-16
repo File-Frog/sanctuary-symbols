@@ -78,6 +78,7 @@ const EGW = 'https://egwwritings.org/'
 
 export const R = {
   pp30: { title: 'Patriarchs and Prophets, ch. 30', detail: 'Ellen G. White, "The Tabernacle and Its Services." A compact, readable tour of the whole system.', url: EGW },
+  pp52: { title: 'Patriarchs and Prophets, ch. 52', detail: 'Ellen G. White, "The Annual Feasts." What each feast commemorated and what it pointed forward to.', url: EGW },
   gc23: { title: 'The Great Controversy, ch. 23', detail: 'Ellen G. White, "What Is the Sanctuary?" How the study of Daniel 8:14 led to the heavenly sanctuary.', url: EGW },
   gc24: { title: 'The Great Controversy, ch. 24', detail: 'Ellen G. White, "In the Holy of Holies." Christ\'s ministry in the second apartment.', url: EGW },
   gc28: { title: 'The Great Controversy, ch. 28', detail: 'Ellen G. White, "Facing Life\'s Record." The judgment and the believer\'s assurance.', url: EGW },

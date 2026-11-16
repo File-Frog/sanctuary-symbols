@@ -2,9 +2,40 @@ import { AnimatePresence, motion, useReducedMotion } from 'framer-motion'
 import { useState } from 'react'
 import Stage from '../components/Stage'
 import { Rich, VerseRef } from '../components/Scripture'
-import { Pager, Resources } from '../components/Bits'
-import { feasts } from '../data/extras'
-import { R } from '../data/symbols'
+import { Pager, Paras, Resources, Terms } from '../components/Bits'
+import { feasts, feastTerms } from '../data/extras'
+import { R, type Para } from '../data/symbols'
+
+const meaning: { title: string; paras: Para[] } = {
+  title: 'Appointments God keeps',
+  paras: [
+    `The feasts were more than holidays. Each one remembered something God had already done for Israel, and each one also pointed to something He was going to do. Passover looked back to the night in Egypt when the destroyer passed over the houses marked with blood, and it looked forward to a greater deliverance.`,
+    {
+      quote: 'On the fourteenth day of the month, at even, the Passover was celebrated, its solemn, impressive ceremonies commemorating the deliverance from bondage in Egypt, and pointing forward to the sacrifice that should deliver from the bondage of sin.',
+      by: 'Ellen G. White',
+      source: 'Patriarchs and Prophets, p. 539',
+    },
+    `The spring feasts show how precisely God kept those appointments. Jesus died at Passover, at the hour of the evening sacrifice. He rested in the tomb over the Sabbath of Unleavened Bread. He rose on the day the 'omer, the first sheaf, was waved before the LORD, and Paul calls Him "the firstfruits of them that slept" (1 Corinthians 15:20). Fifty days later, on Shavuot, the Spirit fell and the first great harvest of believers was gathered in. Each feast met its fulfilment on its own day.`,
+    {
+      quote: 'These types were fulfilled, not only as to the event, but as to the time.',
+      by: 'Ellen G. White',
+      source: 'The Great Controversy, p. 399',
+    },
+    `The autumn feasts follow the same pattern, but they belong to the end of the story. The teru'ah of the trumpets called Israel to get ready, the Day of Atonement brought the judgment and the cleansing of the sanctuary, and the Feast of Tabernacles followed with joy. Five days after the people were made clean, they were living in booths and celebrating the harvest. In the same way, the last message of warning leads to the judgment, and the judgment leads to the great ingathering when Christ returns.`,
+    {
+      quote: 'The Feast of Tabernacles began five days after the day of atonement, and all Israel were rejoicing in their acceptance with God, and also for the bounties of the harvest which had been gathered.',
+      by: 'Stephen N. Haskell',
+      source: 'The Cross and Its Shadow (1914), ch. 32',
+    },
+    `Sukkot also looked back and forward at once. The booths reminded Israel that God had sheltered them in the wilderness, and the harvest pointed to the day when He will gather His people home. Jesus stood up on the last great day of that feast and cried, "If any man thirst, let him come unto me, and drink" (John 7:37). The feast will reach its fulfilment when "the tabernacle of God is with men" (Revelation 21:3) and God's people live in His presence for ever.`,
+    {
+      quote: 'THE Feast of Tabernacles was the last feast in the yearly round of service, and typified the final consummation of the entire plan of redemption.',
+      by: 'Stephen N. Haskell',
+      source: 'The Cross and Its Shadow (1914), ch. 32',
+    },
+    `The ceremonies themselves ended at the cross, because the shadow gives way when the body it pointed to arrives (Colossians 2:16-17). But the lesson of the mo'adim remains. God keeps His appointments. What He did on time at Christ's first coming, He will finish on time at the end.`,
+  ],
+}
 
 // Positions along the sacred year (x in a 1000-wide box).
 const X = [120, 175, 230, 380, 700, 790, 880]
@@ -75,10 +106,10 @@ export default function Feasts() {
           <h1>The Feasts</h1>
           <p className="lede">God's calendar is a prophecy as well.</p>
           <p>
-            <Rich text={`Leviticus 23 lists seven annual feasts, which God calls "my feasts" (Leviticus 23:2). They fall into two clusters. Four come in spring, around the barley harvest. Three come in the seventh month, at the end of the agricultural year. Paul says these festivals were "a shadow of things to come; but the body is of Christ" (Colossians 2:16-17). They pointed forward to events in the plan of salvation, and they met their fulfilment on schedule.`} />
+            <Rich terms={feastTerms} text={`Leviticus 23 lists seven annual feasts, and God calls them "my feasts" (Leviticus 23:2). The Hebrew word is mo'adim, appointed times, the same word used for the "seasons" the sun and moon were made to mark (Genesis 1:14). Each one was a miqra qodesh, a holy convocation that God Himself called. They fall into two groups. Four come in the spring, around the barley and wheat harvests, and three come in the seventh month, at the end of the farming year. Paul says these festivals were "a shadow of things to come; but the body is of Christ" (Colossians 2:16-17). They pointed forward to events in the plan of salvation, and they met their fulfilment on schedule.`} />
           </p>
           <p>
-            <Rich text={`The spring feasts were fulfilled to the day at Christ's first coming. He died on Passover, rested in the tomb during Unleavened Bread, rose on the day of Firstfruits, and poured out the Spirit at Pentecost. The autumn feasts belong to the closing events. The summer harvest between them corresponds to the long age of the gospel.`} />
+            <Rich terms={feastTerms} text={`The spring feasts were fulfilled to the day at Christ's first coming. He died at Passover, rested in the tomb during Unleavened Bread, rose on the day of Firstfruits, and poured out the Spirit at Pentecost. The autumn feasts belong to the closing events of history, and the long summer harvest between the two groups corresponds to the age of the gospel.`} />
           </p>
         </div>
 
@@ -88,8 +119,8 @@ export default function Feasts() {
               <button className="item-title" onClick={() => setSel(i)}>
                 {fe.name} <span style={{ fontFamily: 'var(--body)', fontStyle: 'italic', fontSize: '0.95rem', color: 'var(--ink-soft)' }}>({fe.hebrew}, {fe.meaning}; {fe.date})</span>
               </button>
-              <p><Rich text={fe.type} /></p>
-              <p className="christ"><Rich text={fe.fulfilment} /></p>
+              <p><Rich text={fe.type} terms={feastTerms} /></p>
+              <p className="christ"><Rich text={fe.fulfilment} terms={feastTerms} /></p>
               <p className="refs" style={{ fontSize: '0.92rem' }}>
                 {fe.verses.map((v) => (
                   <span key={v.ref} style={{ marginRight: 14 }}><VerseRef refText={v.ref} /></span>
@@ -99,6 +130,11 @@ export default function Feasts() {
           ))}
         </ul>
 
+        <div className="prose">
+          <h2>{meaning.title}</h2>
+          <Paras items={meaning.paras} terms={feastTerms} />
+        </div>
+
         <div className="callout prose">
           <h2>Why the timing matters</h2>
           <p>
@@ -106,8 +142,11 @@ export default function Feasts() {
           </p>
         </div>
 
+        <h2>Key words</h2>
+        <Terms terms={feastTerms} />
+
         <h2>Further reading</h2>
-        <Resources items={[R.haskell, R.andreasen, R.gc23]} />
+        <Resources items={[R.pp52, R.haskell, R.andreasen, R.gc23]} />
 
         <Pager path="/sanctuary/feasts" />
       </div>

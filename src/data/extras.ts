@@ -113,6 +113,16 @@ export interface Feast {
   verses: Verse[]
 }
 
+export const feastTerms: Term[] = [
+  { word: 'מוֹעֲדִים', translit: "mo'adim", lang: 'Hebrew', meaning: 'Appointed times. The word the KJV translates "feasts" in Leviticus 23:2. It is also used for the "seasons" the sun and moon were made to mark (Genesis 1:14).' },
+  { word: 'מִקְרָא קֹדֶשׁ', translit: 'miqra qodesh', lang: 'Hebrew', meaning: '"Holy convocation": a sacred assembly God Himself called together.' },
+  { word: 'פֶּסַח', translit: 'Pesach', lang: 'Hebrew', meaning: 'Passover, from pasach, to pass over or spare (Exodus 12:13).' },
+  { word: 'עֹמֶר', translit: "'omer", lang: 'Hebrew', meaning: 'Sheaf. The first sheaf of the barley harvest was waved before the LORD (Leviticus 23:10-11).' },
+  { word: 'שָׁבֻעוֹת', translit: 'Shavuot', lang: 'Hebrew', meaning: 'Weeks. Seven weeks were counted from the wave sheaf; the Greek name, Pentecost, means "fiftieth."' },
+  { word: 'תְּרוּעָה', translit: "teru'ah", lang: 'Hebrew', meaning: 'A shout or trumpet blast, the sound of alarm or of a king approaching.' },
+  { word: 'סֻכּוֹת', translit: 'Sukkot', lang: 'Hebrew', meaning: 'Booths, the shelters of branches Israel lived in for a week each autumn.' },
+]
+
 export const feasts: Feast[] = [
   {
     name: 'Passover',
@@ -120,8 +130,8 @@ export const feasts: Feast[] = [
     meaning: 'a passing over',
     season: 'spring',
     date: 'Abib 14',
-    type: 'A lamb was killed and its blood put on the doorposts, and the destroyer passed over that house.',
-    fulfilment: 'Christ died on Passover. "Christ our passover is sacrificed for us."',
+    type: 'On the night Israel left Egypt, each household killed a lamb and put its blood on the doorposts. God said, "when I see the blood, I will pass over you" (Exodus 12:13), and every year afterward Pesach remembered that deliverance.',
+    fulfilment: 'Christ died at Passover, as the true Lamb whose blood shelters His people from death. Paul says plainly, "Christ our passover is sacrificed for us" (1 Corinthians 5:7).',
     verses: [{ ref: 'Exodus 12:13' }, { ref: '1 Corinthians 5:7' }],
   },
   {
@@ -130,8 +140,8 @@ export const feasts: Feast[] = [
     meaning: 'unleavened cakes',
     season: 'spring',
     date: 'Abib 15–21',
-    type: 'Seven days with all leaven removed from the house. Leaven was a standard picture of sin spreading.',
-    fulfilment: 'The sinless Christ lay in the tomb over the Sabbath. Believers keep the feast "with the unleavened bread of sincerity and truth."',
+    type: 'For seven days all leaven was removed from the house, and the people ate unleavened bread (Leviticus 23:6). Leaven spreads quietly through a lump of dough, so it was a familiar picture of sin and its influence.',
+    fulfilment: 'The sinless Christ lay in the tomb through the Sabbath of that feast, and His body saw no corruption. Believers keep the feast in spirit "with the unleavened bread of sincerity and truth" (1 Corinthians 5:8).',
     verses: [{ ref: 'Leviticus 23:6' }, { ref: '1 Corinthians 5:8' }],
   },
   {
@@ -140,8 +150,8 @@ export const feasts: Feast[] = [
     meaning: 'first, beginning',
     season: 'spring',
     date: 'Abib 16',
-    type: 'The first sheaf of barley was waved before the LORD as a pledge of the harvest to come.',
-    fulfilment: 'Christ rose that Sunday, "the firstfruits of them that slept," the guarantee of the resurrection harvest.',
+    type: 'On the day after the Sabbath of Passover week, the priest waved the \'omer, the first sheaf of the barley harvest, before the LORD (Leviticus 23:10-11). It was a pledge that the whole harvest would follow.',
+    fulfilment: 'Christ rose on that very day, "the firstfruits of them that slept" (1 Corinthians 15:20). His resurrection is the guarantee that the full harvest of the resurrection is coming.',
     verses: [{ ref: 'Leviticus 23:10-11' }, { ref: '1 Corinthians 15:20' }],
   },
   {
@@ -150,8 +160,8 @@ export const feasts: Feast[] = [
     meaning: 'weeks',
     season: 'spring',
     date: 'Fifty days later',
-    type: 'Two leavened loaves were waved after seven full weeks of harvest.',
-    fulfilment: 'The Spirit was poured out and three thousand were baptized. It was the signal that Christ had been inaugurated as Priest and King in heaven.',
+    type: 'Seven full weeks were counted from the wave sheaf, and on the fiftieth day two loaves baked with leaven were waved before the LORD as the firstfruits of the wheat harvest (Leviticus 23:15-17).',
+    fulfilment: 'On the day of Pentecost the Holy Spirit was poured out and about three thousand were baptized (Acts 2:1-4, 41). Peter explained that Christ, "by the right hand of God exalted," had poured out what they saw and heard (Acts 2:33). It was the sign that He had been enthroned as Priest and King in heaven.',
     verses: [{ ref: 'Leviticus 23:16-17' }, { ref: 'Acts 2:1-4' }, { ref: 'Acts 2:33' }],
   },
   {
@@ -160,8 +170,8 @@ export const feasts: Feast[] = [
     meaning: 'day of the shout or blast',
     season: 'fall',
     date: 'Tishri 1',
-    type: 'Trumpets sounded ten days before the Day of Atonement as a call to get ready for judgment.',
-    fulfilment: 'The worldwide preaching of Christ\'s soon return and the coming judgment in the decades before 1844.',
+    type: 'On the first day of the seventh month, trumpets sounded the teru\'ah, "a memorial of blowing of trumpets" (Leviticus 23:24). It came ten days before the Day of Atonement and called the nation to prepare for it.',
+    fulfilment: 'Before the antitypical Day of Atonement began, a worldwide message sounded the alarm that the judgment and Christ\'s return were near. Joel\'s words describe it: "Blow ye the trumpet in Zion, and sound an alarm in my holy mountain" (Joel 2:1).',
     verses: [{ ref: 'Leviticus 23:24' }, { ref: 'Joel 2:1' }],
   },
   {
@@ -170,8 +180,8 @@ export const feasts: Feast[] = [
     meaning: 'day of atonement',
     season: 'fall',
     date: 'Tishri 10',
-    type: 'The sanctuary was cleansed and the people were judged.',
-    fulfilment: 'Christ\'s ministry in the most holy place of the heavenly sanctuary, the pre-advent judgment, beginning in 1844.',
+    type: 'The high priest cleansed the sanctuary of the year\'s record of sin, and the people searched their hearts as on a day of judgment (Leviticus 16:30).',
+    fulfilment: 'Christ\'s ministry in the most holy place of the heavenly sanctuary, the pre-advent judgment, which began at the end of the 2,300 days in 1844. Revelation announces it: "the hour of his judgment is come" (Revelation 14:7).',
     verses: [{ ref: 'Leviticus 16:30' }, { ref: 'Revelation 14:7' }],
   },
   {
@@ -180,8 +190,8 @@ export const feasts: Feast[] = [
     meaning: 'booths',
     season: 'fall',
     date: 'Tishri 15–21',
-    type: 'Israel lived in booths and celebrated the last harvest of the year.',
-    fulfilment: 'The final ingathering at Christ\'s return, and God living with His people forever.',
+    type: 'For seven days Israel lived in booths made of branches, "that your generations may know that I made the children of Israel to dwell in booths" (Leviticus 23:43). It was also the great harvest festival at the end of the year, and God commanded the people to rejoice (Deuteronomy 16:15).',
+    fulfilment: 'It points to the final ingathering at Christ\'s return and to the time when God will live with His people for ever: "Behold, the tabernacle of God is with men, and he will dwell with them" (Revelation 21:3).',
     verses: [{ ref: 'Leviticus 23:34' }, { ref: 'Revelation 21:3' }],
   },
 ]
