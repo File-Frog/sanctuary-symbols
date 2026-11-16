@@ -269,12 +269,17 @@ export default function ReadAloud() {
     queue.current = []
     collectBlocks().forEach((el) => chunks(speakable(el)).forEach((text) => queue.current.push({ el, text })))
     nextToFetch.current = 0
-    // Ask the server to start preparing the whole page right away.
+    prepare(0)
+  }
+
+  // Ask the server to start preparing the page (from a given part onward) in the current voice and speed.
+  const prepare = (from: number) => {
+    if (!queue.current.length) return
     const { voice: v, rate: r } = settings.current
     fetch('/api/tts/prepare', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ texts: queue.current.map((q) => q.text), voice: v, rate: r }),
+      body: JSON.stringify({ texts: queue.current.slice(from).map((q) => q.text), voice: v, rate: r }),
     }).catch(() => {})
   }
 
@@ -334,6 +339,8 @@ export default function ReadAloud() {
 
   // A new voice or speed takes effect from the current paragraph, keeping your place.
   const restartCurrent = () => {
+    // Start preparing the rest of the page in the new voice or speed straight away.
+    prepare(state === 'idle' ? 0 : index.current)
     if (state === 'idle') return
     clearUrls()
     const a = audio.current
