@@ -260,6 +260,13 @@ export default function ReadAloud() {
     queue.current = []
     collectBlocks().forEach((el) => chunks(speakable(el)).forEach((text) => queue.current.push({ el, text })))
     nextToFetch.current = 0
+    // Ask the server to start preparing the whole page right away.
+    const { voice: v, rate: r } = settings.current
+    fetch('/api/tts/prepare', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ texts: queue.current.map((q) => q.text), voice: v, rate: r }),
+    }).catch(() => {})
   }
 
   // Start preparing as soon as the Listen panel is opened.
