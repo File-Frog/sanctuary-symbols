@@ -193,7 +193,7 @@ export const symbols: SanctuarySymbol[] = [
           by: 'Ellen White, on Abel',
           source: 'Patriarchs and Prophets, ch. 5',
         },
-        `For the same reason, an offering brought without a changed heart was empty, and the prophets said so bluntly (Isaiah 1:11-17). "For I desired mercy, and not sacrifice; and the knowledge of God more than burnt offerings" (Hosea 6:6). God never wanted the animal for its own sake. He wanted the sinner back.`,
+        `For the same reason, an offering brought without a changed heart was empty, and the prophets said so bluntly (Isaiah 1:11-17). "For I desired mercy, and not sacrifice; and the knowledge of God more than burnt offerings" (Hosea 6:6). God never wanted the animal for its own sake. He wanted the sinner, whom He loves, reconciled to Himself and restored to the family of God.`,
       ],
     },
     christ: `John the Baptist pointed to Jesus and said, "Behold the Lamb of God, which taketh away the sin of the world" (John 1:29). Every animal that died on this altar was a preview of Calvary. "Without shedding of blood is no remission" (Hebrews 9:22), and Christ "his own self bare our sins in his own body on the tree" (1 Peter 2:24). The hand on the animal's head is substitution in its simplest form: my sin is laid on Him, and His death counts as mine (Isaiah 53:6).`,
