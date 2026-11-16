@@ -19,7 +19,7 @@ const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, 
 export const timings = []
 
 async function synthOnce(text, voice, rate, t) {
-  const tts = new MsEdgeTTS()
+  const tts = new MsEdgeTTS({ enableLogger: process.env.TTS_DEBUG === '1' })
   try {
     await tts.setMetadata(voice, OUTPUT_FORMAT.AUDIO_24KHZ_48KBITRATE_MONO_MP3)
     const pct = Math.round((rate - 1) * 100)
