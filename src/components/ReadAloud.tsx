@@ -145,10 +145,24 @@ export default function ReadAloud() {
     return p
   }
 
-  // Prepare the next few parts while the current one plays.
-  const AHEAD = 3
+  // Prepare the rest of the page in order, two parts at a time, so the next part is ready in time.
+  const inFlight = useRef(0)
+  const nextToFetch = useRef(0)
   const prefetch = (from: number) => {
-    for (let j = from; j < Math.min(from + AHEAD, queue.current.length); j++) fetchUrl(j)?.catch(() => {})
+    if (from > nextToFetch.current) nextToFetch.current = from
+    const pump = () => {
+      while (inFlight.current < 2 && nextToFetch.current < queue.current.length) {
+        const j = nextToFetch.current++
+        const p = fetchUrl(j)
+        if (!p) continue
+        inFlight.current++
+        p.catch(() => {}).finally(() => {
+          inFlight.current--
+          pump()
+        })
+      }
+    }
+    pump()
   }
 
   const clearUrls = () => {
@@ -169,7 +183,7 @@ export default function ReadAloud() {
     if (current.current !== item.el) mark(item.el)
     setState((s) => (s === 'playing' ? s : 'loading'))
     try {
-      const url = await fetchUrl(i)!
+      const url = await fetchUrl(i)!.catch(() => fetchUrl(i)!)
       if (id !== run.current) return
       prefetch(i + 1)
       const a = getAudio()
@@ -196,6 +210,7 @@ export default function ReadAloud() {
     }
     mark(null)
     paused.current = false
+    nextToFetch.current = 0
     index.current = 0
     queue.current = []
     clearUrls()
@@ -224,6 +239,7 @@ export default function ReadAloud() {
     const id = ++run.current
     queue.current = []
     collectBlocks().forEach((el) => chunks(el.innerText).forEach((text) => queue.current.push({ el, text })))
+    nextToFetch.current = 0
     prefetch(0)
     playFrom(0, id)
   }
@@ -245,6 +261,7 @@ export default function ReadAloud() {
       a.removeAttribute('src')
     }
     const id = ++run.current
+    nextToFetch.current = index.current
     prefetch(index.current)
     if (state === 'paused') setState('paused')
     else playFrom(index.current, id)
