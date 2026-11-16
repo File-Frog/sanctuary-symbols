@@ -93,6 +93,12 @@
    "t": "But ye are a chosen generation, a royal priesthood, an holy nation, a peculiar people; that ye should shew forth the praises of him who hath called you out of darkness into his marvellous light:"
   }
  ],
+ "1 Peter 4:12": [
+  {
+   "v": 12,
+   "t": "Beloved, think it not strange concerning the fiery trial which is to try you, as though some strange thing happened unto you:"
+  }
+ ],
  "1 Samuel 21:6": [
   {
    "v": 6,
@@ -109,6 +115,12 @@
   {
    "v": 18,
    "t": "But we all, with open face beholding as in a glass the glory of the Lord, are changed into the same image from glory to glory, even as by the Spirit of the Lord."
+  }
+ ],
+ "2 Corinthians 4:6": [
+  {
+   "v": 6,
+   "t": "For God, who commanded the light to shine out of darkness, hath shined in our hearts, to give the light of the knowledge of the glory of God in the face of Jesus Christ."
   }
  ],
  "2 Corinthians 5:21": [
@@ -565,11 +577,13 @@
    "t": "And thou shalt set upon the table shewbread before me alway."
   }
  ],
- "Exodus 25:31-40": [
+ "Exodus 25:31": [
   {
    "v": 31,
    "t": "And thou shalt make a candlestick of pure gold: of beaten work shall the candlestick be made: his shaft, and his branches, his bowls, his knops, and his flowers, shall be of the same."
-  },
+  }
+ ],
+ "Exodus 25:32-34": [
   {
    "v": 32,
    "t": "And six branches shall come out of the sides of it; three branches of the candlestick out of the one side, and three branches of the candlestick out of the other side:"
@@ -581,15 +595,21 @@
   {
    "v": 34,
    "t": "And in the candlestick shall be four bowls made like unto almonds, with their knops and their flowers."
-  },
+  }
+ ],
+ "Exodus 25:33": [
   {
-   "v": 35,
-   "t": "And there shall be a knop under two branches of the same, and a knop under two branches of the same, and a knop under two branches of the same, according to the six branches that proceed out of the candlestick."
-  },
+   "v": 33,
+   "t": "Three bowls made like unto almonds, with a knop and a flower in one branch; and three bowls made like almonds in the other branch, with a knop and a flower: so in the six branches that come out of the candlestick."
+  }
+ ],
+ "Exodus 25:37": [
   {
-   "v": 36,
-   "t": "Their knops and their branches shall be of the same: all it shall be one beaten work of pure gold."
-  },
+   "v": 37,
+   "t": "And thou shalt make the seven lamps thereof: and they shall light the lamps thereof, that they may give light over against it."
+  }
+ ],
+ "Exodus 25:37-38": [
   {
    "v": 37,
    "t": "And thou shalt make the seven lamps thereof: and they shall light the lamps thereof, that they may give light over against it."
@@ -597,20 +617,6 @@
   {
    "v": 38,
    "t": "And the tongs thereof, and the snuffdishes thereof, shall be of pure gold."
-  },
-  {
-   "v": 39,
-   "t": "Of a talent of pure gold shall he make it, with all these vessels."
-  },
-  {
-   "v": 40,
-   "t": "And look that thou make them after their pattern, which was shewed thee in the mount."
-  }
- ],
- "Exodus 25:33": [
-  {
-   "v": 33,
-   "t": "Three bowls made like unto almonds, with a knop and a flower in one branch; and three bowls made like almonds in the other branch, with a knop and a flower: so in the six branches that come out of the candlestick."
   }
  ],
  "Exodus 25:40": [
@@ -1233,6 +1239,12 @@
    "t": "And he put the table in the tent of the congregation, upon the side of the tabernacle northward, without the vail."
   }
  ],
+ "Exodus 40:24": [
+  {
+   "v": 24,
+   "t": "And he put the candlestick in the tent of the congregation, over against the table, on the side of the tabernacle southward."
+  }
+ ],
  "Exodus 40:34": [
   {
    "v": 34,
@@ -1787,6 +1799,12 @@
    "t": "The next day John seeth Jesus coming unto him, and saith, Behold the Lamb of God, which taketh away the sin of the world."
   }
  ],
+ "John 1:9": [
+  {
+   "v": 9,
+   "t": "That was the true Light, which lighteth every man that cometh into the world."
+  }
+ ],
  "John 3:5": [
   {
    "v": 5,
@@ -2087,6 +2105,32 @@
    "t": "And on the fifteenth day of the same month is the feast of unleavened bread unto the LORD: seven days ye must eat unleavened bread."
   }
  ],
+ "Leviticus 24:2": [
+  {
+   "v": 2,
+   "t": "Command the children of Israel, that they bring unto thee pure oil olive beaten for the light, to cause the lamps to burn continually."
+  }
+ ],
+ "Leviticus 24:2-4": [
+  {
+   "v": 2,
+   "t": "Command the children of Israel, that they bring unto thee pure oil olive beaten for the light, to cause the lamps to burn continually."
+  },
+  {
+   "v": 3,
+   "t": "Without the vail of the testimony, in the tabernacle of the congregation, shall Aaron order it from the evening unto the morning before the LORD continually: it shall be a statute for ever in your generations."
+  },
+  {
+   "v": 4,
+   "t": "He shall order the lamps upon the pure candlestick before the LORD continually."
+  }
+ ],
+ "Leviticus 24:3": [
+  {
+   "v": 3,
+   "t": "Without the vail of the testimony, in the tabernacle of the congregation, shall Aaron order it from the evening unto the morning before the LORD continually: it shall be a statute for ever in your generations."
+  }
+ ],
  "Leviticus 24:5": [
   {
    "v": 5,
@@ -2319,6 +2363,66 @@
    "t": "How he entered into the house of God, and did eat the shewbread, which was not lawful for him to eat, neither for them which were with him, but only for the priests?"
   }
  ],
+ "Matthew 25:1-13": [
+  {
+   "v": 1,
+   "t": "Then shall the kingdom of heaven be likened unto ten virgins, which took their lamps, and went forth to meet the bridegroom."
+  },
+  {
+   "v": 2,
+   "t": "And five of them were wise, and five were foolish."
+  },
+  {
+   "v": 3,
+   "t": "They that were foolish took their lamps, and took no oil with them:"
+  },
+  {
+   "v": 4,
+   "t": "But the wise took oil in their vessels with their lamps."
+  },
+  {
+   "v": 5,
+   "t": "While the bridegroom tarried, they all slumbered and slept."
+  },
+  {
+   "v": 6,
+   "t": "And at midnight there was a cry made, Behold, the bridegroom cometh; go ye out to meet him."
+  },
+  {
+   "v": 7,
+   "t": "Then all those virgins arose, and trimmed their lamps."
+  },
+  {
+   "v": 8,
+   "t": "And the foolish said unto the wise, Give us of your oil; for our lamps are gone out."
+  },
+  {
+   "v": 9,
+   "t": "But the wise answered, saying, Not so; lest there be not enough for us and you: but go ye rather to them that sell, and buy for yourselves."
+  },
+  {
+   "v": 10,
+   "t": "And while they went to buy, the bridegroom came; and they that were ready went in with him to the marriage: and the door was shut."
+  },
+  {
+   "v": 11,
+   "t": "Afterward came also the other virgins, saying, Lord, Lord, open to us."
+  },
+  {
+   "v": 12,
+   "t": "But he answered and said, Verily I say unto you, I know you not."
+  },
+  {
+   "v": 13,
+   "t": "Watch therefore, for ye know neither the day nor the hour wherein the Son of man cometh."
+  }
+ ],
+ "Matthew 25:4": [
+  {
+   "v": 4,
+   "t": "But the wise took oil in their vessels with their lamps."
+  }
+ ],
  "Matthew 27:51": [
   {
    "v": 51,
@@ -2351,6 +2455,12 @@
    "t": "Let your light so shine before men, that they may see your good works, and glorify your Father which is in heaven."
   }
  ],
+ "Matthew 5:16": [
+  {
+   "v": 16,
+   "t": "Let your light so shine before men, that they may see your good works, and glorify your Father which is in heaven."
+  }
+ ],
  "Nahum 1:9": [
   {
    "v": 9,
@@ -2367,6 +2477,12 @@
   {
    "v": 8,
    "t": "And it came to pass, that on the morrow Moses went into the tabernacle of witness; and, behold, the rod of Aaron for the house of Levi was budded, and brought forth buds, and bloomed blossoms, and yielded almonds."
+  }
+ ],
+ "Numbers 8:2": [
+  {
+   "v": 2,
+   "t": "Speak unto Aaron, and say unto him, When thou lightest the lamps, the seven lamps shall give light over against the candlestick."
   }
  ],
  "Psalm 100:4": [
@@ -2557,6 +2673,12 @@
   {
    "v": 3,
    "t": "And I heard a great voice out of heaven saying, Behold, the tabernacle of God is with men, and he will dwell with them, and they shall be his people, and God himself shall be with them, and be their God."
+  }
+ ],
+ "Revelation 2:1": [
+  {
+   "v": 1,
+   "t": "Unto the angel of the church of Ephesus write; These things saith he that holdeth the seven stars in his right hand, who walketh in the midst of the seven golden candlesticks;"
   }
  ],
  "Revelation 3:20": [
