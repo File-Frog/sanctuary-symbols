@@ -69,7 +69,7 @@ function chunks(text: string) {
   const out: string[] = []
   let cur = ''
   for (const s of sentences) {
-    if ((cur + s).length > 400 && cur) {
+    if ((cur + s).length > 260 && cur) {
       out.push(cur.trim())
       cur = ''
     }
@@ -145,6 +145,12 @@ export default function ReadAloud() {
     return p
   }
 
+  // The voice service speaks at about real time, so prepare several parts ahead in parallel.
+  const AHEAD = 5
+  const prefetch = (from: number) => {
+    for (let j = from; j < Math.min(from + AHEAD, queue.current.length); j++) fetchUrl(j)?.catch(() => {})
+  }
+
   const clearUrls = () => {
     urls.current.forEach((p) => p.then((u) => URL.revokeObjectURL(u)).catch(() => {}))
     urls.current.clear()
@@ -165,7 +171,7 @@ export default function ReadAloud() {
     try {
       const url = await fetchUrl(i)!
       if (id !== run.current) return
-      fetchUrl(i + 1)?.catch(() => {}) // get the next part ready
+      prefetch(i + 1)
       const a = getAudio()
       a.src = url
       a.onended = () => playFrom(i + 1, id)
@@ -218,6 +224,7 @@ export default function ReadAloud() {
     const id = ++run.current
     queue.current = []
     collectBlocks().forEach((el) => chunks(el.innerText).forEach((text) => queue.current.push({ el, text })))
+    prefetch(0)
     playFrom(0, id)
   }
 
@@ -238,6 +245,7 @@ export default function ReadAloud() {
       a.removeAttribute('src')
     }
     const id = ++run.current
+    prefetch(index.current)
     if (state === 'paused') setState('paused')
     else playFrom(index.current, id)
   }
