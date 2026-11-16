@@ -579,11 +579,13 @@
    "t": "And thou shalt put into the ark the testimony which I shall give thee."
   }
  ],
- "Exodus 25:17-20": [
+ "Exodus 25:17": [
   {
    "v": 17,
    "t": "And thou shalt make a mercy seat of pure gold: two cubits and a half shall be the length thereof, and a cubit and a half the breadth thereof."
-  },
+  }
+ ],
+ "Exodus 25:18-20": [
   {
    "v": 18,
    "t": "And thou shalt make two cherubims of gold, of beaten work shalt thou make them, in the two ends of the mercy seat."
@@ -595,6 +597,12 @@
   {
    "v": 20,
    "t": "And the cherubims shall stretch forth their wings on high, covering the mercy seat with their wings, and their faces shall look one to another; toward the mercy seat shall the faces of the cherubims be."
+  }
+ ],
+ "Exodus 25:21": [
+  {
+   "v": 21,
+   "t": "And thou shalt put the mercy seat above upon the ark; and in the ark thou shalt put the testimony that I shall give thee."
   }
  ],
  "Exodus 25:21-22": [
@@ -2025,6 +2033,44 @@
    "t": "And he shall put the incense upon the fire before the LORD, that the cloud of the incense may cover the mercy seat that is upon the testimony, that he die not:"
   }
  ],
+ "Leviticus 16:13": [
+  {
+   "v": 13,
+   "t": "And he shall put the incense upon the fire before the LORD, that the cloud of the incense may cover the mercy seat that is upon the testimony, that he die not:"
+  }
+ ],
+ "Leviticus 16:13-15": [
+  {
+   "v": 13,
+   "t": "And he shall put the incense upon the fire before the LORD, that the cloud of the incense may cover the mercy seat that is upon the testimony, that he die not:"
+  },
+  {
+   "v": 14,
+   "t": "And he shall take of the blood of the bullock, and sprinkle it with his finger upon the mercy seat eastward; and before the mercy seat shall he sprinkle of the blood with his finger seven times."
+  },
+  {
+   "v": 15,
+   "t": "Then shall he kill the goat of the sin offering, that is for the people, and bring his blood within the vail, and do with that blood as he did with the blood of the bullock, and sprinkle it upon the mercy seat, and before the mercy seat:"
+  }
+ ],
+ "Leviticus 16:13-16": [
+  {
+   "v": 13,
+   "t": "And he shall put the incense upon the fire before the LORD, that the cloud of the incense may cover the mercy seat that is upon the testimony, that he die not:"
+  },
+  {
+   "v": 14,
+   "t": "And he shall take of the blood of the bullock, and sprinkle it with his finger upon the mercy seat eastward; and before the mercy seat shall he sprinkle of the blood with his finger seven times."
+  },
+  {
+   "v": 15,
+   "t": "Then shall he kill the goat of the sin offering, that is for the people, and bring his blood within the vail, and do with that blood as he did with the blood of the bullock, and sprinkle it upon the mercy seat, and before the mercy seat:"
+  },
+  {
+   "v": 16,
+   "t": "And he shall make an atonement for the holy place, because of the uncleanness of the children of Israel, and because of their transgressions in all their sins: and so shall he do for the tabernacle of the congregation, that remaineth among them in the midst of their uncleanness."
+  }
+ ],
  "Leviticus 16:14-15": [
   {
    "v": 14,
@@ -2099,6 +2145,12 @@
   {
    "v": 22,
    "t": "And the goat shall bear upon him all their iniquities unto a land not inhabited: and he shall let go the goat in the wilderness."
+  }
+ ],
+ "Leviticus 16:16": [
+  {
+   "v": 16,
+   "t": "And he shall make an atonement for the holy place, because of the uncleanness of the children of Israel, and because of their transgressions in all their sins: and so shall he do for the tabernacle of the congregation, that remaineth among them in the midst of their uncleanness."
   }
  ],
  "Leviticus 16:18-19": [
@@ -2699,6 +2751,12 @@
   {
    "v": 19,
    "t": "All the heave offerings of the holy things, which the children of Israel offer unto the LORD, have I given thee, and thy sons and thy daughters with thee, by a statute for ever: it is a covenant of salt for ever before the LORD unto thee and to thy seed with thee."
+  }
+ ],
+ "Numbers 7:89": [
+  {
+   "v": 89,
+   "t": "And when Moses was gone into the tabernacle of the congregation to speak with him, then he heard the voice of one speaking unto him from off the mercy seat that was upon the ark of testimony, from between the two cherubims: and he spake unto him."
   }
  ],
  "Numbers 8:2": [
