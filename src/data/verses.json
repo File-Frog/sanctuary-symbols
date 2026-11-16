@@ -65,6 +65,12 @@
    "t": "Whosoever committeth sin transgresseth also the law: for sin is the transgression of the law."
   }
  ],
+ "1 Kings 8:9": [
+  {
+   "v": 9,
+   "t": "There was nothing in the ark save the two tables of stone, which Moses put there at Horeb, when the LORD made a covenant with the children of Israel, when they came out of the land of Egypt."
+  }
+ ],
  "1 Peter 1:12": [
   {
    "v": 12,
@@ -151,6 +157,16 @@
   {
    "v": 10,
    "t": "For godly sorrow worketh repentance to salvation not to be repented of: but the sorrow of the world worketh death."
+  }
+ ],
+ "2 Samuel 6:6-7": [
+  {
+   "v": 6,
+   "t": "And when they came to Nachon’s threshingfloor, Uzzah put forth his hand to the ark of God, and took hold of it; for the oxen shook it."
+  },
+  {
+   "v": 7,
+   "t": "And the anger of the LORD was kindled against Uzzah; and God smote him there for his error; and there he died by the ark of God."
   }
  ],
  "Acts 22:16": [
@@ -463,6 +479,12 @@
    "t": "And he humbled thee, and suffered thee to hunger, and fed thee with manna, which thou knewest not, neither did thy fathers know; that he might make thee know that man doth not live by bread only, but by every word that proceedeth out of the mouth of the LORD doth man live."
   }
  ],
+ "Deuteronomy 9:9": [
+  {
+   "v": 9,
+   "t": "When I was gone up into the mount to receive the tables of stone, even the tables of the covenant which the LORD made with you, then I abode in the mount forty days and forty nights, I neither did eat bread nor drink water:"
+  }
+ ],
  "Ephesians 2:21-22": [
   {
    "v": 21,
@@ -491,7 +513,39 @@
    "t": "And the blood shall be to you for a token upon the houses where ye are: and when I see the blood, I will pass over you, and the plague shall not be upon you to destroy you, when I smite the land of Egypt."
   }
  ],
- "Exodus 25:10-15": [
+ "Exodus 16:22-26": [
+  {
+   "v": 22,
+   "t": "And it came to pass, that on the sixth day they gathered twice as much bread, two omers for one man: and all the rulers of the congregation came and told Moses."
+  },
+  {
+   "v": 23,
+   "t": "And he said unto them, This is that which the LORD hath said, To morrow is the rest of the holy sabbath unto the LORD: bake that which ye will bake to day, and seethe that ye will seethe; and that which remaineth over lay up for you to be kept until the morning."
+  },
+  {
+   "v": 24,
+   "t": "And they laid it up till the morning, as Moses bade: and it did not stink, neither was there any worm therein."
+  },
+  {
+   "v": 25,
+   "t": "And Moses said, Eat that to day; for to day is a sabbath unto the LORD: to day ye shall not find it in the field."
+  },
+  {
+   "v": 26,
+   "t": "Six days ye shall gather it; but on the seventh day, which is the sabbath, in it there shall be none."
+  }
+ ],
+ "Exodus 16:33-34": [
+  {
+   "v": 33,
+   "t": "And Moses said unto Aaron, Take a pot, and put an omer full of manna therein, and lay it up before the LORD, to be kept for your generations."
+  },
+  {
+   "v": 34,
+   "t": "As the LORD commanded Moses, so Aaron laid it up before the Testimony, to be kept."
+  }
+ ],
+ "Exodus 25:10-11": [
   {
    "v": 10,
    "t": "And they shall make an ark of shittim wood: two cubits and a half shall be the length thereof, and a cubit and a half the breadth thereof, and a cubit and a half the height thereof."
@@ -499,7 +553,9 @@
   {
    "v": 11,
    "t": "And thou shalt overlay it with pure gold, within and without shalt thou overlay it, and shalt make upon it a crown of gold round about."
-  },
+  }
+ ],
+ "Exodus 25:12-15": [
   {
    "v": 12,
    "t": "And thou shalt cast four rings of gold for it, and put them in the four corners thereof; and two rings shall be in the one side of it, and two rings in the other side of it."
@@ -1257,6 +1313,18 @@
    "t": "And he gave unto Moses, when he had made an end of communing with him upon mount Sinai, two tables of testimony, tables of stone, written with the finger of God."
   }
  ],
+ "Exodus 32:19": [
+  {
+   "v": 19,
+   "t": "And it came to pass, as soon as he came nigh unto the camp, that he saw the calf, and the dancing: and Moses’ anger waxed hot, and he cast the tables out of his hands, and brake them beneath the mount."
+  }
+ ],
+ "Exodus 34:1": [
+  {
+   "v": 1,
+   "t": "And the LORD said unto Moses, Hew thee two tables of stone like unto the first: and I will write upon these tables the words that were in the first tables, which thou brakest."
+  }
+ ],
  "Exodus 38:25-27": [
   {
    "v": 25,
@@ -1815,6 +1883,12 @@
   {
    "v": 12,
    "t": "Then said the LORD unto me, Thou hast well seen: for I will hasten my word to perform it."
+  }
+ ],
+ "Jeremiah 31:33": [
+  {
+   "v": 33,
+   "t": "But this shall be the covenant that I will make with the house of Israel; After those days, saith the LORD, I will put my law in their inward parts, and write it in their hearts; and will be their God, and they shall be my people."
   }
  ],
  "Joel 2:1": [
@@ -2563,6 +2637,12 @@
    "t": "What do ye imagine against the LORD? he will make an utter end: affliction shall not rise up the second time."
   }
  ],
+ "Numbers 10:33": [
+  {
+   "v": 33,
+   "t": "And they departed from the mount of the LORD three days’ journey: and the ark of the covenant of the LORD went before them in the three days’ journey, to search out a resting place for them."
+  }
+ ],
  "Numbers 14:34": [
   {
    "v": 34,
@@ -2589,10 +2669,30 @@
    "t": "And he stood between the dead and the living; and the plague was stayed."
   }
  ],
+ "Numbers 17:10": [
+  {
+   "v": 10,
+   "t": "And the LORD said unto Moses, Bring Aaron’s rod again before the testimony, to be kept for a token against the rebels; and thou shalt quite take away their murmurings from me, that they die not."
+  }
+ ],
  "Numbers 17:8": [
   {
    "v": 8,
    "t": "And it came to pass, that on the morrow Moses went into the tabernacle of witness; and, behold, the rod of Aaron for the house of Levi was budded, and brought forth buds, and bloomed blossoms, and yielded almonds."
+  }
+ ],
+ "Numbers 17:8-10": [
+  {
+   "v": 8,
+   "t": "And it came to pass, that on the morrow Moses went into the tabernacle of witness; and, behold, the rod of Aaron for the house of Levi was budded, and brought forth buds, and bloomed blossoms, and yielded almonds."
+  },
+  {
+   "v": 9,
+   "t": "And Moses brought out all the rods from before the LORD unto all the children of Israel: and they looked, and took every man his rod."
+  },
+  {
+   "v": 10,
+   "t": "And the LORD said unto Moses, Bring Aaron’s rod again before the testimony, to be kept for a token against the rebels; and thou shalt quite take away their murmurings from me, that they die not."
   }
  ],
  "Numbers 18:19": [
@@ -2611,6 +2711,16 @@
   {
    "v": 4,
    "t": "Enter into his gates with thanksgiving, and into his courts with praise: be thankful unto him, and bless his name."
+  }
+ ],
+ "Psalm 111:7-8": [
+  {
+   "v": 7,
+   "t": "The works of his hands are verity and judgment; all his commandments are sure."
+  },
+  {
+   "v": 8,
+   "t": "They stand fast for ever and ever, and are done in truth and uprightness."
   }
  ],
  "Psalm 119:105": [
@@ -2675,6 +2785,12 @@
   {
    "v": 10,
    "t": "Mercy and truth are met together; righteousness and peace have kissed each other."
+  }
+ ],
+ "Psalm 97:2": [
+  {
+   "v": 2,
+   "t": "Clouds and darkness are round about him: righteousness and judgment are the habitation of his throne."
   }
  ],
  "Revelation 11:19": [
@@ -2871,6 +2987,12 @@
    "t": "To declare, I say, at this time his righteousness: that he might be just, and the justifier of him which believeth in Jesus."
   }
  ],
+ "Romans 3:31": [
+  {
+   "v": 31,
+   "t": "Do we then make void the law through faith? God forbid: yea, we establish the law."
+  }
+ ],
  "Romans 6:23": [
   {
    "v": 23,
@@ -2881,6 +3003,12 @@
   {
    "v": 4,
    "t": "Therefore we are buried with him by baptism into death: that like as Christ was raised up from the dead by the glory of the Father, even so we also should walk in newness of life."
+  }
+ ],
+ "Romans 8:4": [
+  {
+   "v": 4,
+   "t": "That the righteousness of the law might be fulfilled in us, who walk not after the flesh, but after the Spirit."
   }
  ],
  "Titus 3:5": [
