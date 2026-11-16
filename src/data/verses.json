@@ -1,4 +1,10 @@
 {
+ "1 Corinthians 10:17": [
+  {
+   "v": 17,
+   "t": "For we being many are one bread, and one body: for we are all partakers of that one bread."
+  }
+ ],
  "1 Corinthians 15:20": [
   {
    "v": 20,
@@ -85,6 +91,12 @@
   {
    "v": 9,
    "t": "But ye are a chosen generation, a royal priesthood, an holy nation, a peculiar people; that ye should shew forth the praises of him who hath called you out of darkness into his marvellous light:"
+  }
+ ],
+ "1 Samuel 21:6": [
+  {
+   "v": 6,
+   "t": "So the priest gave him hallowed bread: for there was no bread there but the shewbread, that was taken from before the LORD, to put hot bread in the day when it was taken away."
   }
  ],
  "1 Timothy 2:5": [
@@ -409,6 +421,12 @@
    "t": "For the LORD thy God is a consuming fire, even a jealous God."
   }
  ],
+ "Deuteronomy 8:3": [
+  {
+   "v": 3,
+   "t": "And he humbled thee, and suffered thee to hunger, and fed thee with manna, which thou knewest not, neither did thy fathers know; that he might make thee know that man doth not live by bread only, but by every word that proceedeth out of the mouth of the LORD doth man live."
+  }
+ ],
  "Ephesians 2:21-22": [
   {
    "v": 21,
@@ -503,7 +521,7 @@
    "t": "And there I will meet with thee, and I will commune with thee from above the mercy seat, from between the two cherubims which are upon the ark of the testimony, of all things which I will give thee in commandment unto the children of Israel."
   }
  ],
- "Exodus 25:23-30": [
+ "Exodus 25:23-25": [
   {
    "v": 23,
    "t": "Thou shalt also make a table of shittim wood: two cubits shall be the length thereof, and a cubit the breadth thereof, and a cubit and a half the height thereof."
@@ -515,7 +533,15 @@
   {
    "v": 25,
    "t": "And thou shalt make unto it a border of an hand breadth round about, and thou shalt make a golden crown to the border thereof round about."
-  },
+  }
+ ],
+ "Exodus 25:24": [
+  {
+   "v": 24,
+   "t": "And thou shalt overlay it with pure gold, and make thereto a crown of gold round about."
+  }
+ ],
+ "Exodus 25:26-29": [
   {
    "v": 26,
    "t": "And thou shalt make for it four rings of gold, and put the rings in the four corners that are on the four feet thereof."
@@ -531,10 +557,6 @@
   {
    "v": 29,
    "t": "And thou shalt make the dishes thereof, and spoons thereof, and covers thereof, and bowls thereof, to cover withal: of pure gold shalt thou make them."
-  },
-  {
-   "v": 30,
-   "t": "And thou shalt set upon the table shewbread before me alway."
   }
  ],
  "Exodus 25:30": [
@@ -1167,6 +1189,12 @@
    "t": "And when Aaron lighteth the lamps at even, he shall burn incense upon it, a perpetual incense before the LORD throughout your generations."
   }
  ],
+ "Exodus 31:16": [
+  {
+   "v": 16,
+   "t": "Wherefore the children of Israel shall keep the sabbath, to observe the sabbath throughout their generations, for a perpetual covenant."
+  }
+ ],
  "Exodus 31:18": [
   {
    "v": 18,
@@ -1197,6 +1225,12 @@
   {
    "v": 3,
    "t": "And they did beat the gold into thin plates, and cut it into wires, to work it in the blue, and in the purple, and in the scarlet, and in the fine linen, with cunning work."
+  }
+ ],
+ "Exodus 40:22": [
+  {
+   "v": 22,
+   "t": "And he put the table in the tent of the congregation, upon the side of the tabernacle northward, without the vail."
   }
  ],
  "Exodus 40:34": [
@@ -1711,6 +1745,12 @@
    "t": "I am the door: by me if any man enter in, he shall be saved, and shall go in and out, and find pasture."
   }
  ],
+ "John 12:24": [
+  {
+   "v": 24,
+   "t": "Verily, verily, I say unto you, Except a corn of wheat fall into the ground and die, it abideth alone: but if it die, it bringeth forth much fruit."
+  }
+ ],
  "John 13:10": [
   {
    "v": 10,
@@ -2047,6 +2087,22 @@
    "t": "And on the fifteenth day of the same month is the feast of unleavened bread unto the LORD: seven days ye must eat unleavened bread."
   }
  ],
+ "Leviticus 24:5": [
+  {
+   "v": 5,
+   "t": "And thou shalt take fine flour, and bake twelve cakes thereof: two tenth deals shall be in one cake."
+  }
+ ],
+ "Leviticus 24:5-6": [
+  {
+   "v": 5,
+   "t": "And thou shalt take fine flour, and bake twelve cakes thereof: two tenth deals shall be in one cake."
+  },
+  {
+   "v": 6,
+   "t": "And thou shalt set them in two rows, six on a row, upon the pure table before the LORD."
+  }
+ ],
  "Leviticus 24:5-8": [
   {
    "v": 5,
@@ -2078,6 +2134,28 @@
    "v": 7,
    "t": "And thou shalt put pure frankincense upon each row, that it may be on the bread for a memorial, even an offering made by fire unto the LORD."
   },
+  {
+   "v": 8,
+   "t": "Every sabbath he shall set it in order before the LORD continually, being taken from the children of Israel by an everlasting covenant."
+  },
+  {
+   "v": 9,
+   "t": "And it shall be Aaron’s and his sons’; and they shall eat it in the holy place: for it is most holy unto him of the offerings of the LORD made by fire by a perpetual statute."
+  }
+ ],
+ "Leviticus 24:7": [
+  {
+   "v": 7,
+   "t": "And thou shalt put pure frankincense upon each row, that it may be on the bread for a memorial, even an offering made by fire unto the LORD."
+  }
+ ],
+ "Leviticus 24:8": [
+  {
+   "v": 8,
+   "t": "Every sabbath he shall set it in order before the LORD continually, being taken from the children of Israel by an everlasting covenant."
+  }
+ ],
+ "Leviticus 24:8-9": [
   {
    "v": 8,
    "t": "Every sabbath he shall set it in order before the LORD continually, being taken from the children of Israel by an everlasting covenant."
@@ -2231,6 +2309,16 @@
    "t": "Come unto me, all ye that labour and are heavy laden, and I will give you rest."
   }
  ],
+ "Matthew 12:3-4": [
+  {
+   "v": 3,
+   "t": "But he said unto them, Have ye not read what David did, when he was an hungred, and they that were with him;"
+  },
+  {
+   "v": 4,
+   "t": "How he entered into the house of God, and did eat the shewbread, which was not lawful for him to eat, neither for them which were with him, but only for the priests?"
+  }
+ ],
  "Matthew 27:51": [
   {
    "v": 51,
@@ -2291,6 +2379,12 @@
   {
    "v": 105,
    "t": "Thy word is a lamp unto my feet, and a light unto my path."
+  }
+ ],
+ "Psalm 119:18": [
+  {
+   "v": 18,
+   "t": "Open thou mine eyes, that I may behold wondrous things out of thy law."
   }
  ],
  "Psalm 141:2": [
@@ -2463,6 +2557,12 @@
   {
    "v": 3,
    "t": "And I heard a great voice out of heaven saying, Behold, the tabernacle of God is with men, and he will dwell with them, and they shall be his people, and God himself shall be with them, and be their God."
+  }
+ ],
+ "Revelation 3:20": [
+  {
+   "v": 20,
+   "t": "Behold, I stand at the door, and knock: if any man hear my voice, and open the door, I will come in to him, and will sup with him, and he with me."
   }
  ],
  "Revelation 4:5": [
