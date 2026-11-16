@@ -80,7 +80,7 @@ const SAY: Record<string, string> = {
   qeren: 'keh-ren', qetoret: 'keh-toh-ret', rachats: 'rah-khahts', samak: 'sah-mahk', shaqed: 'shah-ked',
   shoham: 'shoh-hahm', shulchan: 'shool-khahn', tabnit: 'tahv-neet', tamid: 'tah-meed',
   thumiama: 'thoo-mee-ah-mah', thura: 'thoo-rah', tsits: 'tseets', zer: 'zair', zabach: 'zah-vahkh',
-  lavan: 'lah-vahn', miqshah: 'meek-shah', katit: 'kah-teet', shoqed: 'shoh-ked', memullach: 'meh-mool-lakh', 'esh zarah': 'aysh zah-rah', "tola'at shani": 'toh-lah-aht shah-nee', "tola'at": 'toh-lah-aht', choshev: 'khoh-shev', tekhelet: 'teh-khay-let', argaman: 'ar-gah-mahn', eschisthē: 'es-kheez-thay', "'edut": 'ay-doot', luchot: 'loo-khote', 'etsba elohim': 'ets-bah eh-loh-heem', shekinah: 'sheh-khee-nah', "sha'ar": 'shah-ar', roqem: 'roh-kem', "nasa 'avon": 'nah-sah ah-vohn', nislach: 'nees-lakh', "chatta't": 'khah-taht', "'olah": 'oh-lah', bad: 'bahd',
+  lavan: 'lah-vahn', miqshah: 'meek-shah', katit: 'kah-teet', shoqed: 'shoh-ked', memullach: 'meh-mool-lakh', 'esh zarah': 'aysh zah-rah', "tola'at shani": 'toh-lah-aht shah-nee', "tola'at": 'toh-lah-aht', choshev: 'khoh-shev', tekhelet: 'teh-khay-let', argaman: 'ar-gah-mahn', eschisthē: 'es-kheez-thay', "'edut": 'ay-doot', luchot: 'loo-khote', 'etsba elohim': 'ets-bah eh-loh-heem', shekinah: 'sheh-khee-nah', "sha'ar": 'shah-ar', roqem: 'roh-kem', "nasa 'avon": 'nah-sah ah-vohn', nislach: 'nees-lakh', 'shabbat shabbaton': 'shah-baht shah-bah-tone', goral: 'goh-rahl', "'aza'zel": 'ah-zah-zel', "'innah nefesh": 'ee-nah neh-fesh', "chatta't": 'khah-taht', "'olah": 'oh-lah', bad: 'bahd',
 }
 const SAY_RE = new RegExp(
   `(^|[^\\p{L}])(${Object.keys(SAY).sort((a, b) => b.length - a.length).join('|')})(?=[^\\p{L}]|$)`,

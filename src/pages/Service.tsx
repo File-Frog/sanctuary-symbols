@@ -68,12 +68,38 @@ const configs: Record<'daily' | 'atonement', Config> = {
     title: 'The Day of Atonement',
     lede: 'The year\'s record of sin, removed.',
     intro: [
-      `Everything in the daily service led up to one day in the seventh month. On Yom Kippur the high priest went into the most holy place, cleansed the sanctuary of the year's accumulated record, and sent the scapegoat into the wilderness. Israel treated it as a day of judgment. It sorted the loyal from the indifferent, and it ended with a clean camp.`,
-      `Daniel 8:14, Daniel 7 and Hebrews 9 all point to a heavenly fulfilment of this day. That is why the 2,300-day prophecy is a sanctuary prophecy.`,
+      `Everything in the daily service led up to one day in the seventh month. On Yom ha-Kippurim, the Day of Atonement, the high priest went into the most holy place, cleansed the sanctuary of the year's record of sin, and sent the scapegoat into the wilderness. Israel treated it as a day of judgment. It separated the loyal from the indifferent, and it ended with a clean camp.`,
+      `Daniel 8:14, Daniel 7 and Hebrews 9 all point to a heavenly fulfilment of this day, which is why the 2,300-day prophecy is a sanctuary prophecy.`,
     ],
     steps: yearlySteps,
     terms: yearlyTerms,
     colour: '#f2c96b',
+    meaning: {
+      title: 'The judgment and the end of sin',
+      paras: [
+        `The daily service dealt with sin one person at a time, and it left the sanctuary carrying a growing record of forgiven sins. The Day of Atonement dealt with the whole record at once. It was the climax of Israel's year, and the people knew it.`,
+        {
+          quote: 'The tenth day of the seventh month was the day of atonement. It was regarded as more sacred than any other day in the yearly round of service.',
+          by: 'Stephen N. Haskell',
+          source: 'The Cross and Its Shadow (1914), ch. 29',
+        },
+        `Everything about the day pointed to Christ. The high priest laid aside his glorious robes and served in plain linen, as Christ laid aside His glory and took on our humanity (Philippians 2:7). He went in alone, with no one else in the tabernacle, as Christ alone makes atonement for us. And he went in with blood, because the cleansing of the sanctuary rests on the sacrifice. Even the final judgment stands on the cross. Christ "was once offered to bear the sins of many," and Hebrews adds, "unto them that look for him shall he appear the second time without sin unto salvation" (Hebrews 9:28). Like Israel waiting outside for the high priest to come out, God's people now wait for their High Priest to finish His work and appear.`,
+        `For the people outside, the day called for 'innah nefesh, real heart-searching. Haskell observed that it was an individual work: the congregation was not accepted as a crowd, but person by person. Each Israelite was to confess every sin, put it away and trust the work the high priest was doing for him. Anyone who treated the day lightly was cut off, not because his sins were too great, but because he would not come to God on God's terms.`,
+        `The two goats show the end of the story. The LORD's goat was slain, and its blood cleansed the sanctuary; that is Christ, whose blood alone atones. The second goat was never slain and atoned for nothing. When the sanctuary was clean, the sins were confessed over its head, and it was taken away into the wilderness, never to return. The one who started sin will finally carry the responsibility for it, and God's people will be free of it for ever.`,
+        {
+          quote: 'When the high priest, by virtue of the blood of the sin-offering, removed the sins from the sanctuary, he placed them upon the scape-goat. When Christ, by virtue of his own blood, removes the sins of his people from the heavenly sanctuary at the close of his ministration, he will place them upon Satan, who, in the execution of the judgment, must bear the final penalty.',
+          by: 'Ellen G. White',
+          source: 'The Great Controversy (1888), p. 422',
+        },
+        `For the believer, the judgment is good news. Zechariah saw it in a vision: Joshua the high priest stood before the Angel of the LORD in filthy garments, with Satan at his right hand to accuse him. But the LORD answered, "The LORD rebuke thee, O Satan," took away the filthy garments and said, "I have caused thine iniquity to pass from thee, and I will clothe thee with change of raiment" (Zechariah 3:2; Zechariah 3:4). Paul asks the same question with the same confidence: "Who shall lay any thing to the charge of God's elect? It is God that justifieth" (Romans 8:33).`,
+        {
+          quote: 'Not until the goat had thus been led away did the people regard themselves as freed from the burden of their sins.',
+          by: 'Ellen G. White',
+          source: 'Patriarchs and Prophets, p. 355',
+        },
+        `That is where the whole sanctuary leads. The prophecy of Daniel 8:14 promised that the sanctuary would be nitsdaq, cleansed and set right. When Christ finishes His work, the record of His people's sins will be gone, God's justice and mercy will both stand vindicated before the universe, and sin will never rise again (Nahum 1:9).`,
+      ],
+    },
     closing: {
       title: 'Good news about the judgment',
       text: `For Israel, the Day of Atonement was not a threat to anyone who had confessed and stayed loyal. It was the day their record was cleared. The judgment works the same way for the believer. Daniel sees it end with "judgment was given to the saints" (Daniel 7:22). The question in the judgment is not whether we were good enough. It is whether we are in Christ, and He is our High Priest, our Advocate and our Judge (1 John 2:1; John 5:22).`,

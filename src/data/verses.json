@@ -2157,7 +2157,7 @@
    "t": "Then shall he kill the goat of the sin offering, that is for the people, and bring his blood within the vail, and do with that blood as he did with the blood of the bullock, and sprinkle it upon the mercy seat, and before the mercy seat:"
   }
  ],
- "Leviticus 16:15-16": [
+ "Leviticus 16:15-17": [
   {
    "v": 15,
    "t": "Then shall he kill the goat of the sin offering, that is for the people, and bring his blood within the vail, and do with that blood as he did with the blood of the bullock, and sprinkle it upon the mercy seat, and before the mercy seat:"
@@ -2165,6 +2165,10 @@
   {
    "v": 16,
    "t": "And he shall make an atonement for the holy place, because of the uncleanness of the children of Israel, and because of their transgressions in all their sins: and so shall he do for the tabernacle of the congregation, that remaineth among them in the midst of their uncleanness."
+  },
+  {
+   "v": 17,
+   "t": "And there shall be no man in the tabernacle of the congregation when he goeth in to make an atonement in the holy place, until he come out, and have made an atonement for himself, and for his household, and for all the congregation of Israel."
   }
  ],
  "Leviticus 16:15-19": [
@@ -2229,6 +2233,12 @@
    "t": "And he shall make an atonement for the holy place, because of the uncleanness of the children of Israel, and because of their transgressions in all their sins: and so shall he do for the tabernacle of the congregation, that remaineth among them in the midst of their uncleanness."
   }
  ],
+ "Leviticus 16:17": [
+  {
+   "v": 17,
+   "t": "And there shall be no man in the tabernacle of the congregation when he goeth in to make an atonement in the holy place, until he come out, and have made an atonement for himself, and for his household, and for all the congregation of Israel."
+  }
+ ],
  "Leviticus 16:18-19": [
   {
    "v": 18,
@@ -2273,10 +2283,40 @@
    "t": "And the goat shall bear upon him all their iniquities unto a land not inhabited: and he shall let go the goat in the wilderness."
   }
  ],
+ "Leviticus 16:23-24": [
+  {
+   "v": 23,
+   "t": "And Aaron shall come into the tabernacle of the congregation, and shall put off the linen garments, which he put on when he went into the holy place, and shall leave them there:"
+  },
+  {
+   "v": 24,
+   "t": "And he shall wash his flesh with water in the holy place, and put on his garments, and come forth, and offer his burnt offering, and the burnt offering of the people, and make an atonement for himself, and for the people."
+  }
+ ],
+ "Leviticus 16:29-31": [
+  {
+   "v": 29,
+   "t": "And this shall be a statute for ever unto you: that in the seventh month, on the tenth day of the month, ye shall afflict your souls, and do no work at all, whether it be one of your own country, or a stranger that sojourneth among you:"
+  },
+  {
+   "v": 30,
+   "t": "For on that day shall the priest make an atonement for you, to cleanse you, that ye may be clean from all your sins before the LORD."
+  },
+  {
+   "v": 31,
+   "t": "It shall be a sabbath of rest unto you, and ye shall afflict your souls, by a statute for ever."
+  }
+ ],
  "Leviticus 16:30": [
   {
    "v": 30,
    "t": "For on that day shall the priest make an atonement for you, to cleanse you, that ye may be clean from all your sins before the LORD."
+  }
+ ],
+ "Leviticus 16:31": [
+  {
+   "v": 31,
+   "t": "It shall be a sabbath of rest unto you, and ye shall afflict your souls, by a statute for ever."
   }
  ],
  "Leviticus 16:33-34": [
@@ -2873,6 +2913,12 @@
    "t": "Speak unto Aaron, and say unto him, When thou lightest the lamps, the seven lamps shall give light over against the candlestick."
   }
  ],
+ "Philippians 2:7": [
+  {
+   "v": 7,
+   "t": "But made himself of no reputation, and took upon him the form of a servant, and was made in the likeness of men:"
+  }
+ ],
  "Psalm 100:4": [
   {
    "v": 4,
@@ -3177,6 +3223,12 @@
    "t": "Therefore we are buried with him by baptism into death: that like as Christ was raised up from the dead by the glory of the Father, even so we also should walk in newness of life."
   }
  ],
+ "Romans 8:33": [
+  {
+   "v": 33,
+   "t": "Who shall lay any thing to the charge of God’s elect? It is God that justifieth."
+  }
+ ],
  "Romans 8:4": [
   {
    "v": 4,
@@ -3193,6 +3245,18 @@
   {
    "v": 10,
    "t": "And I will pour upon the house of David, and upon the inhabitants of Jerusalem, the spirit of grace and of supplications: and they shall look upon me whom they have pierced, and they shall mourn for him, as one mourneth for his only son, and shall be in bitterness for him, as one that is in bitterness for his firstborn."
+  }
+ ],
+ "Zechariah 3:2": [
+  {
+   "v": 2,
+   "t": "And the LORD said unto Satan, The LORD rebuke thee, O Satan; even the LORD that hath chosen Jerusalem rebuke thee: is not this a brand plucked out of the fire?"
+  }
+ ],
+ "Zechariah 3:4": [
+  {
+   "v": 4,
+   "t": "And he answered and spake unto those that stood before him, saying, Take away the filthy garments from him. And unto him he said, Behold, I have caused thine iniquity to pass from thee, and I will clothe thee with change of raiment."
   }
  ],
  "Zechariah 4:6": [

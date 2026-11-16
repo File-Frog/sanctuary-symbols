@@ -54,49 +54,53 @@ export const dailySteps: Step[] = [
 
 export const yearlyTerms: Term[] = [
   { word: 'יוֹם הַכִּפֻּרִים', translit: 'Yom ha-Kippurim', lang: 'Hebrew', meaning: 'The Day of Atonements. The plural suggests a full, complete atonement.' },
-  { word: 'עֲזָאזֵל', translit: "'aza'zel", lang: 'Hebrew', meaning: 'The name given to the second goat. It is set in parallel with "the LORD," so it most naturally names a personal being opposed to God. Early Jewish writers took it that way, and many scholars still do.' },
+  { word: 'שַׁבַּת שַׁבָּתוֹן', translit: 'shabbat shabbaton', lang: 'Hebrew', meaning: '"A sabbath of rest" (Leviticus 16:31), literally a sabbath of sabbaths: the most solemn rest of the year.' },
   { word: 'עִנָּה נֶפֶשׁ', translit: "'innah nefesh", lang: 'Hebrew', meaning: '"Afflict the soul": humble yourself through fasting and heart-searching.' },
+  { word: 'בַּד', translit: 'bad', lang: 'Hebrew', meaning: 'Linen. On this day the high priest wore only plain white garments of bad (Leviticus 16:4).' },
+  { word: 'גּוֹרָל', translit: 'goral', lang: 'Hebrew', meaning: 'Lot, as in casting lots. God, not the priest, chose which goat was which (Leviticus 16:8).' },
+  { word: 'עֲזָאזֵל', translit: "'aza'zel", lang: 'Hebrew', meaning: 'The name given to the second goat. It is set in parallel with "the LORD," so it most naturally names a personal being opposed to God. Early Jewish writers took it that way, and many scholars still do.' },
   { word: 'נִצְדַּק', translit: 'nitsdaq', lang: 'Hebrew', meaning: 'The verb behind "cleansed" in Daniel 8:14. It comes from tsadaq, to be right, so it carries the ideas of being restored, set right and vindicated, as well as cleansed.' },
 ]
 
 export const yearlySteps: Step[] = [
   {
     title: 'The tenth day of the seventh month',
-    text: 'Once a year Israel kept its most solemn day. Nobody worked, and everyone was to afflict the soul. Anyone who would not was "cut off from among his people" (Leviticus 23:27-29). In Jewish tradition it is still the day when judgment is sealed. The text points the same way, since the day revealed who was loyal.',
-    verses: [{ ref: 'Leviticus 23:27-29' }],
+    text: 'Once a year, on the tenth day of the seventh month, Israel kept its most solemn day. It was a shabbat shabbaton, "a sabbath of rest," and no one did any work (Leviticus 16:29-31). Every person was to practice \'innah nefesh, to afflict the soul through fasting and searching the heart, and anyone who refused was "cut off from among his people" (Leviticus 23:27-29). In Jewish tradition it is still the day when judgment is sealed, and the text points the same way, since the day showed who was truly loyal to God.',
+    verses: [{ ref: 'Leviticus 23:27-29' }, { ref: 'Leviticus 16:29-31' }],
     at: [-4, 25],
   },
   {
     title: 'The high priest dresses in plain linen',
-    text: 'He set aside his garments of glory and wore only white linen (Leviticus 16:4). He offered a bullock for himself and his house (Leviticus 16:6), then went past the veil with a censer of coals from the altar and a cloud of incense to cover the mercy seat (Leviticus 16:12-13). This was the one day anyone entered the most holy place, and he did not go without blood (Hebrews 9:7).',
+    text: 'The high priest set aside his garments of glory and wore only white bad, plain linen: "the holy linen coat," the breeches, the girdle and the mitre (Leviticus 16:4). He first offered a bull as a sin offering for himself and his house (Leviticus 16:6). Then he took a censer full of coals from the altar and two handfuls of incense and went inside the veil, so that the cloud of incense covered the mercy seat (Leviticus 16:12-13). It was the one day of the year when anyone entered the most holy place, and he did not go "without blood" (Hebrews 9:7).',
     verses: [{ ref: 'Leviticus 16:2-4' }, { ref: 'Leviticus 16:12-13' }, { ref: 'Hebrews 9:7' }],
     at: [22, 25],
   },
   {
     title: 'Two goats, and only one is slain',
-    text: 'Lots were cast over two goats, "one lot for the LORD, and the other lot for the scapegoat" (Leviticus 16:8). The LORD\'s goat was killed, and its blood was sprinkled on the mercy seat, then on the incense altar, then on the bronze altar. This cleansed every part of the sanctuary "because of the uncleanness of the children of Israel, and because of their transgressions in all their sins" (Leviticus 16:15-19).',
-    verses: [{ ref: 'Leviticus 16:7-9' }, { ref: 'Leviticus 16:15-16' }, { ref: 'Leviticus 16:18-19' }],
+    text: 'Two goats stood before the LORD, and the high priest cast a goral, a lot, over them: "one lot for the LORD, and the other lot for the scapegoat" (Leviticus 16:8). The LORD\'s goat was killed as a sin offering, and its blood was carried into the most holy place and sprinkled on the mercy seat and before it, then put on the golden altar and on the altar in the court. This made atonement for every part of the sanctuary "because of the uncleanness of the children of Israel, and because of their transgressions in all their sins" (Leviticus 16:15-19). While he did this, "there shall be no man in the tabernacle of the congregation" (Leviticus 16:17). The high priest did this work alone.',
+    verses: [{ ref: 'Leviticus 16:7-9' }, { ref: 'Leviticus 16:15-17' }, { ref: 'Leviticus 16:18-19' }],
     at: [75, 25],
   },
   {
     title: 'The scapegoat carries it away',
-    text: 'Only after the sanctuary was clean did the high priest lay both hands on the live goat and confess over it all of Israel\'s iniquities. It was led into the wilderness and left there (Leviticus 16:20-22). Its blood was never shed, so it made no atonement for anyone. It carried away the responsibility for sins already forgiven and already removed from the sanctuary. The fitting antitype is Satan, who started sin and will finally bear the responsibility for it.',
+    text: 'Only when the sanctuary was clean did the high priest come out, lay both hands on the live goat and confess over it "all the iniquities of the children of Israel, and all their transgressions in all their sins." A man led it into the wilderness and left it there (Leviticus 16:20-22). Its blood was never shed, so it made no atonement for anyone\'s sin. It carried away the responsibility for sins that had already been forgiven and already removed from the sanctuary. The goat is named for \'aza\'zel, a figure set opposite the LORD, and the fitting fulfilment is Satan, who started sin and will finally bear the responsibility for it (Revelation 20:1-3).',
     verses: [{ ref: 'Leviticus 16:20-22' }, { ref: 'Revelation 20:1-3' }],
     at: [-6, 25],
   },
   {
     title: 'A clean people and a clean sanctuary',
-    text: '"On that day shall the priest make an atonement for you, to cleanse you, that ye may be clean from all your sins before the LORD" (Leviticus 16:30). The year\'s record was closed. Forgiveness during the year came at the altar. This day removed the record and confirmed who belonged to God.',
+    text: 'The high priest then changed back into his garments of glory and offered the burnt offerings (Leviticus 16:23-24). God\'s promise for the day was complete: "On that day shall the priest make an atonement for you, to cleanse you, that ye may be clean from all your sins before the LORD" (Leviticus 16:30). The year\'s record was closed. Forgiveness during the year had come at the altar, and this day removed the record and confirmed who belonged to God.',
     verses: [{ ref: 'Leviticus 16:30' }, { ref: 'Leviticus 16:33-34' }],
     at: [50, 25],
   },
   {
     title: 'The heavenly fulfilment',
-    text: 'Hebrews says the heavenly things themselves had to be purified "with better sacrifices" (Hebrews 9:23-24). Daniel says when: "Unto two thousand and three hundred days; then shall the sanctuary be cleansed" (Daniel 8:14). Daniel 7 shows the same event as a heavenly court that sits, opens the books and rules in favour of the saints before the kingdom is given (Daniel 7:9-10; Daniel 7:22). Revelation announces it worldwide: "the hour of his judgment is come" (Revelation 14:7). The cross secured our forgiveness. The judgment shows the universe that God was right to forgive, and then sin is blotted out forever (Acts 3:19-20).',
+    text: 'Hebrews says that the heavenly things themselves had to be purified "with better sacrifices than these" (Hebrews 9:23-24). Daniel says when: "Unto two thousand and three hundred days; then shall the sanctuary be cleansed" (Daniel 8:14), and the word for cleansed, nitsdaq, also means set right and vindicated. Daniel 7 shows the same event as a heavenly court that sits and opens the books, and it ends with "judgment was given to the saints" before the kingdom is handed over (Daniel 7:9-10, 22). Revelation announces it to the whole world: "the hour of his judgment is come" (Revelation 14:7). The cross secured our forgiveness. The judgment shows the universe that God was right to forgive, and then sin is blotted out for ever (Acts 3:19-20).',
     verses: [{ ref: 'Hebrews 9:23-24' }, { ref: 'Daniel 8:14' }, { ref: 'Daniel 7:9-10' }, { ref: 'Revelation 14:7' }, { ref: 'Acts 3:19-20' }],
     at: [75, 25],
   },
 ]
+
 
 export interface Feast {
   name: string
