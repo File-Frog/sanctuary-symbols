@@ -16,6 +16,7 @@
     "@fontsource/spectral": "^5.3.0",
     "express": "^5.3.0",
     "framer-motion": "^14.14.0",
+    "msedge-tts": "^2.1.1",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
     "react-router-dom": "^7.18.5"

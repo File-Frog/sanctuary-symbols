@@ -687,3 +687,4 @@ p { margin: 0 0 1rem; line-height: 1.72; }
 .ra-panel input[type='range'] { width: 100%; accent-color: var(--gold); }
 .reading-now { background: rgba(201, 162, 74, 0.18); box-shadow: -10px 0 0 rgba(201, 162, 74, 0.18), 10px 0 0 rgba(201, 162, 74, 0.18); border-radius: 3px; transition: background 0.3s; }
 @media (max-width: 860px) { .ra { right: 12px; bottom: 12px; } .ra-panel { width: min(290px, calc(100vw - 24px)); } }
+.ra-error { margin: 10px 0 0; font-size: 0.85rem; color: #f3b4ad; }
