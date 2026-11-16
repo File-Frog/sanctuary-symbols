@@ -182,6 +182,7 @@ export const symbols: SanctuarySymbol[] = [
         by: 'Stephen N. Haskell',
         source: 'The Cross and Its Shadow (1914), ch. 25',
       },
+      `The fire itself carried meaning. It first came from God: when the altar was dedicated, "there came a fire out from before the LORD, and consumed upon the altar the burnt offering" (Leviticus 9:24). Scripture says, "our God is a consuming fire" (Hebrews 12:29; Deuteronomy 4:24). On the altar that fire consumed the offering that carried the sinner's guilt, a picture of God's holiness meeting sin and destroying it. It also points to the end of sin itself. At the close of history death and hell are "cast into the lake of fire" (Revelation 20:14), the wicked become "ashes under the soles of your feet" (Malachi 4:3), and Satan, the originator of sin, is brought "to ashes upon the earth" (Ezekiel 28:18). Then sin is gone for good: "affliction shall not rise up the second time" (Nahum 1:9). The fire that never went out on the altar declared that God will not let sin go on forever, and that He has provided a sacrifice so that the sinner need not be consumed with it.`,
     ],
     links: [
       { to: 'incense', text: 'Coals for the golden altar of incense came only from this altar. Prayer is fuelled by the sacrifice.' },
@@ -196,6 +197,8 @@ export const symbols: SanctuarySymbol[] = [
       { ref: '1 Peter 2:24', note: 'Bare our sins on the tree' },
       { ref: 'Isaiah 53:6', note: 'The iniquity of us all' },
       { ref: 'Leviticus 6:13', note: 'The fire shall ever be burning' },
+      { ref: 'Hebrews 12:29', note: 'Our God is a consuming fire' },
+      { ref: 'Revelation 20:14', note: 'The lake of fire' },
       { ref: 'Leviticus 17:11', note: 'The life is in the blood' },
       { ref: 'Exodus 27:1-2', note: 'The altar described' },
     ],
