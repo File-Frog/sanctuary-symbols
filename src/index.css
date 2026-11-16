@@ -589,7 +589,7 @@ p { margin: 0 0 1rem; line-height: 1.72; }
 .pc-inner p { color: var(--linen); font-size: 1.02rem; margin: 0; }
 @media (max-width: 860px) {
   .priest-card { display: none; }
-  .stage-split .plan-pane:has(> svg[aria-label="The high priest's garments"]) { position: static; width: auto; height: 100%; border: 0; background: none; }
+  .stage-split .plan-pane:has(.priest-paint) { position: static; width: auto; height: 100%; border: 0; background: none; }
 }
 .home-plan { position: absolute; inset: 96px 0 34px; }
 @media (max-width: 860px) { .home-plan { inset: 70px 0 30px; } }
@@ -688,3 +688,18 @@ p { margin: 0 0 1rem; line-height: 1.72; }
 .reading-now { background: rgba(201, 162, 74, 0.18); box-shadow: -10px 0 0 rgba(201, 162, 74, 0.18), 10px 0 0 rgba(201, 162, 74, 0.18); border-radius: 3px; transition: background 0.3s; }
 @media (max-width: 860px) { .ra { right: 12px; bottom: 12px; } .ra-panel { width: min(290px, calc(100vw - 24px)); } }
 .ra-error { margin: 10px 0 0; font-size: 0.85rem; color: #f3b4ad; }
+
+/* High priest painting with clickable garments */
+.stage-split .plan-pane:has(.priest-paint) { -webkit-mask-image: none; mask-image: none; }
+.priest-paint { position: absolute; inset: 0; overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); }
+.priest-paint .painting-bg { inset: -60px; }
+.priest-svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+.priest-svg .ph > * { fill: rgba(242, 201, 107, 0); stroke: none; transition: fill .25s, stroke .25s; }
+.priest-svg .ph:hover > *, .priest-svg .ph:focus-visible > * { fill: rgba(242, 201, 107, 0.14); }
+.priest-svg .ph.on > * { fill: rgba(242, 201, 107, 0.16); stroke: #f2c96b; stroke-width: 7; }
+.priest-svg .stone { fill: transparent; stroke: transparent; stroke-width: 3; cursor: pointer; }
+.priest-svg .stone.on { stroke: #fff; }
+@media (max-width: 860px) {
+  .priest-paint { -webkit-mask-image: none; mask-image: none; top: 44px; }
+  .priest-paint .priest-svg { left: 50%; width: auto; aspect-ratio: 2 / 3; transform: translateX(-50%); }
+}

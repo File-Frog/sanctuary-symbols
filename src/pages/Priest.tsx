@@ -5,6 +5,7 @@ import { Rich, VerseList, VerseRef } from '../components/Scripture'
 import { Pager, Paras, Resources, Terms } from '../components/Bits'
 import { garments, priestTerms, priestVerses, stones } from '../data/extras'
 import { R, type Para } from '../data/symbols'
+import priestArt from '../assets/priest.webp'
 
 // Original-language words to highlight: the general terms plus each garment's own word.
 const allTerms = [...priestTerms, ...garments.map((x) => x.term)]
@@ -41,92 +42,69 @@ const meaning: { title: string; paras: Para[] } = {
   ],
 }
 
-const C = { blue: '#24497f', purple: '#5b2a5f', scarlet: '#9e2a2b', linen: '#efe7d6', gold: '#c9a24a', hi: '#f6dc93' }
+
+// Clickable areas over the painting, in the painting's own pixel coordinates (1024 × 1536).
+const AREAS: { id: string; shape: 'path' | 'circle' | 'rect' | 'ellipse'; d?: string; c?: number[] }[] = [
+  { id: 'linen', shape: 'path', d: 'M268 1300 L700 1300 L705 1420 L268 1420 Z M240 540 L345 560 L335 800 L255 805 Z M680 560 L760 540 L762 800 L690 790 Z' },
+  { id: 'robe', shape: 'path', d: 'M262 1095 L725 1095 L722 1240 L735 1300 L255 1300 L262 1240 Z M330 300 L238 530 L300 555 L330 450 Z M690 300 L760 535 L700 555 L690 450 Z' },
+  { id: 'ephod', shape: 'path', d: 'M330 290 L690 290 L700 560 L712 1100 L500 1105 L272 1100 L300 560 Z' },
+  { id: 'onyx', shape: 'path', d: 'M366 298 a26 26 0 1 0 52 0 a26 26 0 1 0 -52 0 Z M606 300 a26 26 0 1 0 52 0 a26 26 0 1 0 -52 0 Z' },
+  { id: 'breastplate', shape: 'rect', c: [425, 377, 187, 168] },
+  { id: 'mitre', shape: 'ellipse', c: [498, 100, 92, 60] },
+]
+// The twelve stones, row by row, three to a row.
+const STONE_X = [439, 494, 549]
+const STONE_Y = [388, 425, 463, 501]
 
 function Figure({ sel, onSel }: { sel: string; onSel: (id: string) => void }) {
   const [stone, setStone] = useState<number | null>(null)
   const part = (id: string) => ({
-    className: 'hit',
+    className: `hit ph${sel === id ? ' on' : ''}`,
     role: 'button' as const,
     tabIndex: 0,
     'aria-label': garments.find((g) => g.id === id)?.name,
     onClick: () => onSel(id),
     onKeyDown: (e: React.KeyboardEvent) => (e.key === 'Enter' || e.key === ' ') && (e.preventDefault(), onSel(id)),
-    style: { filter: sel === id ? 'drop-shadow(0 0 6px rgba(242,201,107,.9))' : undefined, transition: 'filter .3s' },
   })
   return (
-    <svg className="stage-svg" viewBox="0 0 600 440" role="img" aria-label="The high priest's garments">
-      <defs>
-        <linearGradient id="pGold" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stopColor="#f6dc93" />
-          <stop offset="1" stopColor="#8a6a26" />
-        </linearGradient>
-      </defs>
-      <circle cx="300" cy="200" r="190" fill="#f2c96b" opacity="0.05" />
-      {/* linen coat (sleeves and hem) */}
-      <g {...part('linen')}>
-        <path d="M218 128 L160 250 L182 258 L232 160 Z M382 128 L440 250 L418 258 L368 160 Z" fill={C.linen} />
-        <path d="M232 380 L368 380 L374 420 L226 420 Z" fill={C.linen} />
-        <circle cx="171" cy="262" r="12" fill="#c9a888" />
-        <circle cx="429" cy="262" r="12" fill="#c9a888" />
-      </g>
-      {/* robe of blue */}
-      <g {...part('robe')}>
-        <path d="M232 112 L368 112 L392 384 L208 384 Z" fill={C.blue} />
-        {Array.from({ length: 13 }, (_, i) => (
-          <circle key={i} cx={214 + i * 14.3} cy={390} r={4.5} fill={i % 2 ? C.scarlet : C.hi} />
+    <div className="priest-paint">
+      <img className="painting-bg" src={priestArt} alt="" aria-hidden="true" />
+      <svg className="priest-svg" viewBox="0 0 1024 1536" preserveAspectRatio="xMaxYMid meet" role="img" aria-label="The high priest's garments">
+        <image href={priestArt} width="1024" height="1536" />
+        {AREAS.map((a) => (
+          <g key={a.id} {...part(a.id)}>
+            {a.shape === 'path' && <path d={a.d} />}
+            {a.shape === 'rect' && <rect x={a.c![0]} y={a.c![1]} width={a.c![2]} height={a.c![3]} rx={6} />}
+            {a.shape === 'ellipse' && <ellipse cx={a.c![0]} cy={a.c![1]} rx={a.c![2]} ry={a.c![3]} />}
+          </g>
         ))}
-      </g>
-      {/* ephod */}
-      <g {...part('ephod')}>
-        <path d="M240 112 L360 112 L366 270 L234 270 Z" fill={C.purple} />
-        {[0, 1, 2, 3].map((i) => (
-          <rect key={i} x={240 + i * 30} y={112} width={8} height={158} fill={[C.blue, C.scarlet, C.linen, C.gold][i]} opacity={0.6} />
-        ))}
-        <rect x="230" y="262" width="140" height="14" fill="url(#pGold)" />
-      </g>
-      {/* shoulders */}
-      <g {...part('onyx')}>
-        <ellipse cx="250" cy="118" rx="14" ry="10" fill="#3a3436" stroke="url(#pGold)" strokeWidth="4" />
-        <ellipse cx="350" cy="118" rx="14" ry="10" fill="#3a3436" stroke="url(#pGold)" strokeWidth="4" />
-      </g>
-      {/* breastplate */}
-      <g {...part('breastplate')}>
-        <rect x="262" y="146" width="76" height="98" fill="url(#pGold)" rx="3" />
-        {stones.map((st, i) => {
-          const r = Math.floor(i / 3)
-          const c = i % 3
-          return (
+        <g pointerEvents="none">
+          {stones.map((st, i) => (
             <rect
               key={st.name}
-              x={268 + c * 23}
-              y={152 + r * 23}
-              width={18}
-              height={18}
-              rx={3}
-              fill={st.color}
-              stroke={stone === i ? '#fff' : '#5a4518'}
-              strokeWidth={stone === i ? 2 : 1}
+              x={STONE_X[i % 3]}
+              y={STONE_Y[Math.floor(i / 3)]}
+              width={46}
+              height={32}
+              rx={5}
+              className={`stone${stone === i ? ' on' : ''}`}
+              pointerEvents="all"
               onMouseEnter={() => setStone(i)}
               onMouseLeave={() => setStone(null)}
+              onClick={() => onSel('breastplate')}
             />
-          )
-        })}
-      </g>
-      {/* head and mitre */}
-      <circle cx="300" cy="84" r="24" fill="#c9a888" />
-      <path d="M300 106 q-14 24 0 30 q14 -6 0 -30" fill="#8d7b6a" opacity="0.6" />
-      <g {...part('mitre')}>
-        <path d="M272 70 Q300 30 328 70 L326 78 L274 78 Z" fill={C.linen} />
-        <rect x="286" y="62" width="28" height="10" rx="2" fill="url(#pGold)" />
-        <path d="M282 72 L270 64 M318 72 L330 64" stroke={C.blue} strokeWidth="2" />
-      </g>
-      {stone !== null && (
-        <text x="300" y="30" textAnchor="middle" className="tip-label" fill="#f2c96b" fontSize="18">
-          Row {Math.floor(stone / 3) + 1}: {stones[stone].name}
-        </text>
-      )}
-    </svg>
+          ))}
+        </g>
+        {stone !== null && (
+          <g pointerEvents="none">
+            <rect x="262" y="1452" width="500" height="64" rx="12" fill="rgba(15,29,51,.82)" />
+            <text x="512" y="1496" textAnchor="middle" className="tip-label" fill="#f2c96b" fontSize="36">
+              Row {Math.floor(stone / 3) + 1}: {stones[stone].name}
+            </text>
+          </g>
+        )}
+      </svg>
+    </div>
   )
 }
 
