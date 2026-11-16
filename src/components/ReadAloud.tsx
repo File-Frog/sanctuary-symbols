@@ -78,7 +78,7 @@ const SAY: Record<string, string> = {
   qeren: 'keh-ren', qetoret: 'keh-toh-ret', rachats: 'rah-khahts', samak: 'sah-mahk', shaqed: 'shah-ked',
   shoham: 'shoh-hahm', shulchan: 'shool-khahn', tabnit: 'tahv-neet', tamid: 'tah-meed',
   thumiama: 'thoo-mee-ah-mah', thura: 'thoo-rah', tsits: 'tseets', zer: 'zair', zabach: 'zah-vahkh',
-  lavan: 'lah-vahn', miqshah: 'meek-shah', katit: 'kah-teet', shoqed: 'shoh-ked', memullach: 'meh-mool-lakh', 'esh zarah': 'aysh zah-rah', bad: 'bahd',
+  lavan: 'lah-vahn', miqshah: 'meek-shah', katit: 'kah-teet', shoqed: 'shoh-ked', memullach: 'meh-mool-lakh', 'esh zarah': 'aysh zah-rah', "tola'at shani": 'toh-lah-aht shah-nee', "tola'at": 'toh-lah-aht', choshev: 'khoh-shev', tekhelet: 'teh-khay-let', argaman: 'ar-gah-mahn', eschisthē: 'es-kheez-thay', bad: 'bahd',
 }
 const SAY_RE = new RegExp(
   `(^|[^\\p{L}])(${Object.keys(SAY).sort((a, b) => b.length - a.length).join('|')})(?=[^\\p{L}]|$)`,
