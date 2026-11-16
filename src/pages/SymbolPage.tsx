@@ -1,6 +1,6 @@
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion'
 import { useEffect, useState } from 'react'
-import { Link, Navigate, useNavigate, useParams } from 'react-router-dom'
+import { Navigate, useNavigate, useParams } from 'react-router-dom'
 import Plan from '../components/Plan'
 import Illustration, { artFor } from '../components/Illustration'
 import Stage from '../components/Stage'
@@ -128,34 +128,6 @@ export default function SymbolPage() {
 
             <h2>Key words</h2>
             <Terms terms={s.terms} />
-
-            <h2>How it connects</h2>
-            <p className="prose" style={{ color: 'var(--ink-soft)', fontSize: '0.95rem' }}>
-              Point at a connection to see both pieces on the plan.
-            </p>
-            <ul className="links">
-              {s.links.map((l) => {
-                const t = getSymbol(l.to)
-                if (!t) return null
-                return (
-                  <li key={l.to}>
-                    <Link
-                      to={`/sanctuary/symbol/${l.to}`}
-                      onMouseEnter={() => setPair(l.to)}
-                      onMouseLeave={() => setPair(undefined)}
-                      onFocus={() => setPair(l.to)}
-                      onBlur={() => setPair(undefined)}
-                    >
-                      <span className="ln-name">
-                        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6"><path d="M2 12 Q8 0 14 12" /><circle cx="2" cy="12" r="1.6" fill="currentColor" /><circle cx="14" cy="12" r="1.6" fill="currentColor" /></svg>
-                        {t.name}
-                      </span>
-                      <span className="ln-text">{l.text}</span>
-                    </Link>
-                  </li>
-                )
-              })}
-            </ul>
 
             <div className="callout prose">
               <h2>For today</h2>
