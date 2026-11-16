@@ -96,6 +96,7 @@ function speakable(el: HTMLElement) {
     // "p. 347" and "pp. 477-478" are read as "page" and "pages".
     .replace(/\bpp\.\s(?=\d)/g, 'pages ')
     .replace(/\bp\.\s(?=\d)/g, 'page ')
+    .replace(/\bch\.\s(?=\d)/g, 'chapter ')
   return text.replace(SAY_RE, (m, pre: string, word: string) => {
     const key = word.toLowerCase()
     if (key === 'bad' && !marked.has('bad')) return m
