@@ -2,6 +2,7 @@ import { AnimatePresence, motion, useReducedMotion } from 'framer-motion'
 import { useEffect, useState } from 'react'
 import { NavLink, useLocation, useNavigate, useOutlet } from 'react-router-dom'
 import { neighbours, topicFor, topics, type Topic } from '../data/order'
+import ReadAloud from './ReadAloud'
 
 function TopicNav({ topic, open, onToggle, onNavigate }: { topic: Topic; open: boolean; onToggle: () => void; onNavigate: () => void }) {
   const reduce = useReducedMotion()
@@ -129,6 +130,7 @@ export default function Layout() {
             {outlet}
           </motion.div>
         </AnimatePresence>
+        <ReadAloud />
       </main>
     </div>
   )
