@@ -39,10 +39,16 @@ export function ttsRoutes(app, express) {
     const rate = Math.min(1.25, Math.max(0.8, Number(req.body?.rate) || 1))
     if (!text) return res.status(400).json({ error: 'No text to read.' })
     const key = createHash('sha1').update(`${voice}|${rate}|${text}`).digest('hex')
+    // The voice service needs a sentence ending; headings and labels often have none.
+    const spoken = /[.!?:;]["'”’)]*$/.test(text) ? text : `${text}.`
     try {
       let audio = cache.get(key)
       if (!audio) {
-        audio = await synth(text, voice, rate)
+        try {
+          audio = await synth(spoken, voice, rate)
+        } catch {
+          audio = await synth(spoken, voice, rate) // one retry
+        }
         if (!audio.length) throw new Error('empty audio')
         cache.set(key, audio)
         if (cache.size > MAX_CACHE) cache.delete(cache.keys().next().value)
