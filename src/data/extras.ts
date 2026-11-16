@@ -316,7 +316,7 @@ export const prophecyPeriods: Period[] = [
     start: -408,
     end: 27,
     title: '434 years: to the Anointed One',
-    text: 'Sixty-nine weeks, 483 years, run "unto the Messiah the Prince." Counting from 457 BC brings us to AD 27, the fifteenth year of Tiberius, when Jesus was baptized and anointed by the Spirit (Luke 3:1; Luke 3:21-22). "Messiah" means anointed. Jesus began preaching with the words "The time is fulfilled" (Mark 1:15).',
+    text: 'Sixty-nine weeks, 483 years, run "unto the Messiah the Prince," mashiach nagid (Daniel 9:25). Counting from 457 BC brings us to AD 27, the fifteenth year of Tiberius, when Jesus was baptized and anointed by the Spirit (Luke 3:1; Luke 3:21-22). Mashiach means anointed one, and Jesus began preaching with the words "The time is fulfilled" (Mark 1:15).',
     verses: [{ ref: 'Luke 3:1' }, { ref: 'Luke 3:21-22' }, { ref: 'Mark 1:14-15' }],
   },
   {
@@ -334,7 +334,7 @@ export const prophecyPeriods: Period[] = [
     start: -457,
     end: 34,
     title: '490 years: the seventy weeks',
-    text: 'Gabriel says seventy weeks are "determined" for Daniel\'s people and Jerusalem (Daniel 9:24). Seventy weeks of years is 490 years. Six things were to happen within them: to finish the transgression, make an end of sins, make reconciliation for iniquity, bring in everlasting righteousness, seal up the vision and prophecy, and anoint the most holy. Every one of them is Messiah\'s work. The last, the anointing of the most holy, points to the inauguration of the heavenly sanctuary when Christ ascended.',
+    text: 'Gabriel says seventy shavu\'im, seventy sevens, are "determined" for Daniel\'s people and Jerusalem (Daniel 9:24). Seventy weeks of years is 490 years. Six things were to happen within them: to finish the transgression, make an end of sins, make reconciliation for iniquity, bring in everlasting righteousness, seal up the vision and prophecy, and anoint the most holy. Every one of them is Messiah\'s work. The last, the anointing of the qodesh qodashim, the most holy, points to the inauguration of the heavenly sanctuary when Christ ascended.',
     verses: [{ ref: 'Daniel 9:24' }, { ref: 'Hebrews 9:11-12' }],
   },
   {
@@ -343,15 +343,19 @@ export const prophecyPeriods: Period[] = [
     start: 34,
     end: 1844,
     title: 'The rest of the 2,300 years',
-    text: 'The 490 years were "determined," literally cut off, from the 2,300 (Daniel 9:24). Gabriel came back specifically to explain the vision (mar\'eh) that had left Daniel sick and confused, which was the 2,300-day vision of chapter 8 (Daniel 8:26-27; Daniel 9:23). Subtract 490 from 2,300 and 1,810 years remain. Added to AD 34, that reaches 1844. On the Day of Atonement that autumn, by the ancient Jewish reckoning, Christ began the closing phase of His ministry: the cleansing of the heavenly sanctuary.',
+    text: 'The 490 years were nechtak, "determined," literally cut off, from the 2,300 (Daniel 9:24). Gabriel came back specifically to explain the vision (mar\'eh) that had left Daniel sick and confused, which was the 2,300-day vision of chapter 8 (Daniel 8:26-27; Daniel 9:23). Subtract 490 from 2,300 and 1,810 years remain. Added to AD 34, that reaches 1844. On the Day of Atonement that autumn, by the ancient Jewish reckoning, Christ began the closing phase of His ministry: the cleansing of the heavenly sanctuary.',
     verses: [{ ref: 'Daniel 8:14' }, { ref: 'Daniel 9:24' }, { ref: 'Daniel 8:26-27' }, { ref: 'Revelation 14:6-7' }],
   },
 ]
 
 export const prophecyTerms: Term[] = [
   { word: 'עֶרֶב בֹּקֶר', translit: "'ereb boqer", lang: 'Hebrew', meaning: '"Evening-morning," the unit counted in Daniel 8:14. It echoes Genesis 1 and means full days, not half-days of sacrifices.' },
-  { word: 'נֶחְתַּךְ', translit: 'nechtak', lang: 'Hebrew', meaning: '"Determined" in Daniel 9:24. It appears only here in the Bible. In later Hebrew it means "cut off" or "cut out," which suggests the 70 weeks were sliced off a longer period.' },
+  { word: 'הַתָּמִיד', translit: 'ha-tamid', lang: 'Hebrew', meaning: '"The daily" or "the continual" (Daniel 8:11-13): the ongoing ministry of the sanctuary that the little horn tries to take away.' },
+  { word: 'נִצְדַּק', translit: 'nitsdaq', lang: 'Hebrew', meaning: 'The verb behind "cleansed" in Daniel 8:14. It comes from tsadaq, to be right, so it carries the ideas of being restored, set right and vindicated, as well as cleansed.' },
   { word: 'מַרְאֶה', translit: "mar'eh", lang: 'Hebrew', meaning: 'Appearance or vision. Used in Daniel 8:26 for the 2,300 days and again in 9:23 when Gabriel tells Daniel to "consider the vision."' },
+  { word: 'שָׁבֻעִים', translit: "shavu'im", lang: 'Hebrew', meaning: '"Weeks," literally "sevens." Seventy sevens of years make 490 years.' },
+  { word: 'נֶחְתַּךְ', translit: 'nechtak', lang: 'Hebrew', meaning: '"Determined" in Daniel 9:24. It appears only here in the Bible. In later Hebrew it means "cut off" or "cut out," which suggests the 70 weeks were sliced off a longer period.' },
+  { word: 'מָשִׁיחַ נָגִיד', translit: 'mashiach nagid', lang: 'Hebrew', meaning: '"Messiah the Prince" (Daniel 9:25). Mashiach means "anointed one," the word behind both Messiah and, in Greek, Christ.' },
   { word: 'קֹדֶשׁ קָדָשִׁים', translit: 'qodesh qodashim', lang: 'Hebrew', meaning: '"Most holy." Daniel 9:24 says the 70 weeks end with the anointing of the most holy, which matches the anointing that inaugurated a sanctuary (Exodus 30:26-29).' },
 ]
 
