@@ -16,21 +16,33 @@ const MAX_CACHE = 400
 
 const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
 
+export const timings = []
+
 async function synth(text, voice, rate) {
+  const t0 = Date.now()
   const tts = new MsEdgeTTS()
+  const t = { len: text.length }
   try {
     await tts.setMetadata(voice, OUTPUT_FORMAT.AUDIO_24KHZ_48KBITRATE_MONO_MP3)
+    t.meta = Date.now() - t0
     const pct = Math.round((rate - 1) * 100)
     const { audioStream } = tts.toStream(esc(text), { rate: `${pct >= 0 ? '+' : ''}${pct}%` })
     const parts = []
-    for await (const chunk of audioStream) parts.push(chunk)
+    for await (const chunk of audioStream) {
+      if (!t.first) t.first = Date.now() - t0
+      parts.push(chunk)
+    }
+    t.end = Date.now() - t0
     return Buffer.concat(parts)
   } finally {
     tts.close()
+    timings.push(t)
+    if (timings.length > 20) timings.shift()
   }
 }
 
 export function ttsRoutes(app, express) {
+  app.get('/api/tts/timings', (_req, res) => res.json(timings))
   app.get('/api/tts/voices', (_req, res) => res.json(Object.entries(VOICES).map(([id, label]) => ({ id, label }))))
 
   app.post('/api/tts', express.json({ limit: '8kb' }), async (req, res) => {
