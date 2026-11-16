@@ -104,7 +104,11 @@ export default function ReadAloud() {
   const paused = useRef(false)
 
   const getAudio = () => {
-    if (!audio.current) audio.current = new Audio()
+    if (!audio.current) {
+      audio.current = new Audio()
+      audio.current.preload = 'auto'
+      ;(window as unknown as { __readAloud?: HTMLAudioElement }).__readAloud = audio.current
+    }
     return audio.current
   }
 
