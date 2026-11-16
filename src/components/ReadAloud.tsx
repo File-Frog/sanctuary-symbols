@@ -23,7 +23,7 @@ const VOICES = [
 ]
 
 // Sections that are not narrative: verse lists, reading lists, word boxes, navigation, quiz buttons.
-const SKIP = '.verse-list, .res-list, .pager, .terms, .quiz-opts, .search, .step-controls, [data-noread]'
+const SKIP = '.verse-list, .res-list, .pager, .terms, .quiz-opts, .search, .step-controls, .steps .refs, [data-noread]'
 const BLOCKS = 'h1, .lede, h2, h3, p, dt, dd, li, .pullquote blockquote, .pullquote figcaption'
 
 const store = {
@@ -54,6 +54,8 @@ function collectBlocks(): HTMLElement[] {
   const picked: HTMLElement[] = []
   root.querySelectorAll<HTMLElement>(BLOCKS).forEach((el) => {
     if (el.closest(SKIP)) return
+    // A step card is read as its title, then its text, so the two do not run together.
+    if (el.tagName === 'LI' && el.querySelector(':scope > h3, :scope > p')) return
     // Skip headings of sections that are not read (Key words, Scripture, Further reading).
     if (/^H[23]$/.test(el.tagName) && el.nextElementSibling?.matches(SKIP)) return
     if (picked.some((p) => p.contains(el))) return
@@ -78,7 +80,7 @@ const SAY: Record<string, string> = {
   qeren: 'keh-ren', qetoret: 'keh-toh-ret', rachats: 'rah-khahts', samak: 'sah-mahk', shaqed: 'shah-ked',
   shoham: 'shoh-hahm', shulchan: 'shool-khahn', tabnit: 'tahv-neet', tamid: 'tah-meed',
   thumiama: 'thoo-mee-ah-mah', thura: 'thoo-rah', tsits: 'tseets', zer: 'zair', zabach: 'zah-vahkh',
-  lavan: 'lah-vahn', miqshah: 'meek-shah', katit: 'kah-teet', shoqed: 'shoh-ked', memullach: 'meh-mool-lakh', 'esh zarah': 'aysh zah-rah', "tola'at shani": 'toh-lah-aht shah-nee', "tola'at": 'toh-lah-aht', choshev: 'khoh-shev', tekhelet: 'teh-khay-let', argaman: 'ar-gah-mahn', eschisthē: 'es-kheez-thay', "'edut": 'ay-doot', luchot: 'loo-khote', 'etsba elohim': 'ets-bah eh-loh-heem', shekinah: 'sheh-khee-nah', "sha'ar": 'shah-ar', roqem: 'roh-kem', bad: 'bahd',
+  lavan: 'lah-vahn', miqshah: 'meek-shah', katit: 'kah-teet', shoqed: 'shoh-ked', memullach: 'meh-mool-lakh', 'esh zarah': 'aysh zah-rah', "tola'at shani": 'toh-lah-aht shah-nee', "tola'at": 'toh-lah-aht', choshev: 'khoh-shev', tekhelet: 'teh-khay-let', argaman: 'ar-gah-mahn', eschisthē: 'es-kheez-thay', "'edut": 'ay-doot', luchot: 'loo-khote', 'etsba elohim': 'ets-bah eh-loh-heem', shekinah: 'sheh-khee-nah', "sha'ar": 'shah-ar', roqem: 'roh-kem', "nasa 'avon": 'nah-sah ah-vohn', nislach: 'nees-lakh', "chatta't": 'khah-taht', "'olah": 'oh-lah', bad: 'bahd',
 }
 const SAY_RE = new RegExp(
   `(^|[^\\p{L}])(${Object.keys(SAY).sort((a, b) => b.length - a.length).join('|')})(?=[^\\p{L}]|$)`,

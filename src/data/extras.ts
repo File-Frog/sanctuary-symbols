@@ -11,39 +11,42 @@ export interface Step {
 
 export const dailyTerms: Term[] = [
   { word: 'תָּמִיד', translit: 'tamid', lang: 'Hebrew', meaning: 'Continual. "The daily" in Daniel 8:11-13 translates this word: the regular, ongoing ministry of the sanctuary.' },
+  { word: 'עֹלָה', translit: "'olah", lang: 'Hebrew', meaning: 'Burnt offering, literally "that which goes up," because the whole animal went up in smoke to God. The morning and evening lamb was an \'olah.' },
   { word: 'חַטָּאת', translit: "chatta't", lang: 'Hebrew', meaning: 'Sin offering. Roy Gane and others translate it "purification offering," since its job was to purge sin.' },
-  { word: 'כִּפֶּר', translit: 'kipper', lang: 'Hebrew', meaning: 'To atone, purge or ransom. The verb behind kapporet (mercy seat) and Yom Kippur.' },
   { word: 'סָמַךְ', translit: 'samak', lang: 'Hebrew', meaning: 'To lean or press, used for laying a hand on the head of the offering. It means real weight, not a light touch.' },
+  { word: 'כִּפֶּר', translit: 'kipper', lang: 'Hebrew', meaning: 'To atone, purge or ransom. The verb behind kapporet (mercy seat) and Yom Kippur.' },
+  { word: 'נָשָׂא עָוֺן', translit: "nasa 'avon", lang: 'Hebrew', meaning: '"To bear iniquity." Used of the priest who ate the sin offering (Leviticus 10:17), and of the Servant who "bare the sin of many" (Isaiah 53:12).' },
+  { word: 'נִסְלַח', translit: 'nislach', lang: 'Hebrew', meaning: '"It shall be forgiven." The promise that closes each sin offering in Leviticus 4. Only God is ever the subject of this verb.' },
 ]
 
 export const dailySteps: Step[] = [
   {
-    title: 'The sinner brings a lamb',
-    text: 'The animal had to be a male without blemish, chosen from the flock (Leviticus 4:32). A perfect substitute was required because the one bringing it was not perfect. Peter says we were redeemed "with the precious blood of Christ, as of a lamb without blemish and without spot" (1 Peter 1:18-19).',
+    title: 'The sinner brings an offering',
+    text: 'When an Israelite realized he had sinned, he brought a chatta\'t, a sin offering, to the door of the sanctuary. What he brought depended on who he was: a priest or the whole congregation brought a young bull, a ruler a male goat, and an ordinary person a female goat or a female lamb (Leviticus 4:3, 14, 23, 28, 32). Whatever the animal, it had to be "without blemish." A perfect substitute was required because the one bringing it was not perfect, and Peter says we were redeemed "with the precious blood of Christ, as of a lamb without blemish and without spot" (1 Peter 1:19).',
     verses: [{ ref: 'Leviticus 4:32' }, { ref: '1 Peter 1:18-19' }],
     at: [4, 25],
   },
   {
     title: 'A hand on its head and sin confessed',
-    text: 'The worshipper pressed his hand on the animal\'s head and confessed (Leviticus 4:33; Leviticus 5:5). In picture, the guilt moved from the sinner to the victim. Confession still works the same way: "If we confess our sins, he is faithful and just to forgive us" (1 John 1:9).',
+    text: 'The worshipper then did samak: he leaned his hand with his full weight on the animal\'s head and confessed what he had done (Leviticus 4:33; Leviticus 5:5). In picture, his guilt passed from himself to the victim. The same is still true of confession: "If we confess our sins, he is faithful and just to forgive us our sins, and to cleanse us from all unrighteousness" (1 John 1:9).',
     verses: [{ ref: 'Leviticus 4:33' }, { ref: 'Leviticus 5:5' }, { ref: '1 John 1:9' }],
     at: [22, 19],
   },
   {
     title: 'The sinner takes its life',
-    text: 'He killed it with his own hand, on the north side of the altar (Leviticus 1:11). "The wages of sin is death" (Romans 6:23), and the lamb paid them. "He was wounded for our transgressions" (Isaiah 53:5).',
+    text: 'He killed the animal with his own hand, at the place where the burnt offerings were slain on the north side of the altar (Leviticus 4:33; Leviticus 1:11). Watching an innocent life end because of his sin was meant to break his heart. "The wages of sin is death" (Romans 6:23), and the substitute paid them, just as the Servant of the LORD "was wounded for our transgressions" (Isaiah 53:5).',
     verses: [{ ref: 'Romans 6:23' }, { ref: 'Isaiah 53:5' }, { ref: 'Leviticus 1:11' }],
     at: [22, 25],
   },
   {
     title: 'The priest ministers the blood',
-    text: 'For a priest or the whole congregation, the blood was carried into the holy place and sprinkled seven times before the veil (Leviticus 4:6-7). For a ruler or a commoner, it went on the horns of the bronze altar, and the priest ate part of the flesh, bearing the iniquity himself (Leviticus 10:17). Either way the sin was now recorded in the sanctuary. The sinner went home forgiven. The sanctuary held the record.',
+    text: 'Now the priest took over. When a priest or the whole congregation had sinned, the blood was carried into the holy place and sprinkled seven times before the veil, then put on the horns of the golden altar (Leviticus 4:6-7, 17-18). When a ruler or an ordinary person had sinned, the blood went on the horns of the bronze altar, and the priest ate part of the flesh in the holy place, because God had given it to the priests "to bear the iniquity of the congregation" (Leviticus 6:26; Leviticus 10:17). That phrase, nasa \'avon, means to carry guilt. Either way the sin now stood recorded in the sanctuary. The sinner went home with the promise nislach, "it shall be forgiven him" (Leviticus 4:31), and the sanctuary kept the record.',
     verses: [{ ref: 'Leviticus 4:6-7' }, { ref: 'Leviticus 10:17' }, { ref: 'Leviticus 17:11' }],
     at: [68.4, 25],
   },
   {
     title: 'Morning and evening, without a break',
-    text: 'Beside the personal offerings, a lamb was offered for the whole nation every morning and every evening, with incense burned on the golden altar at the same hours (Exodus 29:38-42; Exodus 30:7-8). This tamid kept Israel continually covered. Jesus died at the ninth hour, the time of the evening sacrifice (Mark 15:34-37). Hebrews contrasts the priests who stood daily offering sacrifices that could never take away sin with Christ, who offered one sacrifice for sins forever and sat down (Hebrews 10:11-12).',
+    text: 'Alongside these personal offerings, a lamb was offered for the whole nation every morning and every evening as an \'olah, a burnt offering that went up entirely to God, and incense was burned on the golden altar at the same hours (Exodus 29:38-42; Exodus 30:7-8). This tamid kept Israel continually covered, even on days when no one brought an offering of his own. Jesus died at the ninth hour, the hour of the evening sacrifice (Mark 15:34-37). Hebrews contrasts the priests who "standeth daily" offering sacrifices "which can never take away sins" with Christ, who "offered one sacrifice for sins for ever" and sat down at God\'s right hand (Hebrews 10:11-12).',
     verses: [{ ref: 'Exodus 29:38-39' }, { ref: 'Hebrews 10:11-12' }, { ref: 'Mark 15:34-37' }],
     at: [22, 25],
   },
