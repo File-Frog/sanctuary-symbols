@@ -5,6 +5,12 @@
    "t": "But now is Christ risen from the dead, and become the firstfruits of them that slept."
   }
  ],
+ "1 Corinthians 3:16": [
+  {
+   "v": 16,
+   "t": "Know ye not that ye are the temple of God, and that the Spirit of God dwelleth in you?"
+  }
+ ],
  "1 Corinthians 5:7": [
   {
    "v": 7,
@@ -189,6 +195,12 @@
   {
    "v": 17,
    "t": "Which are a shadow of things to come; but the body is of Christ."
+  }
+ ],
+ "Colossians 2:9": [
+  {
+   "v": 9,
+   "t": "For in him dwelleth all the fulness of the Godhead bodily."
   }
  ],
  "Daniel 10:5": [
@@ -397,6 +409,22 @@
    "t": "For the LORD thy God is a consuming fire, even a jealous God."
   }
  ],
+ "Ephesians 2:21-22": [
+  {
+   "v": 21,
+   "t": "In whom all the building fitly framed together groweth unto an holy temple in the Lord:"
+  },
+  {
+   "v": 22,
+   "t": "In whom ye also are builded together for an habitation of God through the Spirit."
+  }
+ ],
+ "Ephesians 2:22": [
+  {
+   "v": 22,
+   "t": "In whom ye also are builded together for an habitation of God through the Spirit."
+  }
+ ],
  "Ephesians 5:26": [
   {
    "v": 26,
@@ -591,6 +619,18 @@
    "t": "According to all that I shew thee, after the pattern of the tabernacle, and the pattern of all the instruments thereof, even so shall ye make it."
   }
  ],
+ "Exodus 26:1": [
+  {
+   "v": 1,
+   "t": "Moreover thou shalt make the tabernacle with ten curtains of fine twined linen, and blue, and purple, and scarlet: with cherubims of cunning work shalt thou make them."
+  }
+ ],
+ "Exodus 26:14": [
+  {
+   "v": 14,
+   "t": "And thou shalt make a covering for the tent of rams’ skins dyed red, and a covering above of badgers’ skins."
+  }
+ ],
  "Exodus 26:15-25": [
   {
    "v": 15,
@@ -637,6 +677,20 @@
    "t": "And they shall be eight boards, and their sockets of silver, sixteen sockets; two sockets under one board, and two sockets under another board."
   }
  ],
+ "Exodus 26:26-28": [
+  {
+   "v": 26,
+   "t": "And thou shalt make bars of shittim wood; five for the boards of the one side of the tabernacle,"
+  },
+  {
+   "v": 27,
+   "t": "And five bars for the boards of the other side of the tabernacle, and five bars for the boards of the side of the tabernacle, for the two sides westward."
+  },
+  {
+   "v": 28,
+   "t": "And the middle bar in the midst of the boards shall reach from end to end."
+  }
+ ],
  "Exodus 26:31-33": [
   {
    "v": 31,
@@ -649,6 +703,28 @@
   {
    "v": 33,
    "t": "And thou shalt hang up the vail under the taches, that thou mayest bring in thither within the vail the ark of the testimony: and the vail shall divide unto you between the holy place and the most holy."
+  }
+ ],
+ "Exodus 26:36-37": [
+  {
+   "v": 36,
+   "t": "And thou shalt make an hanging for the door of the tent, of blue, and purple, and scarlet, and fine twined linen, wrought with needlework."
+  },
+  {
+   "v": 37,
+   "t": "And thou shalt make for the hanging five pillars of shittim wood, and overlay them with gold, and their hooks shall be of gold: and thou shalt cast five sockets of brass for them."
+  }
+ ],
+ "Exodus 26:37": [
+  {
+   "v": 37,
+   "t": "And thou shalt make for the hanging five pillars of shittim wood, and overlay them with gold, and their hooks shall be of gold: and thou shalt cast five sockets of brass for them."
+  }
+ ],
+ "Exodus 26:7": [
+  {
+   "v": 7,
+   "t": "And thou shalt make curtains of goats’ hair to be a covering upon the tabernacle: eleven curtains shalt thou make."
   }
  ],
  "Exodus 27:1-2": [
@@ -919,6 +995,16 @@
    "t": "And Aaron and his sons thou shalt bring unto the door of the tabernacle of the congregation, and shalt wash them with water."
   }
  ],
+ "Exodus 29:42-43": [
+  {
+   "v": 42,
+   "t": "This shall be a continual burnt offering throughout your generations at the door of the tabernacle of the congregation before the LORD: where I will meet you, to speak there unto thee."
+  },
+  {
+   "v": 43,
+   "t": "And there I will meet with the children of Israel, and the tabernacle shall be sanctified by my glory."
+  }
+ ],
  "Exodus 30:1-6": [
   {
    "v": 1,
@@ -951,26 +1037,10 @@
    "t": "And Aaron shall make an atonement upon the horns of it once in a year with the blood of the sin offering of atonements: once in the year shall he make atonement upon it throughout your generations: it is most holy unto the LORD."
   }
  ],
- "Exodus 30:12-16": [
+ "Exodus 30:12": [
   {
    "v": 12,
    "t": "When thou takest the sum of the children of Israel after their number, then shall they give every man a ransom for his soul unto the LORD, when thou numberest them; that there be no plague among them, when thou numberest them."
-  },
-  {
-   "v": 13,
-   "t": "This they shall give, every one that passeth among them that are numbered, half a shekel after the shekel of the sanctuary: (a shekel is twenty gerahs:) an half shekel shall be the offering of the LORD."
-  },
-  {
-   "v": 14,
-   "t": "Every one that passeth among them that are numbered, from twenty years old and above, shall give an offering unto the LORD."
-  },
-  {
-   "v": 15,
-   "t": "The rich shall not give more, and the poor shall not give less than half a shekel, when they give an offering unto the LORD, to make an atonement for your souls."
-  },
-  {
-   "v": 16,
-   "t": "And thou shalt take the atonement money of the children of Israel, and shalt appoint it for the service of the tabernacle of the congregation; that it may be a memorial unto the children of Israel before the LORD, to make an atonement for your souls."
   }
  ],
  "Exodus 30:18": [
@@ -1103,6 +1173,20 @@
    "t": "And he gave unto Moses, when he had made an end of communing with him upon mount Sinai, two tables of testimony, tables of stone, written with the finger of God."
   }
  ],
+ "Exodus 38:25-27": [
+  {
+   "v": 25,
+   "t": "And the silver of them that were numbered of the congregation was an hundred talents, and a thousand seven hundred and threescore and fifteen shekels, after the shekel of the sanctuary:"
+  },
+  {
+   "v": 26,
+   "t": "A bekah for every man, that is, half a shekel, after the shekel of the sanctuary, for every one that went to be numbered, from twenty years old and upward, for six hundred thousand and three thousand and five hundred and fifty men."
+  },
+  {
+   "v": 27,
+   "t": "And of the hundred talents of silver were cast the sockets of the sanctuary, and the sockets of the vail; an hundred sockets of the hundred talents, a talent for a socket."
+  }
+ ],
  "Exodus 38:8": [
   {
    "v": 8,
@@ -1113,6 +1197,26 @@
   {
    "v": 3,
    "t": "And they did beat the gold into thin plates, and cut it into wires, to work it in the blue, and in the purple, and in the scarlet, and in the fine linen, with cunning work."
+  }
+ ],
+ "Exodus 40:34": [
+  {
+   "v": 34,
+   "t": "Then a cloud covered the tent of the congregation, and the glory of the LORD filled the tabernacle."
+  }
+ ],
+ "Exodus 40:36-38": [
+  {
+   "v": 36,
+   "t": "And when the cloud was taken up from over the tabernacle, the children of Israel went onward in all their journeys:"
+  },
+  {
+   "v": 37,
+   "t": "But if the cloud were not taken up, then they journeyed not till the day that it was taken up."
+  },
+  {
+   "v": 38,
+   "t": "For the cloud of the LORD was upon the tabernacle by day, and fire was on it by night, in the sight of all the house of Israel, throughout all their journeys."
   }
  ],
  "Exodus 40:9": [
@@ -1189,6 +1293,12 @@
    "t": "Meekness, temperance: against such there is no law."
   }
  ],
+ "Genesis 22:13": [
+  {
+   "v": 13,
+   "t": "And Abraham lifted up his eyes, and looked, and behold behind him a ram caught in a thicket by his horns: and Abraham went and took the ram, and offered him up for a burnt offering in the stead of his son."
+  }
+ ],
  "Genesis 3:15": [
   {
    "v": 15,
@@ -1199,6 +1309,12 @@
   {
    "v": 24,
    "t": "So he drove out the man; and he placed at the east of the garden of Eden Cherubims, and a flaming sword which turned every way, to keep the way of the tree of life."
+  }
+ ],
+ "Genesis 3:8": [
+  {
+   "v": 8,
+   "t": "And they heard the voice of the LORD God walking in the garden in the cool of the day: and Adam and his wife hid themselves from the presence of the LORD God amongst the trees of the garden."
   }
  ],
  "Hebrews 10:11-12": [
