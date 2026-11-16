@@ -145,8 +145,8 @@ export default function ReadAloud() {
     return p
   }
 
-  // The voice service speaks at about real time, so prepare several parts ahead in parallel.
-  const AHEAD = 5
+  // Prepare the next few parts while the current one plays.
+  const AHEAD = 3
   const prefetch = (from: number) => {
     for (let j = from; j < Math.min(from + AHEAD, queue.current.length); j++) fetchUrl(j)?.catch(() => {})
   }

@@ -18,27 +18,68 @@ const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, 
 
 export const timings = []
 
-async function synth(text, voice, rate) {
-  const t0 = Date.now()
-  const tts = new MsEdgeTTS()
-  const t = { len: text.length }
-  try {
-    await tts.setMetadata(voice, OUTPUT_FORMAT.AUDIO_24KHZ_48KBITRATE_MONO_MP3)
-    t.meta = Date.now() - t0
-    const pct = Math.round((rate - 1) * 100)
-    const { audioStream } = tts.toStream(esc(text), { rate: `${pct >= 0 ? '+' : ''}${pct}%` })
-    const parts = []
-    for await (const chunk of audioStream) {
-      if (!t.first) t.first = Date.now() - t0
-      parts.push(chunk)
-    }
-    t.end = Date.now() - t0
-    return Buffer.concat(parts)
-  } finally {
-    tts.close()
-    timings.push(t)
-    if (timings.length > 20) timings.shift()
+/*
+  One open connection per voice, reused for every request and used one request at a time.
+  Opening a new connection costs several seconds, so reusing it keeps the gaps short.
+*/
+const pool = new Map() // voice -> { tts, chain, timer }
+
+function getConn(voice) {
+  let c = pool.get(voice)
+  if (!c) {
+    const tts = new MsEdgeTTS()
+    c = { tts, ready: tts.setMetadata(voice, OUTPUT_FORMAT.AUDIO_24KHZ_48KBITRATE_MONO_MP3), chain: Promise.resolve(), timer: null }
+    pool.set(voice, c)
   }
+  clearTimeout(c.timer)
+  c.timer = setTimeout(() => dropConn(voice, c), 90_000)
+  return c
+}
+
+function dropConn(voice, c) {
+  if (pool.get(voice) === c) pool.delete(voice)
+  clearTimeout(c.timer)
+  try {
+    c.tts.close()
+  } catch {
+    /* already closed */
+  }
+}
+
+async function synthOnce(c, text, rate, t) {
+  await c.ready
+  const pct = Math.round((rate - 1) * 100)
+  const { audioStream } = c.tts.toStream(esc(text), { rate: `${pct >= 0 ? '+' : ''}${pct}%` })
+  const parts = []
+  for await (const chunk of audioStream) {
+    if (!t.first) t.first = Date.now() - t.t0
+    parts.push(chunk)
+  }
+  const buf = Buffer.concat(parts)
+  if (!buf.length) throw new Error('empty audio')
+  return buf
+}
+
+function synth(text, voice, rate) {
+  const c = getConn(voice)
+  const t = { len: text.length, t0: Date.now() }
+  const job = c.chain.then(async () => {
+    t.wait = Date.now() - t.t0
+    try {
+      return await synthOnce(c, text, rate, t)
+    } catch {
+      // The connection may have dropped: open a fresh one and try once more.
+      dropConn(voice, c)
+      return await synthOnce(getConn(voice), text, rate, t)
+    } finally {
+      t.end = Date.now() - t.t0
+      delete t.t0
+      timings.push(t)
+      if (timings.length > 30) timings.shift()
+    }
+  })
+  c.chain = job.catch(() => {})
+  return job
 }
 
 export function ttsRoutes(app, express) {
@@ -56,12 +97,7 @@ export function ttsRoutes(app, express) {
     try {
       let audio = cache.get(key)
       if (!audio) {
-        try {
-          audio = await synth(spoken, voice, rate)
-        } catch {
-          audio = await synth(spoken, voice, rate) // one retry
-        }
-        if (!audio.length) throw new Error('empty audio')
+        audio = await synth(spoken, voice, rate)
         cache.set(key, audio)
         if (cache.size > MAX_CACHE) cache.delete(cache.keys().next().value)
       }
