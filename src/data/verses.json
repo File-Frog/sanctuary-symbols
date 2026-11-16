@@ -209,6 +209,12 @@
    "t": "And he shall send Jesus Christ, which before was preached unto you:"
   }
  ],
+ "Acts 4:12": [
+  {
+   "v": 12,
+   "t": "Neither is there salvation in any other: for there is none other name under heaven given among men, whereby we must be saved."
+  }
+ ],
  "Acts 7:56-59": [
   {
    "v": 56,
@@ -899,16 +905,62 @@
    "t": "And for the gate of the court shall be an hanging of twenty cubits, of blue, and purple, and scarlet, and fine twined linen, wrought with needlework: and their pillars shall be four, and their sockets four."
   }
  ],
- "Exodus 27:18": [
-  {
-   "v": 18,
-   "t": "The length of the court shall be an hundred cubits, and the breadth fifty every where, and the height five cubits of fine twined linen, and their sockets of brass."
-  }
- ],
  "Exodus 27:20": [
   {
    "v": 20,
    "t": "And thou shalt command the children of Israel, that they bring thee pure oil olive beaten for the light, to cause the lamp to burn always."
+  }
+ ],
+ "Exodus 27:9-10": [
+  {
+   "v": 9,
+   "t": "And thou shalt make the court of the tabernacle: for the south side southward there shall be hangings for the court of fine twined linen of an hundred cubits long for one side:"
+  },
+  {
+   "v": 10,
+   "t": "And the twenty pillars thereof and their twenty sockets shall be of brass; the hooks of the pillars and their fillets shall be of silver."
+  }
+ ],
+ "Exodus 27:9-18": [
+  {
+   "v": 9,
+   "t": "And thou shalt make the court of the tabernacle: for the south side southward there shall be hangings for the court of fine twined linen of an hundred cubits long for one side:"
+  },
+  {
+   "v": 10,
+   "t": "And the twenty pillars thereof and their twenty sockets shall be of brass; the hooks of the pillars and their fillets shall be of silver."
+  },
+  {
+   "v": 11,
+   "t": "And likewise for the north side in length there shall be hangings of an hundred cubits long, and his twenty pillars and their twenty sockets of brass; the hooks of the pillars and their fillets of silver."
+  },
+  {
+   "v": 12,
+   "t": "And for the breadth of the court on the west side shall be hangings of fifty cubits: their pillars ten, and their sockets ten."
+  },
+  {
+   "v": 13,
+   "t": "And the breadth of the court on the east side eastward shall be fifty cubits."
+  },
+  {
+   "v": 14,
+   "t": "The hangings of one side of the gate shall be fifteen cubits: their pillars three, and their sockets three."
+  },
+  {
+   "v": 15,
+   "t": "And on the other side shall be hangings fifteen cubits: their pillars three, and their sockets three."
+  },
+  {
+   "v": 16,
+   "t": "And for the gate of the court shall be an hanging of twenty cubits, of blue, and purple, and scarlet, and fine twined linen, wrought with needlework: and their pillars shall be four, and their sockets four."
+  },
+  {
+   "v": 17,
+   "t": "All the pillars round about the court shall be filleted with silver; their hooks shall be of silver, and their sockets of brass."
+  },
+  {
+   "v": 18,
+   "t": "The length of the court shall be an hundred cubits, and the breadth fifty every where, and the height five cubits of fine twined linen, and their sockets of brass."
   }
  ],
  "Exodus 28:15-21": [
@@ -2701,6 +2753,20 @@
    "t": "After the number of the days in which ye searched the land, even forty days, each day for a year, shall ye bear your iniquities, even forty years, and ye shall know my breach of promise."
   }
  ],
+ "Numbers 15:14-16": [
+  {
+   "v": 14,
+   "t": "And if a stranger sojourn with you, or whosoever be among you in your generations, and will offer an offering made by fire, of a sweet savour unto the LORD; as ye do, so he shall do."
+  },
+  {
+   "v": 15,
+   "t": "One ordinance shall be both for you of the congregation, and also for the stranger that sojourneth with you, an ordinance for ever in your generations: as ye are, so shall the stranger be before the LORD."
+  },
+  {
+   "v": 16,
+   "t": "One law and one manner shall be for you, and for the stranger that sojourneth with you."
+  }
+ ],
  "Numbers 16:46-48": [
   {
    "v": 46,
@@ -2751,6 +2817,18 @@
   {
    "v": 19,
    "t": "All the heave offerings of the holy things, which the children of Israel offer unto the LORD, have I given thee, and thy sons and thy daughters with thee, by a statute for ever: it is a covenant of salt for ever before the LORD unto thee and to thy seed with thee."
+  }
+ ],
+ "Numbers 2:3": [
+  {
+   "v": 3,
+   "t": "And on the east side toward the rising of the sun shall they of the standard of the camp of Judah pitch throughout their armies: and Nahshon the son of Amminadab shall be captain of the children of Judah."
+  }
+ ],
+ "Numbers 3:38": [
+  {
+   "v": 38,
+   "t": "But those that encamp before the tabernacle toward the east, even before the tabernacle of the congregation eastward, shall be Moses, and Aaron and his sons, keeping the charge of the sanctuary for the charge of the children of Israel; and the stranger that cometh nigh shall be put to death."
   }
  ],
  "Numbers 7:89": [
@@ -2825,6 +2903,12 @@
   {
    "v": 17,
    "t": "The sacrifices of God are a broken spirit: a broken and a contrite heart, O God, thou wilt not despise."
+  }
+ ],
+ "Psalm 65:4": [
+  {
+   "v": 4,
+   "t": "Blessed is the man whom thou choosest, and causest to approach unto thee, that he may dwell in thy courts: we shall be satisfied with the goodness of thy house, even of thy holy temple."
   }
  ],
  "Psalm 77:13": [
