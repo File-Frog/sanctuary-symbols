@@ -63,24 +63,55 @@ const AREAS: { id: string; shape: 'path' | 'circle' | 'rect' | 'ellipse'; d?: st
   { id: 'breastplate', shape: 'rect', c: [425, 377, 187, 168] },
   { id: 'mitre', shape: 'ellipse', c: [498, 100, 92, 60] },
 ]
+// Where the label sits when a garment is chosen with the keyboard (no pointer).
+const ANCHOR: Record<string, { x: number; y: number }> = {
+  mitre: { x: 498, y: 60 },
+  onyx: { x: 512, y: 300 },
+  breastplate: { x: 518, y: 380 },
+  ephod: { x: 500, y: 700 },
+  robe: { x: 500, y: 1150 },
+  linen: { x: 490, y: 1300 },
+}
 // The twelve stones, row by row, three to a row.
 const STONE_X = [439, 494, 549]
 const STONE_Y = [388, 425, 463, 501]
 
 function Figure({ sel, onSel }: { sel: string; onSel: (id: string) => void }) {
   const [stone, setStone] = useState<number | null>(null)
+  const [hover, setHover] = useState<string | null>(null)
+  const [pos, setPos] = useState<{ x: number; y: number } | null>(null)
+  const track = (e: React.MouseEvent<SVGSVGElement>) => {
+    const svg = e.currentTarget
+    const m = svg.getScreenCTM()
+    if (!m) return
+    const pt = svg.createSVGPoint()
+    pt.x = e.clientX
+    pt.y = e.clientY
+    const q = pt.matrixTransform(m.inverse())
+    setPos({ x: q.x, y: q.y })
+  }
+  const tip = stone !== null ? `Row ${Math.floor(stone / 3) + 1}: ${stones[stone].name}` : hover ? garments.find((g) => g.id === hover)?.name : null
+  const at = pos ?? (hover ? ANCHOR[hover] : null) ?? { x: 512, y: 700 }
+  const fs = 50
+  const tw = (tip?.length ?? 0) * fs * 0.52 + 56
+  const tx = Math.min(Math.max(at.x, tw / 2 + 8), 1016 - tw / 2)
+  const ty = at.y < 150 ? at.y + 40 : at.y - 110
   const part = (id: string) => ({
     className: `hit ph${sel === id ? ' on' : ''}`,
     role: 'button' as const,
     tabIndex: 0,
     'aria-label': garments.find((g) => g.id === id)?.name,
     onClick: () => onSel(id),
+    onMouseEnter: () => setHover(id),
+    onMouseLeave: () => setHover((h) => (h === id ? null : h)),
+    onFocus: () => setHover(id),
+    onBlur: () => setHover((h) => (h === id ? null : h)),
     onKeyDown: (e: React.KeyboardEvent) => (e.key === 'Enter' || e.key === ' ') && (e.preventDefault(), onSel(id)),
   })
   return (
     <div className="priest-paint">
       <img className="painting-bg" src={priestArt} alt="" aria-hidden="true" />
-      <svg className="priest-svg" viewBox="0 0 1024 1536" preserveAspectRatio="xMaxYMid meet" role="img" aria-label="The high priest's garments">
+      <svg className="priest-svg" viewBox="0 0 1024 1536" preserveAspectRatio="xMaxYMid meet" role="img" aria-label="The high priest's garments" onMouseMove={track} onMouseLeave={() => setPos(null)}>
         <image href={priestArt} width="1024" height="1536" />
         {AREAS.map((a) => (
           <g key={a.id} {...part(a.id)}>
@@ -106,11 +137,11 @@ function Figure({ sel, onSel }: { sel: string; onSel: (id: string) => void }) {
             />
           ))}
         </g>
-        {stone !== null && (
+        {tip && (
           <g pointerEvents="none">
-            <rect x="262" y="1452" width="500" height="64" rx="12" fill="rgba(15,29,51,.82)" />
-            <text x="512" y="1496" textAnchor="middle" className="tip-label" fill="#f2c96b" fontSize="36">
-              Row {Math.floor(stone / 3) + 1}: {stones[stone].name}
+            <rect x={tx - tw / 2} y={ty} width={tw} height={78} rx={14} fill="rgba(15,29,51,.88)" stroke="rgba(242,201,107,.6)" strokeWidth={2} />
+            <text x={tx} y={ty + 54} textAnchor="middle" className="tip-label" fill="#f2c96b" fontSize={fs}>
+              {tip}
             </text>
           </g>
         )}
@@ -126,7 +157,7 @@ export default function Priest() {
 
   return (
     <>
-      <Stage caption="Click a garment. Point at a stone in the breastplate to read its name.">
+      <Stage caption="Point at a garment to see its name, and click it to read about it. Point at a stone in the breastplate to read its name.">
         <div className="stage-split">
           <div className="plan-pane">
             <Figure sel={sel} onSel={setSel} />

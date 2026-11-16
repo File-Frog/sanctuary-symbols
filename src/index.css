@@ -695,7 +695,7 @@ p { margin: 0 0 1rem; line-height: 1.72; }
 .priest-paint .painting-bg { inset: -60px; }
 .priest-svg { position: absolute; inset: 0; width: 100%; height: 100%; }
 .priest-svg .ph > * { fill: rgba(242, 201, 107, 0); stroke: none; transition: fill .25s, stroke .25s; }
-.priest-svg .ph:hover > *, .priest-svg .ph:focus-visible > * { fill: rgba(242, 201, 107, 0.14); }
+.priest-svg .ph:hover > *, .priest-svg .ph:focus-visible > * { fill: rgba(242, 201, 107, 0.18); stroke: rgba(242, 201, 107, 0.85); stroke-width: 6; }
 .priest-svg .ph.on > * { fill: rgba(242, 201, 107, 0.16); stroke: #f2c96b; stroke-width: 7; }
 .priest-svg .stone { fill: transparent; stroke: transparent; stroke-width: 3; cursor: pointer; }
 .priest-svg .stone.on { stroke: #fff; }
