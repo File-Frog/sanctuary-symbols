@@ -63,6 +63,38 @@ function collectBlocks(): HTMLElement[] {
   return picked
 }
 
+// How the voice should say the original-language words, so they flow with the English.
+const SAY: Record<string, string> = {
+  'yom ha-kippurim': 'yohm hah-kee-poo-reem', 'lechem ha-panim': 'leh-khem hah-pah-neem',
+  'qodesh qodashim': 'koh-desh koh-dah-sheem', 'kohen gadol': 'koh-hen gah-dole', 'berit olam': 'beh-reet oh-lahm',
+  adanim: 'ah-dah-neem', archiereus: 'ar-khee-eh-reh-oos', aron: 'ah-rohn', azkarah: 'ahz-kah-rah',
+  berit: 'beh-reet', challot: 'khah-lote', chatser: 'khah-tsair', choshen: 'khoh-shen',
+  eskēnōsen: 'es-kay-noh-sen', hilastērion: 'hee-lah-stay-ree-on', kapporet: 'kah-poh-ret',
+  katapetasma: 'kah-tah-peh-tahz-mah', keruvim: 'keh-roo-veem', kibōtos: 'kee-boh-tos', kipper: 'kee-pair',
+  kiyyor: 'kee-yore', kopher: 'koh-fair', leitourgos: 'lay-toor-gos', levonah: 'leh-voh-nah',
+  loutron: 'loo-tron', luchnia: 'lookh-nee-ah', masak: 'mah-sahk', mishkan: 'meesh-kahn',
+  mizbeach: 'meez-beh-akh', nechoshet: 'neh-khoh-shet', nechtak: 'nekh-tahk', nitsdaq: 'neets-dahk',
+  olah: 'oh-lah', parochet: 'pah-roh-khet', prothesis: 'proh-theh-sis', qerashim: 'keh-rah-sheem',
+  qeren: 'keh-ren', qetoret: 'keh-toh-ret', rachats: 'rah-khahts', samak: 'sah-mahk', shaqed: 'shah-ked',
+  shoham: 'shoh-hahm', shulchan: 'shool-khahn', tabnit: 'tahv-neet', tamid: 'tah-meed',
+  thumiama: 'thoo-mee-ah-mah', thura: 'thoo-rah', tsits: 'tseets', zer: 'zair', zabach: 'zah-vahkh',
+  lavan: 'lah-vahn', bad: 'bahd',
+}
+const SAY_RE = new RegExp(
+  `(^|[^\\p{L}])(${Object.keys(SAY).sort((a, b) => b.length - a.length).join('|')})(?=[^\\p{L}]|$)`,
+  'giu',
+)
+// Text for the voice: the words on screen, with original-language terms respelled.
+// "bad" (linen) is only respelled where the page marks it as a term.
+function speakable(el: HTMLElement) {
+  const marked = new Set([...el.querySelectorAll('.term-inline')].map((t) => t.textContent?.toLowerCase()))
+  return el.innerText.replace(SAY_RE, (m, pre: string, word: string) => {
+    const key = word.toLowerCase()
+    if (key === 'bad' && !marked.has('bad')) return m
+    return pre + SAY[key]
+  })
+}
+
 // Split long paragraphs into sentence groups so audio starts quickly.
 function chunks(text: string) {
   const sentences = text.replace(/\s+/g, ' ').match(/[^.!?]+[.!?"”')]*\s*/g) ?? [text]
@@ -226,7 +258,7 @@ export default function ReadAloud() {
   const buildQueue = () => {
     queuePath.current = pathname
     queue.current = []
-    collectBlocks().forEach((el) => chunks(el.innerText).forEach((text) => queue.current.push({ el, text })))
+    collectBlocks().forEach((el) => chunks(speakable(el)).forEach((text) => queue.current.push({ el, text })))
     nextToFetch.current = 0
   }
 
