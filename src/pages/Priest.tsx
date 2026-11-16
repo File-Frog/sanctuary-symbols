@@ -16,6 +16,17 @@ function brief(text: string) {
   return parts[0].length < 70 && parts[1] && (parts[0] + ' ' + parts[1]).length <= 170 ? `${parts[0]} ${parts[1]}` : parts[0]
 }
 
+const colours: { title: string; paras: Para[] } = {
+  title: 'The colours: a prophecy of Christ',
+  paras: [
+    `Three colours run through the high priest's garments, just as they run through the gate, the tent door and the veil: blue, purple and scarlet, woven with fine twined linen and, in the ephod and breastplate, with gold (Exodus 28:5-6). They were not chosen for decoration. Read together, they foretold who the Messiah would be and what He would do.`,
+    `Blue is the colour of obedience to God's law. God told Israel to put "a ribband of blue" on the fringes of their garments, "that ye may look upon it, and remember all the commandments of the LORD, and do them" (Numbers 15:38-39). The high priest's robe was woven entirely of blue (Exodus 28:31), so he was clothed from shoulder to hem in that reminder. Christ is the One who actually lived it. The psalm that Hebrews applies to Him says, "I delight to do thy will, O my God: yea, thy law is within my heart" (Psalm 40:8; Hebrews 10:7), and Jesus could say, "I have kept my Father's commandments" (John 15:10). The blue foretold a perfect obedience no one else has ever offered, and that righteousness is what He gives to us.`,
+    `Purple is the colour of kings, because the dye was rare and costly. It foretold that the Messiah would reign. Isaiah said His government would rest "upon the throne of David, and upon his kingdom" (Isaiah 9:7), and the angel told Mary, "the Lord God shall give unto him the throne of his father David" (Luke 1:32). At His trial the soldiers mocked that very claim. They "clothed him with purple, and platted a crown of thorns," and saluted Him, "Hail, King of the Jews!" (Mark 15:17-18). The charge fixed above His head on the cross said the same thing: "THIS IS JESUS THE KING OF THE JEWS" (Matthew 27:37). They meant it as mockery, but they were telling the truth.`,
+    `Scarlet is the colour of blood and sacrifice. Scarlet was burned with the red heifer whose ashes made the water of cleansing, and it was dipped in blood for the cleansing of the leper (Numbers 19:6; Leviticus 14:4-6). Isaiah used it for the stain of sin itself: "though your sins be as scarlet, they shall be as white as snow" (Isaiah 1:18). It foretold that the King would also be the sacrifice. At His trial the soldiers "stripped him, and put on him a scarlet robe" (Matthew 27:28), and within hours He gave His life for us as "a lamb without blemish and without spot" (1 Peter 1:19).`,
+    `Both royal colours appear in the accounts of His trial. Mark and John call the robe the soldiers put on Him purple, and Matthew calls it scarlet (Mark 15:17; John 19:2; Matthew 27:28). The colours woven side by side into Aaron's garments came together on the shoulders of Jesus in Pilate's hall. The King was the sacrifice, and the obedience the blue foretold is why that sacrifice could be accepted for us. What Aaron wore as a prophecy, Jesus wore in fulfilment.`,
+  ],
+}
+
 const meaning: { title: string; paras: Para[] } = {
   title: 'A Priest who carries us',
   paras: [
@@ -170,6 +181,11 @@ export default function Priest() {
             </li>
           ))}
         </ul>
+
+        <div className="prose">
+          <h2>{colours.title}</h2>
+          <Paras items={colours.paras} terms={allTerms} />
+        </div>
 
         <div className="prose">
           <h2>{meaning.title}</h2>

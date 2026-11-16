@@ -1105,6 +1105,12 @@
    "t": "And thou shalt put in the breastplate of judgment the Urim and the Thummim; and they shall be upon Aaron’s heart, when he goeth in before the LORD: and Aaron shall bear the judgment of the children of Israel upon his heart before the LORD continually."
   }
  ],
+ "Exodus 28:31": [
+  {
+   "v": 31,
+   "t": "And thou shalt make the robe of the ephod all of blue."
+  }
+ ],
  "Exodus 28:31-35": [
   {
    "v": 31,
@@ -1151,6 +1157,16 @@
   {
    "v": 41,
    "t": "And thou shalt put them upon Aaron thy brother, and his sons with him; and shalt anoint them, and consecrate them, and sanctify them, that they may minister unto me in the priest’s office."
+  }
+ ],
+ "Exodus 28:5-6": [
+  {
+   "v": 5,
+   "t": "And they shall take gold, and blue, and purple, and scarlet, and fine linen."
+  },
+  {
+   "v": 6,
+   "t": "And they shall make the ephod of gold, of blue, and of purple, of scarlet, and fine twined linen, with cunning work."
   }
  ],
  "Exodus 28:6-8": [
@@ -1621,6 +1637,12 @@
    "t": "For it is not possible that the blood of bulls and of goats should take away sins."
   }
  ],
+ "Hebrews 10:7": [
+  {
+   "v": 7,
+   "t": "Then said I, Lo, I come (in the volume of the book it is written of me,) to do thy will, O God."
+  }
+ ],
  "Hebrews 11:4": [
   {
    "v": 4,
@@ -1937,6 +1959,12 @@
    "t": "Come now, and let us reason together, saith the LORD: though your sins be as scarlet, they shall be as white as snow; though they be red like crimson, they shall be as wool."
   }
  ],
+ "Isaiah 44:3": [
+  {
+   "v": 3,
+   "t": "For I will pour water upon him that is thirsty, and floods upon the dry ground: I will pour my spirit upon thy seed, and my blessing upon thine offspring:"
+  }
+ ],
  "Isaiah 45:22": [
   {
    "v": 22,
@@ -1983,6 +2011,12 @@
   {
    "v": 6,
    "t": "For unto us a child is born, unto us a son is given: and the government shall be upon his shoulder: and his name shall be called Wonderful, Counsellor, The mighty God, The everlasting Father, The Prince of Peace."
+  }
+ ],
+ "Isaiah 9:7": [
+  {
+   "v": 7,
+   "t": "Of the increase of his government and peace there shall be no end, upon the throne of David, and upon his kingdom, to order it, and to establish it with judgment and with justice from henceforth even for ever. The zeal of the LORD of hosts will perform this."
   }
  ],
  "James 1:23-25": [
@@ -2057,6 +2091,12 @@
    "t": "Jesus saith unto him, I am the way, the truth, and the life: no man cometh unto the Father, but by me."
   }
  ],
+ "John 15:10": [
+  {
+   "v": 10,
+   "t": "If ye keep my commandments, ye shall abide in my love; even as I have kept my Father’s commandments, and abide in his love."
+  }
+ ],
  "John 15:3": [
   {
    "v": 3,
@@ -2067,6 +2107,12 @@
   {
    "v": 5,
    "t": "I am the vine, ye are the branches: He that abideth in me, and I in him, the same bringeth forth much fruit: for without me ye can do nothing."
+  }
+ ],
+ "John 19:2": [
+  {
+   "v": 2,
+   "t": "And the soldiers platted a crown of thorns, and put it on his head, and they put on him a purple robe,"
   }
  ],
  "John 19:23-24": [
@@ -2097,6 +2143,22 @@
    "t": "That was the true Light, which lighteth every man that cometh into the world."
   }
  ],
+ "John 3:3-4": [
+  {
+   "v": 3,
+   "t": "Jesus answered and said unto him, Verily, verily, I say unto thee, Except a man be born again, he cannot see the kingdom of God."
+  },
+  {
+   "v": 4,
+   "t": "Nicodemus saith unto him, How can a man be born when he is old? can he enter the second time into his mother’s womb, and be born?"
+  }
+ ],
+ "John 3:4": [
+  {
+   "v": 4,
+   "t": "Nicodemus saith unto him, How can a man be born when he is old? can he enter the second time into his mother’s womb, and be born?"
+  }
+ ],
  "John 3:5": [
   {
    "v": 5,
@@ -2125,6 +2187,42 @@
   {
    "v": 37,
    "t": "In the last day, that great day of the feast, Jesus stood and cried, saying, If any man thirst, let him come unto me, and drink."
+  }
+ ],
+ "John 7:37-38": [
+  {
+   "v": 37,
+   "t": "In the last day, that great day of the feast, Jesus stood and cried, saying, If any man thirst, let him come unto me, and drink."
+  },
+  {
+   "v": 38,
+   "t": "He that believeth on me, as the scripture hath said, out of his belly shall flow rivers of living water."
+  }
+ ],
+ "John 7:37-39": [
+  {
+   "v": 37,
+   "t": "In the last day, that great day of the feast, Jesus stood and cried, saying, If any man thirst, let him come unto me, and drink."
+  },
+  {
+   "v": 38,
+   "t": "He that believeth on me, as the scripture hath said, out of his belly shall flow rivers of living water."
+  },
+  {
+   "v": 39,
+   "t": "(But this spake he of the Spirit, which they that believe on him should receive: for the Holy Ghost was not yet given; because that Jesus was not yet glorified.)"
+  }
+ ],
+ "John 7:38": [
+  {
+   "v": 38,
+   "t": "He that believeth on me, as the scripture hath said, out of his belly shall flow rivers of living water."
+  }
+ ],
+ "John 7:39": [
+  {
+   "v": 39,
+   "t": "(But this spake he of the Spirit, which they that believe on him should receive: for the Holy Ghost was not yet given; because that Jesus was not yet glorified.)"
   }
  ],
  "John 8:12": [
@@ -2159,6 +2257,20 @@
   {
    "v": 17,
    "t": "Wherefore have ye not eaten the sin offering in the holy place, seeing it is most holy, and God hath given it you to bear the iniquity of the congregation, to make atonement for them before the LORD?"
+  }
+ ],
+ "Leviticus 14:4-6": [
+  {
+   "v": 4,
+   "t": "Then shall the priest command to take for him that is to be cleansed two birds alive and clean, and cedar wood, and scarlet, and hyssop:"
+  },
+  {
+   "v": 5,
+   "t": "And the priest shall command that one of the birds be killed in an earthen vessel over running water:"
+  },
+  {
+   "v": 6,
+   "t": "As for the living bird, he shall take it, and the cedar wood, and the scarlet, and the hyssop, and shall dip them and the living bird in the blood of the bird that was killed over the running water:"
   }
  ],
  "Leviticus 16:12": [
@@ -2733,6 +2845,12 @@
    "t": "And the whole multitude of the people were praying without at the time of incense."
   }
  ],
+ "Luke 1:32": [
+  {
+   "v": 32,
+   "t": "He shall be great, and shall be called the Son of the Highest: and the Lord God shall give unto him the throne of his father David:"
+  }
+ ],
  "Luke 3:1": [
   {
    "v": 1,
@@ -2753,6 +2871,22 @@
   {
    "v": 3,
    "t": "And ye shall tread down the wicked; for they shall be ashes under the soles of your feet in the day that I shall do this, saith the LORD of hosts."
+  }
+ ],
+ "Mark 15:17": [
+  {
+   "v": 17,
+   "t": "And they clothed him with purple, and platted a crown of thorns, and put it about his head,"
+  }
+ ],
+ "Mark 15:17-18": [
+  {
+   "v": 17,
+   "t": "And they clothed him with purple, and platted a crown of thorns, and put it about his head,"
+  },
+  {
+   "v": 18,
+   "t": "And began to salute him, Hail, King of the Jews!"
   }
  ],
  "Mark 15:34-37": [
@@ -2883,6 +3017,18 @@
    "t": "Then the high priest rent his clothes, saying, He hath spoken blasphemy; what further need have we of witnesses? behold, now ye have heard his blasphemy."
   }
  ],
+ "Matthew 27:28": [
+  {
+   "v": 28,
+   "t": "And they stripped him, and put on him a scarlet robe."
+  }
+ ],
+ "Matthew 27:37": [
+  {
+   "v": 37,
+   "t": "And set up over his head his accusation written, THIS IS JESUS THE KING OF THE JEWS."
+  }
+ ],
  "Matthew 27:51": [
   {
    "v": 51,
@@ -2953,6 +3099,16 @@
    "t": "One law and one manner shall be for you, and for the stranger that sojourneth with you."
   }
  ],
+ "Numbers 15:38-39": [
+  {
+   "v": 38,
+   "t": "Speak unto the children of Israel, and bid them that they make them fringes in the borders of their garments throughout their generations, and that they put upon the fringe of the borders a ribband of blue:"
+  },
+  {
+   "v": 39,
+   "t": "And it shall be unto you for a fringe, that ye may look upon it, and remember all the commandments of the LORD, and do them; and that ye seek not after your own heart and your own eyes, after which ye use to go a whoring:"
+  }
+ ],
  "Numbers 16:46-48": [
   {
    "v": 46,
@@ -3003,6 +3159,12 @@
   {
    "v": 19,
    "t": "All the heave offerings of the holy things, which the children of Israel offer unto the LORD, have I given thee, and thy sons and thy daughters with thee, by a statute for ever: it is a covenant of salt for ever before the LORD unto thee and to thy seed with thee."
+  }
+ ],
+ "Numbers 19:6": [
+  {
+   "v": 6,
+   "t": "And the priest shall take cedar wood, and hyssop, and scarlet, and cast it into the midst of the burning of the heifer."
   }
  ],
  "Numbers 2:3": [

@@ -287,6 +287,10 @@ export const priestVerses: Verse[] = [
   { ref: 'Hebrews 7:24-25', note: 'An unchangeable priesthood' },
   { ref: '1 Timothy 2:5', note: 'One mediator' },
   { ref: '1 Peter 2:9', note: 'A royal priesthood' },
+  { ref: 'Numbers 15:38-39', note: 'A ribband of blue, to remember the commandments' },
+  { ref: 'Luke 1:32', note: 'The throne of his father David' },
+  { ref: 'Mark 15:17-18', note: 'Clothed with purple, hailed as King' },
+  { ref: 'Matthew 27:28', note: 'A scarlet robe' },
 ]
 
 export interface Period {
