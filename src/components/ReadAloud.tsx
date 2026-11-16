@@ -213,6 +213,7 @@ export default function ReadAloud() {
     nextToFetch.current = 0
     index.current = 0
     queue.current = []
+    queuePath.current = ''
     clearUrls()
     setState('idle')
     setError('')
@@ -220,6 +221,28 @@ export default function ReadAloud() {
 
   // Stop when the page changes.
   useEffect(() => stop, [pathname, stop])
+
+  const queuePath = useRef('')
+  const buildQueue = () => {
+    queuePath.current = pathname
+    queue.current = []
+    collectBlocks().forEach((el) => chunks(el.innerText).forEach((text) => queue.current.push({ el, text })))
+    nextToFetch.current = 0
+  }
+
+  // Start preparing as soon as the Listen panel is opened.
+  useEffect(() => {
+    if (!open || state !== 'idle') return
+    // Wait for the page's text to finish appearing before reading it.
+    const t = window.setTimeout(() => {
+      if (queuePath.current === pathname && queue.current.length) return
+      clearUrls()
+      buildQueue()
+      prefetch(0)
+    }, 800)
+    return () => window.clearTimeout(t)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [open, pathname, state])
 
   const play = () => {
     setError('')
@@ -237,11 +260,22 @@ export default function ReadAloud() {
       return
     }
     const id = ++run.current
-    queue.current = []
-    collectBlocks().forEach((el) => chunks(el.innerText).forEach((text) => queue.current.push({ el, text })))
-    nextToFetch.current = 0
+    if (!queue.current.length || queuePath.current !== pathname) {
+      clearUrls()
+      buildQueue()
+    }
     prefetch(0)
-    playFrom(0, id)
+    // Give it a head start: wait until the opening parts are ready so the reading flows without gaps.
+    setState('loading')
+    const head: Promise<string>[] = []
+    let chars = 0
+    for (let j = 0; j < queue.current.length && (j < 4 || chars < 600); j++) {
+      chars += queue.current[j].text.length
+      const p = fetchUrl(j)
+      if (p) head.push(p.catch(() => ''))
+      if (chars >= 900) break
+    }
+    Promise.race([Promise.all(head), new Promise((r) => setTimeout(r, 12000))]).then(() => playFrom(0, id))
   }
 
   const pause = () => {
