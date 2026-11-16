@@ -90,7 +90,13 @@ const SAY_RE = new RegExp(
 // "bad" (linen) is only respelled where the page marks it as a term.
 function speakable(el: HTMLElement) {
   const marked = new Set([...el.querySelectorAll('.term-inline')].map((t) => t.textContent?.toLowerCase()))
-  return el.innerText.replace(SAY_RE, (m, pre: string, word: string) => {
+  // Initials such as "E. J. Waggoner" are read without the full stops, so the voice does not pause.
+  const text = el.innerText
+    .replace(/\b([A-Z])\.\s(?=[A-Z])/g, '$1 ')
+    // "p. 347" and "pp. 477-478" are read as "page" and "pages".
+    .replace(/\bpp\.\s(?=\d)/g, 'pages ')
+    .replace(/\bp\.\s(?=\d)/g, 'page ')
+  return text.replace(SAY_RE, (m, pre: string, word: string) => {
     const key = word.toLowerCase()
     if (key === 'bad' && !marked.has('bad')) return m
     return pre + SAY[key]

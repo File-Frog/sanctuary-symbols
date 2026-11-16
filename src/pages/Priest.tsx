@@ -22,13 +22,13 @@ const meaning: { title: string; paras: Para[] } = {
     `Of all the priests in Israel, the high priest stood closest to the meaning of the sanctuary. The ordinary priests served in the court and the holy place, but he alone went into the most holy place, and he alone wore the garments that carried the names of the tribes.`,
     {
       quote: 'God designed that the high priest should more nearly represent Christ than any other priest.',
-      by: 'Stephen N. Haskell',
+      by: 'Stephen Haskell',
       source: 'The Cross and Its Shadow (1914), ch. 9',
     },
     `The most striking thing about his dress is where the names of God's people were placed. They were engraved on the shoulder stones, so he carried Israel on his strength, and on the breastplate, so he carried them over his heart. He could not go in before God without bringing them with him. God says the same to His people through Isaiah: "Behold, I have graven thee upon the palms of my hands" (Isaiah 49:16).`,
     {
       quote: 'So Christ, the great High Priest, pleading His blood before the Father in the sinner\'s behalf, bears upon His heart the name of every repentant, believing soul.',
-      by: 'Ellen G. White',
+      by: 'Ellen White',
       source: 'Patriarchs and Prophets, p. 351',
     },
     `A priest was consecrated by mille' yad, the filling of his hands. Blood was put on his right ear, his right thumb and his right great toe, so that everything he heard, did and walked toward belonged to God (Leviticus 8:23-24). Christ's consecration went further still. He did not need blood for His own sins, because He had none; He offered His own blood for ours (Hebrews 9:12). And unlike Aaron, He holds His priesthood for ever, "after the order of Melchisedec" (Hebrews 5:6). Malki-tsedeq means king of righteousness, and Christ is both King and Priest at once.`,
@@ -36,7 +36,7 @@ const meaning: { title: string; paras: Para[] } = {
     `Finally, what Aaron wore alone, Christ shares with His people. John saw Him in heaven "clothed with a garment down to the foot, and girt about the paps with a golden girdle" (Revelation 1:13), dressed as a priest. And He has made His people "kings and priests unto God" (Revelation 1:6). The linen of His righteousness is given to everyone who trusts Him.`,
     {
       quote: 'Only the family of Aaron could wear the rich garments of the priest; but there are robes of "fine linen, clean and white," in store for every overcomer.',
-      by: 'Stephen N. Haskell',
+      by: 'Stephen Haskell',
       source: 'The Cross and Its Shadow (1914), ch. 12',
     },
   ],

@@ -13,7 +13,7 @@ const meaning: { title: string; paras: Para[] } = {
     `It is easy to treat the 2,300 days as a puzzle of dates, but the prophecy is really about Christ. The seventy weeks name the year He would be anointed, the time He would die and the turning of the gospel to the nations. The longer period then carries His work forward into the heavenly sanctuary, all the way to its final phase.`,
     {
       quote: 'The time of Christ\'s coming, His anointing by the Holy Spirit, His death, and the giving of the gospel to the Gentiles, were definitely pointed out.',
-      by: 'Ellen G. White',
+      by: 'Ellen White',
       source: 'The Desire of Ages, p. 234',
     },
     `The link between the two chapters is what holds the whole calculation together. Gabriel was sent to make Daniel understand the mar'eh he had not understood, and his first words were about a period of time that was cut off. Bible students in the nineteenth century saw that this is the hinge of the prophecy: if the seventy weeks are the first part of the 2,300 days, then the starting point of one is the starting point of the other.`,
@@ -25,7 +25,7 @@ const meaning: { title: string; paras: Para[] } = {
     `Because the first part of the prophecy was fulfilled to the year, believers in the 1840s were confident the end of it would be too. They were right about the date and wrong about the event, and their disappointment drove them back to the text. There they found that "the sanctuary" of Daniel 8:14 is the one in heaven, where Christ serves as High Priest, and that its cleansing is the work pictured by the Day of Atonement.`,
     {
       quote: 'All the preceding specifications of the prophecy had been unquestionably fulfilled at the time appointed.',
-      by: 'Ellen G. White',
+      by: 'Ellen White',
       source: 'The Great Controversy, p. 410',
     },
     `So the prophecy ends where the whole sanctuary leads: with Christ finishing His work, the record of sin removed, God's character vindicated, and the kingdom given to "the saints of the most High" (Daniel 7:27). For the believer, that is not a date to fear but a reason for confidence. The same God who kept the appointment at the Jordan, at Calvary and at Stephen's death will keep the last one too.`,

@@ -38,7 +38,7 @@ const configs: Record<'daily' | 'atonement', Config> = {
         `The daily service taught Israel that forgiveness is never cheap. A sinner could not simply decide to feel sorry and move on. He had to bring a life, lean his weight on it, confess his sin aloud and take that life with his own hand. The act itself was his repentance, his confession and his faith, all at once. He was saying, "This is what my sin deserves, and I am trusting God to accept this substitute in my place."`,
         {
           quote: 'The repentant sinner brought his offering to the door of the tabernacle, and, placing his hand upon the victim\'s head, confessed his sins, thus in figure transferring them from himself to the innocent sacrifice.',
-          by: 'Ellen G. White',
+          by: 'Ellen White',
           source: 'Patriarchs and Prophets, p. 354',
         },
         `Every part of the service pointed to Christ. He is the Lamb without blemish, and "the LORD hath laid on him the iniquity of us all" (Isaiah 53:6). Paul says that God "hath made him to be sin for us, who knew no sin; that we might be made the righteousness of God in him" (2 Corinthians 5:21). He is also the Priest. Just as the priest who ate the sin offering bore the people's iniquity, Christ, the Servant of Isaiah 53, "bare the sin of many, and made intercession for the transgressors" (Isaiah 53:12). He is both the sacrifice that dies and the priest who carries the sin away from the sinner.`,
@@ -51,7 +51,7 @@ const configs: Record<'daily' | 'atonement', Config> = {
         `Behind the personal offerings stood the tamid, the lamb offered morning and evening for the whole nation. M. L. Andreasen called that lamb "representative of the whole nation, a kind of summary of all offerings." It meant that Israel was never left uncovered. Even when no one had come to the altar, a lamb lay on it, and the fire never went out (Leviticus 6:13). Day and night the nation lived under the protection of a sacrifice.`,
         {
           quote: 'Every morning and evening a lamb of a year old was burned upon the altar, with its appropriate meat offering, thus symbolizing the daily consecration of the nation to Jehovah, and their constant dependence upon the atoning blood of Christ.',
-          by: 'Ellen G. White',
+          by: 'Ellen White',
           source: 'Patriarchs and Prophets, p. 352',
         },
         `The hours of that sacrifice became the hours of prayer. Daniel prayed three times a day with his window open toward Jerusalem (Daniel 6:10), and the apostles went up to the temple "at the hour of prayer, being the ninth hour" (Acts 3:1). The tamid still has a lesson for us. We need Christ's sacrifice every day, and we can come to God every morning and every evening, confident that His sacrifice covers us all day long. That daily ministry is what Daniel calls "the daily," and it is the work Christ carries on for us in the heavenly sanctuary.`,
@@ -80,7 +80,7 @@ const configs: Record<'daily' | 'atonement', Config> = {
         `The daily service dealt with sin one person at a time, and it left the sanctuary carrying a growing record of forgiven sins. The Day of Atonement dealt with the whole record at once. It was the climax of Israel's year, and the people knew it.`,
         {
           quote: 'The tenth day of the seventh month was the day of atonement. It was regarded as more sacred than any other day in the yearly round of service.',
-          by: 'Stephen N. Haskell',
+          by: 'Stephen Haskell',
           source: 'The Cross and Its Shadow (1914), ch. 29',
         },
         `Everything about the day pointed to Christ. The high priest laid aside his glorious robes and served in plain linen, as Christ laid aside His glory and took on our humanity (Philippians 2:7). He went in alone, with no one else in the tabernacle, as Christ alone makes atonement for us. And he went in with blood, because the cleansing of the sanctuary rests on the sacrifice. Even the final judgment stands on the cross. Christ "was once offered to bear the sins of many," and Hebrews adds, "unto them that look for him shall he appear the second time without sin unto salvation" (Hebrews 9:28). Like Israel waiting outside for the high priest to come out, God's people now wait for their High Priest to finish His work and appear.`,
@@ -88,13 +88,13 @@ const configs: Record<'daily' | 'atonement', Config> = {
         `The two goats show the end of the story. The LORD's goat was slain, and its blood cleansed the sanctuary; that is Christ, whose blood alone atones. The second goat was never slain and atoned for nothing. When the sanctuary was clean, the sins were confessed over its head, and it was taken away into the wilderness, never to return. The one who started sin will finally carry the responsibility for it, and God's people will be free of it for ever.`,
         {
           quote: 'When the high priest, by virtue of the blood of the sin-offering, removed the sins from the sanctuary, he placed them upon the scape-goat. When Christ, by virtue of his own blood, removes the sins of his people from the heavenly sanctuary at the close of his ministration, he will place them upon Satan, who, in the execution of the judgment, must bear the final penalty.',
-          by: 'Ellen G. White',
+          by: 'Ellen White',
           source: 'The Great Controversy (1888), p. 422',
         },
         `For the believer, the judgment is good news. Zechariah saw it in a vision: Joshua the high priest stood before the Angel of the LORD in filthy garments, with Satan at his right hand to accuse him. But the LORD answered, "The LORD rebuke thee, O Satan," took away the filthy garments and said, "I have caused thine iniquity to pass from thee, and I will clothe thee with change of raiment" (Zechariah 3:2; Zechariah 3:4). Paul asks the same question with the same confidence: "Who shall lay any thing to the charge of God's elect? It is God that justifieth" (Romans 8:33).`,
         {
           quote: 'Not until the goat had thus been led away did the people regard themselves as freed from the burden of their sins.',
-          by: 'Ellen G. White',
+          by: 'Ellen White',
           source: 'Patriarchs and Prophets, p. 355',
         },
         `That is where the whole sanctuary leads. The prophecy of Daniel 8:14 promised that the sanctuary would be nitsdaq, cleansed and set right. When Christ finishes His work, the record of His people's sins will be gone, God's justice and mercy will both stand vindicated before the universe, and sin will never rise again (Nahum 1:9).`,

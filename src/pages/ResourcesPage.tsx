@@ -26,7 +26,7 @@ export default function ResourcesPage() {
         <h2>Scripture</h2>
         <Resources items={generalResources} />
 
-        <h2>Ellen G. White</h2>
+        <h2>Ellen White</h2>
         <Resources items={[R.pp30, R.gc23, R.gc24, R.gc28]} />
 
         <h2>Classic studies</h2>
