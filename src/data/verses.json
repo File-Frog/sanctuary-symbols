@@ -17,6 +17,12 @@
    "t": "Therefore let us keep the feast, not with old leaven, neither with the leaven of malice and wickedness; but with the unleavened bread of sincerity and truth."
   }
  ],
+ "1 Corinthians 6:11": [
+  {
+   "v": 11,
+   "t": "And such were some of you: but ye are washed, but ye are sanctified, but ye are justified in the name of the Lord Jesus, and by the Spirit of our God."
+  }
+ ],
  "1 Corinthians 6:19": [
   {
    "v": 19,
@@ -79,6 +85,12 @@
   {
    "v": 5,
    "t": "For there is one God, and one mediator between God and men, the man Christ Jesus;"
+  }
+ ],
+ "2 Corinthians 3:18": [
+  {
+   "v": 18,
+   "t": "But we all, with open face beholding as in a glass the glory of the Lord, are changed into the same image from glory to glory, even as by the Spirit of the Lord."
   }
  ],
  "2 Corinthians 5:21": [
@@ -961,6 +973,12 @@
    "t": "And thou shalt take the atonement money of the children of Israel, and shalt appoint it for the service of the tabernacle of the congregation; that it may be a memorial unto the children of Israel before the LORD, to make an atonement for your souls."
   }
  ],
+ "Exodus 30:18": [
+  {
+   "v": 18,
+   "t": "Thou shalt also make a laver of brass, and his foot also of brass, to wash withal: and thou shalt put it between the tabernacle of the congregation and the altar, and thou shalt put water therein."
+  }
+ ],
  "Exodus 30:18-20": [
   {
    "v": 18,
@@ -984,6 +1002,22 @@
    "v": 19,
    "t": "For Aaron and his sons shall wash their hands and their feet thereat:"
   },
+  {
+   "v": 20,
+   "t": "When they go into the tabernacle of the congregation, they shall wash with water, that they die not; or when they come near to the altar to minister, to burn offering made by fire unto the LORD:"
+  },
+  {
+   "v": 21,
+   "t": "So they shall wash their hands and their feet, that they die not: and it shall be a statute for ever to them, even to him and to his seed throughout their generations."
+  }
+ ],
+ "Exodus 30:19": [
+  {
+   "v": 19,
+   "t": "For Aaron and his sons shall wash their hands and their feet thereat:"
+  }
+ ],
+ "Exodus 30:20-21": [
   {
    "v": 20,
    "t": "When they go into the tabernacle of the congregation, they shall wash with water, that they die not; or when they come near to the altar to minister, to burn offering made by fire unto the LORD:"
@@ -1093,6 +1127,16 @@
    "t": "Thou hast defiled thy sanctuaries by the multitude of thine iniquities, by the iniquity of thy traffick; therefore will I bring forth a fire from the midst of thee, it shall devour thee, and I will bring thee to ashes upon the earth in the sight of all them that behold thee."
   }
  ],
+ "Ezekiel 36:25-26": [
+  {
+   "v": 25,
+   "t": "Then will I sprinkle clean water upon you, and ye shall be clean: from all your filthiness, and from all your idols, will I cleanse you."
+  },
+  {
+   "v": 26,
+   "t": "A new heart also will I give you, and a new spirit will I put within you: and I will take away the stony heart out of your flesh, and I will give you an heart of flesh."
+  }
+ ],
  "Ezekiel 36:26-27": [
   {
    "v": 26,
@@ -1187,6 +1231,12 @@
   {
    "v": 4,
    "t": "By faith Abel offered unto God a more excellent sacrifice than Cain, by which he obtained witness that he was righteous, God testifying of his gifts: and by it he being dead yet speaketh."
+  }
+ ],
+ "Hebrews 12:14": [
+  {
+   "v": 14,
+   "t": "Follow peace with all men, and holiness, without which no man shall see the Lord:"
   }
  ],
  "Hebrews 12:29": [
@@ -1557,6 +1607,12 @@
    "t": "Jesus saith unto him, I am the way, the truth, and the life: no man cometh unto the Father, but by me."
   }
  ],
+ "John 15:3": [
+  {
+   "v": 3,
+   "t": "Now ye are clean through the word which I have spoken unto you."
+  }
+ ],
  "John 15:5": [
   {
    "v": 5,
@@ -1573,6 +1629,12 @@
   {
    "v": 29,
    "t": "The next day John seeth Jesus coming unto him, and saith, Behold the Lamb of God, which taketh away the sin of the world."
+  }
+ ],
+ "John 3:5": [
+  {
+   "v": 5,
+   "t": "Jesus answered, Verily, verily, I say unto thee, Except a man be born of water and of the Spirit, he cannot enter into the kingdom of God."
   }
  ],
  "John 5:22": [
@@ -2121,6 +2183,16 @@
    "t": "Let my prayer be set forth before thee as incense; and the lifting up of my hands as the evening sacrifice."
   }
  ],
+ "Psalm 24:3-4": [
+  {
+   "v": 3,
+   "t": "Who shall ascend into the hill of the LORD? or who shall stand in his holy place?"
+  },
+  {
+   "v": 4,
+   "t": "He that hath clean hands, and a pure heart; who hath not lifted up his soul unto vanity, nor sworn deceitfully."
+  }
+ ],
  "Psalm 40:8": [
   {
    "v": 8,
@@ -2331,6 +2403,12 @@
   {
    "v": 23,
    "t": "For the wages of sin is death; but the gift of God is eternal life through Jesus Christ our Lord."
+  }
+ ],
+ "Romans 6:4": [
+  {
+   "v": 4,
+   "t": "Therefore we are buried with him by baptism into death: that like as Christ was raised up from the dead by the glory of the Father, even so we also should walk in newness of life."
   }
  ],
  "Titus 3:5": [
